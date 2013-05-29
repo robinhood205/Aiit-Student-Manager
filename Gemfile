@@ -5,7 +5,6 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -37,7 +36,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-# 追加
+
+
+# 追加,修正
 gem "fastercsv"
 gem "rails_admin"
 gem "devise"
@@ -45,4 +46,12 @@ gem "devise"
 group :development, :test do
   gem "rspec" 
   gem "rspec-rails"
+end
+
+group :test, :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem "pg"
 end
