@@ -40,5 +40,9 @@ gem 'jquery-rails'
 # 追加
 gem "fastercsv"
 gem "rails_admin"
-
 gem "devise"
+
+group :development, :test do
+  gem "rspec" 
+  gem "rspec-rails"
+end
