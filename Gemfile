@@ -36,3 +36,9 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# 追加
+gem "fastercsv"
+gem "rails_admin"
+
+gem "devise"
