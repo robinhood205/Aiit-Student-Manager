@@ -37,18 +37,19 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 
-
+##########################
 # 追加,修正
 gem "fastercsv"
 gem "rails_admin"
 gem "devise"
 
+group :test do
+  gem "i18n_generators"
+end
+
 group :development, :test do
   gem "rspec" 
   gem "rspec-rails"
-end
-
-group :test, :development do
   gem 'sqlite3'
 end
 
