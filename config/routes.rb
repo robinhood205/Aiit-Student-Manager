@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
 Students::Application.routes.draw do
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  # ダッシュボード画面をrootに設定
+  root :to => "rails_admin/main#dashboard"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
