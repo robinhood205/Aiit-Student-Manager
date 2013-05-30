@@ -16,6 +16,7 @@ RailsAdmin.config do |config|
 
   # If you want to track changes on your models:
   # config.audit_with :history, 'User'
+  config.audit_with :history, 'Student'
 
   # Or with a PaperTrail: (you need to install it first)
   # config.audit_with :paper_trail, 'User'
