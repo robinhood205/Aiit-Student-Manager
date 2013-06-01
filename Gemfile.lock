@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/stephskardal/rails_admin_import.git
+  revision: 90f967a3700f803670cc59da916cd06999a9aebf
+  specs:
+    rails_admin_import (0.1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -194,6 +200,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.11)
   rails_admin
+  rails_admin_import!
   rspec
   rspec-rails
   sass-rails (~> 3.2.3)

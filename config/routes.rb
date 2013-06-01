@@ -7,6 +7,9 @@ Students::Application.routes.draw do
   # ダッシュボード画面をrootに設定
   root :to => "rails_admin/main#dashboard"
 
+  # インポート機能のroute設定
+  mount RailsAdminImport::Engine => '/rails_admin_import', :as => 'rails_admin_import'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

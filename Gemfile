@@ -42,6 +42,8 @@ gem 'jquery-rails'
 gem "fastercsv"
 gem "rails_admin"
 gem "devise"
+gem "rails_admin_import", :git => "git://github.com/stephskardal/rails_admin_import.git"
+
 
 group :test do
   gem "i18n_generators"
@@ -56,3 +58,4 @@ end
 group :production do
   gem "pg"
 end
+
