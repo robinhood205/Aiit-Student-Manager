@@ -1,4 +1,5 @@
 テスト
+テスト
 
 == Welcome to Rails
 
