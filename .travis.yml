@@ -10,7 +10,7 @@ script:
 # 環境変数に暗号化したHerokuのAPIキーを設定
 env:
   global:
-    - secure: "EFKwohfRjl8FY8Jvt4awJAQxp2p8YmPhXuUxxyBW73JPNnKZbYtSo0vR9vxV\nM+2ryLWkim86ySh58pJGpCvyLp/VLgUkqcVRlEK79Gf1EvkfU3bz7oekB4vc\n7Wq/I/IePbQuaPPvfuxZ+k9A6sIog1gWAAVtubOWAtRybgXSqFk="
+    - secure: EFKwohfRjl8FY8Jvt4awJAQxp2p8YmPhXuUxxyBW73JPNnKZbYtSo0vR9vxV\nM+2ryLWkim86ySh58pJGpCvyLp/VLgUkqcVRlEK79Gf1EvkfU3bz7oekB4vc\n7Wq/I/IePbQuaPPvfuxZ+k9A6sIog1gWAAVtubOWAtRybgXSqFk=
 
 # ビルドが成功した後に実行するスクリプト
 after_success:
