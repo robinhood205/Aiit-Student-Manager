@@ -1,4 +1,4 @@
-あああああああ
+ああああああああああああ
 
 source 'https://rubygems.org'
 
