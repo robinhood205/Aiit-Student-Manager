@@ -19,4 +19,4 @@ after_success:
 #- yes | git push heroku master
 - git push heroku master
 - heroku run rake db:migrate
-- heroku restart
+#- heroku restart
