@@ -6,7 +6,7 @@
 Niu is test file.
 This is gyu add file.
 Date 20130604_1
-
+222222222222222
 >>>>>>> parent of e81c78b... gyuuno test
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
