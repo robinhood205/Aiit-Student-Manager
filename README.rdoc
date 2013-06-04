@@ -1,7 +1,8 @@
 テスト
 テスト
 リョウテスト
-ヨウのテスト。
+ヨウのテスト
+kaneko。
 == Welcome to Rails
 楊のテスト。
 Rails is a web-application framework that includes everything needed to create
