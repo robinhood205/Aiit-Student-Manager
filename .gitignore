@@ -13,3 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
