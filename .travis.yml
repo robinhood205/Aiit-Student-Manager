@@ -16,7 +16,7 @@ env:
       XNg0venKJkldhfdAVH8VnVbxopzoQaRBoCD75JLx8aOJ045q5D8='
 
 after_success:
-  - if [[ "$TRAVIS_BRANCH" = "master" ]]
+  - if [[ "$TRAVIS_BRANCH" != "master" ]]; then exit 0; fi
   - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:studentsmanager.git
@@ -30,5 +30,3 @@ after_success:
   - git push heroku master
   - heroku run rake db:migrate
   - heroku restart
-  - fi
-  
