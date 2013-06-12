@@ -15,9 +15,9 @@ env:
       X5Ouyw8BZ5ufJpp86GPitYIRxaykafDdpGjoJKNEwRKJM1yq9dhBCuEr4IjR
       XNg0venKJkldhfdAVH8VnVbxopzoQaRBoCD75JLx8aOJ045q5D8='
 
+
 after_success:
   - if [[ "$TRAVIS_BRANCH" != "master" ]]; then exit 0; fi
-  - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:studentsmanager.git
   - echo "Host heroku.com" >> ~/.ssh/config
