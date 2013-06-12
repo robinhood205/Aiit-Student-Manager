@@ -11,14 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130612101119) do
 
   create_table "association_pbls", :force => true do |t|
     t.string   "name"
+=======
+ActiveRecord::Schema.define(:version => 20130612091951) do
+
+  create_table "association_pbls", :force => true do |t|
+    t.string   "name"
+    t.integer  "association_student_id"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+  end
+
+  create_table "association_students", :force => true do |t|
+    t.string   "name"
+>>>>>>> b72896f1815fc334b83d5aa418bbe0aec8f848a5
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
+<<<<<<< HEAD
   create_table "association_students", :force => true do |t|
     t.string   "name"
     t.integer  "association_pbl_id"
@@ -31,6 +46,13 @@ ActiveRecord::Schema.define(:version => 20130612101119) do
     t.integer  "association_pbl_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+=======
+  create_table "association_tels", :force => true do |t|
+    t.string   "number"
+    t.integer  "association_student_id"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+>>>>>>> b72896f1815fc334b83d5aa418bbe0aec8f848a5
   end
 
   create_table "rails_admin_histories", :force => true do |t|
