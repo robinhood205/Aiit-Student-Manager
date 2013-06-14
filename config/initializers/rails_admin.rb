@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # RailsAdmin config file. Generated on May 29, 2013 16:35
 # See github.com/sferik/rails_admin for more informations
 
@@ -14,7 +15,13 @@ RailsAdmin.config do |config|
   #   end
   # end
   # end
-  
+
+  # 逆向きのassociationをonにする
+  # config.model TelTest do
+  #   field :student_test_id do
+  #     inverse_of :tel_tests
+  #   end
+  # end                           
 
 
 
