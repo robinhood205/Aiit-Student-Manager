@@ -6,7 +6,7 @@
 ヨウのテスト
 kaneko。
 
-[![Build Status](https://travis-ci.org/a1125ts/students.png?branch=master)](https://travis-ci.org/a1125ts/students)
+{<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]]
 
 == Welcome to Rails
 楊のテスト。
