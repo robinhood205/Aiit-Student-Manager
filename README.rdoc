@@ -1,5 +1,8 @@
 == 学生データベース
 {<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]
 
-=== 開発チーム
+=== Scrum Team
 チョウ、ギュウ、ヨウ、柴田、リョウ、kaneko
+中鉢
+
+
