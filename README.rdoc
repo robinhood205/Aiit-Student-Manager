@@ -1,4 +1,3 @@
-
 柴田テスト2
 チョウのテスト
 テスト
@@ -6,7 +5,7 @@
 ヨウのテスト
 kaneko。
 
-{<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]]
+{<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]
 
 == Welcome to Rails
 楊のテスト。
