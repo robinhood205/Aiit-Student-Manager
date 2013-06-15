@@ -2,12 +2,9 @@
 {<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]
 
 === 開発チーム
-チョウ、ギュウ、ヨウ、柴田、リョウ、kaneko
-test
+チョウ、ギュウ、ヨウ、柴田、リョウ、金子
 
-=======
 == Scrum Team
-
 === Scrum Master
 kaneko
 
@@ -16,5 +13,5 @@ kaneko
 中鉢
 
 === Product Owner
-AIIT 教務 sachie
+AIIT 教務
 
