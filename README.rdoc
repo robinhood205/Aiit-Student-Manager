@@ -1,7 +1,19 @@
-== 学生データベース
+= 学生データベース
 {<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]
 
 === 開発チーム
 チョウ、ギュウ、ヨウ、柴田、リョウ、kaneko
 test
 
+=======
+== Scrum Team
+
+=== Scrum Master
+kaneko
+
+=== Member
+チョウ、ギュウ、ヨウ、柴田、リョウ、
+中鉢
+
+=== Product Owner
+AIIT 教務
