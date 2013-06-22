@@ -5,4 +5,3 @@
 require File.expand_path('../config/application', __FILE__)
 
 Students::Application.load_tasks
-ENV['SKIP_RAILS_ADMIN_INITIALIZER']='true'
