@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
   # password(パスワード確認),registration(サインアップ)機能へのルーティングを除外
-  devise_for :users#, only: [:session]
+  devise_for :users, only: [:session]
 
 
   # RailsAdmin
