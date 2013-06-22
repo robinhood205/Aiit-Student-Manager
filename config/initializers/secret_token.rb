@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Students::Application.config.secret_token = 'cb5437ca21180ab4fd2bea4ed5d37fa62e44f8031814bb03e63dd4a047e197ba77e544c750884eb4a6d86a3344dd91162c52212af125cbe589097907caceb6a6'
+Students::Application.config.secret_token = 'e182de2ac6ccd16c9479f338a722c65c3becff3304a7360c97aafe1f755911fd5da2a3e73b2afb0cf31d203ce7ecf261efc2b755e2116da7421c2dc61a9b75c7'
