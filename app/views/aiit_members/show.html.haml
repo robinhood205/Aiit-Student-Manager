@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Family name:
+  = @aiit_member.family_name
+%p
+  %b Given name:
+  = @aiit_member.given_name
+%p
+  %b Birthday:
+  = @aiit_member.birthday
+%p
+  %b Sex:
+  = @aiit_member.sex
+
+= link_to 'Edit', edit_aiit_member_path(@aiit_member)
+\|
+= link_to 'Back', aiit_members_path

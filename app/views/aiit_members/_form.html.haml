@@ -1,0 +1,22 @@
+= form_for @aiit_member do |f|
+  - if @aiit_member.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@aiit_member.errors.count, "error")} prohibited this aiit_member from being saved:"
+      %ul
+        - @aiit_member.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :family_name
+    = f.text_field :family_name
+  .field
+    = f.label :given_name
+    = f.text_field :given_name
+  .field
+    = f.label :birthday
+    = f.date_select :birthday
+  .field
+    = f.label :sex
+    = f.text_field :sex
+  .actions
+    = f.submit 'Save'
