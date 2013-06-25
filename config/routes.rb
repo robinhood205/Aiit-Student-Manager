@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
+  resources :aiit_members
+
+
   # password(パスワード確認),registration(サインアップ)機能へのルーティングを除外
   devise_for :users, only: [:session]
 
