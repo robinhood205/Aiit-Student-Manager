@@ -61,5 +61,7 @@ module Students
     config.assets.version = '1.0'
     # for Heroku
     config.assets.initialize_on_precompile = false
+    # for sass
+    config.sass.preferred_syntax = :sass
   end
 end

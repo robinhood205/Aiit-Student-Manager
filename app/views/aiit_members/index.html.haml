@@ -1,0 +1,25 @@
+%h1 Listing aiit_members
+
+%table
+  %tr
+    %th Family name
+    %th Given name
+    %th Birthday
+    %th Sex
+    %th
+    %th
+    %th
+
+  - @aiit_members.each do |aiit_member|
+    %tr
+      %td= aiit_member.family_name
+      %td= aiit_member.given_name
+      %td= aiit_member.birthday
+      %td= aiit_member.sex
+      %td= link_to 'Show', aiit_member
+      %td= link_to 'Edit', edit_aiit_member_path(aiit_member)
+      %td= link_to 'Destroy', aiit_member, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Aiit member', new_aiit_member_path
