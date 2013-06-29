@@ -2,6 +2,9 @@
 Students::Application.routes.draw do
   resources :prospects
 
+  resources :guarantors
+
+  resources :privacies
 
   resources :aiit_members
 

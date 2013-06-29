@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130629053055) do
+=======
+ActiveRecord::Schema.define(:version => 20130629061257) do
+>>>>>>> master
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -42,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20130629053055) do
     t.datetime "updated_at",         :null => false
   end
 
+<<<<<<< HEAD
   create_table "prospects", :force => true do |t|
     t.date     "jusndt"
     t.string   "kbsnko"
@@ -52,6 +57,43 @@ ActiveRecord::Schema.define(:version => 20130629053055) do
     t.string   "syugan"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+=======
+  create_table "guarantors", :force => true do |t|
+    t.string   "name"
+    t.string   "namekata"
+    t.integer  "zip"
+    t.string   "address"
+    t.integer  "tel"
+    t.string   "relationship"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "privacies", :force => true do |t|
+    t.string   "name"
+    t.string   "kana_name"
+    t.string   "eng_name"
+    t.string   "sex"
+    t.date     "birthday"
+    t.string   "nationality"
+    t.string   "zip_code"
+    t.string   "city"
+    t.string   "block"
+    t.string   "address"
+    t.string   "building"
+    t.string   "tel"
+    t.string   "mobile"
+    t.string   "mail_pc"
+    t.string   "mail_mobile"
+    t.string   "graduated_school"
+    t.string   "department"
+    t.date     "graduated_date"
+    t.string   "occupation"
+    t.string   "company"
+    t.string   "company_address"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+>>>>>>> master
   end
 
   create_table "rails_admin_histories", :force => true do |t|

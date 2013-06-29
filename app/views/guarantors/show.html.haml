@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @guarantor.name
+%p
+  %b Namekata:
+  = @guarantor.namekata
+%p
+  %b Zip:
+  = @guarantor.zip
+%p
+  %b Address:
+  = @guarantor.address
+%p
+  %b Tel:
+  = @guarantor.tel
+%p
+  %b Relationship:
+  = @guarantor.relationship
+
+= link_to 'Edit', edit_guarantor_path(@guarantor)
+\|
+= link_to 'Back', guarantors_path

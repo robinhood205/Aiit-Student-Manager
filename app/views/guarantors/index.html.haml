@@ -1,0 +1,29 @@
+%h1 Listing guarantors
+
+%table
+  %tr
+    %th Name
+    %th Namekata
+    %th Zip
+    %th Address
+    %th Tel
+    %th Relationship
+    %th
+    %th
+    %th
+
+  - @guarantors.each do |guarantor|
+    %tr
+      %td= guarantor.name
+      %td= guarantor.namekata
+      %td= guarantor.zip
+      %td= guarantor.address
+      %td= guarantor.tel
+      %td= guarantor.relationship
+      %td= link_to 'Show', guarantor
+      %td= link_to 'Edit', edit_guarantor_path(guarantor)
+      %td= link_to 'Destroy', guarantor, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Guarantor', new_guarantor_path
