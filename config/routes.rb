@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
 
+  resources :guarantors
+
+
   resources :privacies
 
   resources :aiit_members
