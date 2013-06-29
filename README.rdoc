@@ -15,12 +15,19 @@ kaneko
 === Product Owner
 AIIT 教務
 
-===和英対照
+=== 和英対照
 Guarantors　保証人
+
 Prospects　見込学生
+
 Privacy　個人情報
+
 Students_list　学生一覧
+
 Tuition　授業料
+
 Status_change 身分異動
+
 Examinee 受験生
+
 Aiit_member AIIT会員
