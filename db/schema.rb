@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130625154304) do
+ActiveRecord::Schema.define(:version => 20130629053055) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -40,6 +40,18 @@ ActiveRecord::Schema.define(:version => 20130625154304) do
     t.integer  "association_pbl_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "prospects", :force => true do |t|
+    t.date     "jusndt"
+    t.string   "kbsnko"
+    t.string   "kbsryo"
+    t.string   "event"
+    t.date     "raijdt"
+    t.boolean  "infoyn"
+    t.string   "syugan"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "rails_admin_histories", :force => true do |t|

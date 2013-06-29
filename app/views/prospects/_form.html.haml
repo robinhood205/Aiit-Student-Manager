@@ -1,0 +1,31 @@
+= form_for @prospect do |f|
+  - if @prospect.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@prospect.errors.count, "error")} prohibited this prospect from being saved:"
+      %ul
+        - @prospect.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :jusndt
+    = f.date_select :jusndt
+  .field
+    = f.label :kbsnko
+    = f.text_field :kbsnko
+  .field
+    = f.label :kbsryo
+    = f.text_field :kbsryo
+  .field
+    = f.label :event
+    = f.text_field :event
+  .field
+    = f.label :raijdt
+    = f.date_select :raijdt
+  .field
+    = f.label :infoyn
+    = f.check_box :infoyn
+  .field
+    = f.label :syugan
+    = f.text_field :syugan
+  .actions
+    = f.submit 'Save'
