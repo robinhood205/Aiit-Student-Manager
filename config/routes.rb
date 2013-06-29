@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
-<<<<<<< HEAD
+
   resources :privacies
-=======
+
   resources :aiit_members
->>>>>>> master
+
 
 
   # password(パスワード確認),registration(サインアップ)機能へのルーティングを除外

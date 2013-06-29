@@ -11,10 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130629033408) do
-=======
-ActiveRecord::Schema.define(:version => 20130625154304) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -24,7 +21,6 @@ ActiveRecord::Schema.define(:version => 20130625154304) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
->>>>>>> master
 
   create_table "association_pbls", :force => true do |t|
     t.string   "name"
@@ -46,7 +42,6 @@ ActiveRecord::Schema.define(:version => 20130625154304) do
     t.datetime "updated_at",         :null => false
   end
 
-<<<<<<< HEAD
   create_table "privacies", :force => true do |t|
     t.string   "name"
     t.string   "kana_name"
@@ -73,8 +68,6 @@ ActiveRecord::Schema.define(:version => 20130625154304) do
     t.datetime "updated_at",       :null => false
   end
 
-=======
->>>>>>> master
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
     t.string   "username"
