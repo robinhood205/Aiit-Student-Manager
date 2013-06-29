@@ -1,0 +1,63 @@
+<h1>Listing privacies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Kana name</th>
+    <th>Eng name</th>
+    <th>Sex</th>
+    <th>Birthday</th>
+    <th>Nationality</th>
+    <th>Zip code</th>
+    <th>City</th>
+    <th>Block</th>
+    <th>Address</th>
+    <th>Building</th>
+    <th>Tel</th>
+    <th>Mobile</th>
+    <th>Mail pc</th>
+    <th>Mail mobile</th>
+    <th>Graduated school</th>
+    <th>Department</th>
+    <th>Graduated date</th>
+    <th>Occupation</th>
+    <th>Company</th>
+    <th>Company address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @privacies.each do |privacy| %>
+  <tr>
+    <td><%= privacy.name %></td>
+    <td><%= privacy.kana_name %></td>
+    <td><%= privacy.eng_name %></td>
+    <td><%= privacy.sex %></td>
+    <td><%= privacy.birthday %></td>
+    <td><%= privacy.nationality %></td>
+    <td><%= privacy.zip_code %></td>
+    <td><%= privacy.city %></td>
+    <td><%= privacy.block %></td>
+    <td><%= privacy.address %></td>
+    <td><%= privacy.building %></td>
+    <td><%= privacy.tel %></td>
+    <td><%= privacy.mobile %></td>
+    <td><%= privacy.mail_pc %></td>
+    <td><%= privacy.mail_mobile %></td>
+    <td><%= privacy.graduated_school %></td>
+    <td><%= privacy.department %></td>
+    <td><%= privacy.graduated_date %></td>
+    <td><%= privacy.occupation %></td>
+    <td><%= privacy.company %></td>
+    <td><%= privacy.company_address %></td>
+    <td><%= link_to 'Show', privacy %></td>
+    <td><%= link_to 'Edit', edit_privacy_path(privacy) %></td>
+    <td><%= link_to 'Destroy', privacy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Privacy', new_privacy_path %>

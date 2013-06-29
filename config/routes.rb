@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
+  resources :privacies
+
+
   # password(パスワード確認),registration(サインアップ)機能へのルーティングを除外
   devise_for :users#, only: [:session]
 
