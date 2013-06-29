@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20130629053055) do
+=======
 ActiveRecord::Schema.define(:version => 20130629061257) do
+>>>>>>> master
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -42,6 +46,18 @@ ActiveRecord::Schema.define(:version => 20130629061257) do
     t.datetime "updated_at",         :null => false
   end
 
+<<<<<<< HEAD
+  create_table "prospects", :force => true do |t|
+    t.date     "jusndt"
+    t.string   "kbsnko"
+    t.string   "kbsryo"
+    t.string   "event"
+    t.date     "raijdt"
+    t.boolean  "infoyn"
+    t.string   "syugan"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+=======
   create_table "guarantors", :force => true do |t|
     t.string   "name"
     t.string   "namekata"
@@ -77,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20130629061257) do
     t.string   "company_address"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+>>>>>>> master
   end
 
   create_table "rails_admin_histories", :force => true do |t|
