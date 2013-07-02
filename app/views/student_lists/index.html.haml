@@ -1,0 +1,47 @@
+%h1 Listing student_lists
+
+%table
+  %tr
+    %th Name
+    %th Classification
+    %th Gakusyu no
+    %th Grade
+    %th Program
+    %th Student account
+    %th Email
+    %th Nationality
+    %th Visa
+    %th Nyugaku
+    %th Risyukikan
+    %th Syuryo
+    %th Pbl 1st
+    %th Pbl 2nd
+    %th Pbl teacher
+    %th
+    %th
+    %th
+
+  - @student_lists.each do |student_list|
+    %tr
+      %td= student_list.name
+      %td= student_list.classification
+      %td= student_list.gakusyu_no
+      %td= student_list.grade
+      %td= student_list.program
+      %td= student_list.student_account
+      %td= student_list.Email
+      %td= student_list.nationality
+      %td= student_list.visa
+      %td= student_list.nyugaku
+      %td= student_list.risyukikan
+      %td= student_list.syuryo
+      %td= student_list.PBL_1st
+      %td= student_list.PBL_2nd
+      %td= student_list.PBL_teacher
+      %td= link_to 'Show', student_list
+      %td= link_to 'Edit', edit_student_list_path(student_list)
+      %td= link_to 'Destroy', student_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Student list', new_student_list_path

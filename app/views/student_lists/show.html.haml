@@ -1,0 +1,51 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @student_list.name
+%p
+  %b Classification:
+  = @student_list.classification
+%p
+  %b Gakusyu no:
+  = @student_list.gakusyu_no
+%p
+  %b Grade:
+  = @student_list.grade
+%p
+  %b Program:
+  = @student_list.program
+%p
+  %b Student account:
+  = @student_list.student_account
+%p
+  %b Email:
+  = @student_list.Email
+%p
+  %b Nationality:
+  = @student_list.nationality
+%p
+  %b Visa:
+  = @student_list.visa
+%p
+  %b Nyugaku:
+  = @student_list.nyugaku
+%p
+  %b Risyukikan:
+  = @student_list.risyukikan
+%p
+  %b Syuryo:
+  = @student_list.syuryo
+%p
+  %b Pbl 1st:
+  = @student_list.PBL_1st
+%p
+  %b Pbl 2nd:
+  = @student_list.PBL_2nd
+%p
+  %b Pbl teacher:
+  = @student_list.PBL_teacher
+
+= link_to 'Edit', edit_student_list_path(@student_list)
+\|
+= link_to 'Back', student_lists_path
