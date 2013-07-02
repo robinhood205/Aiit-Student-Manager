@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
+<<<<<<< HEAD
   resources :students_lists
+=======
+  resources :mibuns
+>>>>>>> origin/master
 
 
   resources :prospects
