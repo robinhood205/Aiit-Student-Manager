@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20130702111008) do
-=======
-ActiveRecord::Schema.define(:version => 20130702113812) do
->>>>>>> origin/master
+ActiveRecord::Schema.define(:version => 20130702130315) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -116,6 +112,26 @@ ActiveRecord::Schema.define(:version => 20130702113812) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
+  create_table "student_lists", :force => true do |t|
+    t.string   "name"
+    t.string   "classification"
+    t.string   "gakusyu_no"
+    t.string   "grade"
+    t.string   "program"
+    t.string   "student_account"
+    t.string   "Email"
+    t.string   "nationality"
+    t.string   "visa"
+    t.date     "nyugaku"
+    t.string   "risyukikan"
+    t.date     "syuryo"
+    t.string   "PBL_1st"
+    t.string   "PBL_2nd"
+    t.string   "PBL_teacher"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
   create_table "students", :force => true do |t|
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
@@ -176,26 +192,6 @@ ActiveRecord::Schema.define(:version => 20130702113812) do
     t.integer  "goukeiten"
     t.string   "umu"
     t.string   "hanteiriyuu"
-  end
-
-  create_table "students_lists", :force => true do |t|
-    t.string   "name"
-    t.string   "classification"
-    t.string   "gakusyu_no"
-    t.string   "grade"
-    t.string   "class"
-    t.string   "user_id"
-    t.string   "E_mail"
-    t.string   "nationality"
-    t.string   "visa"
-    t.date     "nyugaku"
-    t.string   "risyukikan"
-    t.date     "syuryo"
-    t.string   "PBL_1st"
-    t.string   "PBL_2nd"
-    t.string   "PBL_teacher"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
   end
 
   create_table "users", :force => true do |t|
