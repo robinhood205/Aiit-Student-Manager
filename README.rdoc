@@ -15,6 +15,7 @@ kaneko
 === Product Owner
 AIIT 教務
 
+<<<<<<< HEAD
 === 和英対照
 Guarantors　保証人
 
@@ -31,3 +32,6 @@ Status_change 身分異動
 Examinee 受験生
 
 Aiit_member AIIT会員
+=======
+test
+>>>>>>> origin/develop
