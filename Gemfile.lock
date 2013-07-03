@@ -46,6 +46,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    commonjs (0.2.6)
     devise (2.2.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -85,6 +86,11 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    less (2.3.2)
+      commonjs (~> 0.2.6)
+    less-rails (2.3.3)
+      actionpack (>= 3.1)
+      less (~> 2.3.1)
     libv8 (3.11.8.17)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -191,6 +197,11 @@ GEM
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
+    twitter-bootstrap-rails (2.2.7)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
     tzinfo (0.3.37)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
@@ -212,6 +223,7 @@ DEPENDENCIES
   haml-rails
   i18n_generators
   jquery-rails
+  less-rails
   pg
   rails (= 3.2.11)
   rails_admin
@@ -221,4 +233,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
+  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
