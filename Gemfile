@@ -46,9 +46,9 @@ gem "devise"
 gem "rails_admin_import", :git => "git://github.com/stephskardal/rails_admin_import.git"
 
 
-group :test do
-  gem "i18n_generators"
-end
+
+gem "i18n_generators"
+
 
 group :development, :test do
   gem "rspec" 

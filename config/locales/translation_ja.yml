@@ -1,0 +1,148 @@
+ja:
+  activerecord:
+    models:
+      aiit_member: aiit_member  #g
+      association_pbl: association_pbl  #g
+      association_student: association_student  #g
+      association_teacher: association_teacher  #g
+      guarantor: guarantor  #g
+      mibun: mibun  #g
+      privacy: privacy  #g
+      prospect: 見込み学生  #g
+      student: student  #g
+      user: user  #g
+
+    attributes:
+      aiit_member:
+        birthday: birthday  #g
+        family_name: family_name  #g
+        given_name: given_name  #g
+        sex: sex  #g
+
+      association_pbl:
+        association_students: association_students  #g
+        association_teacher: :activerecord.models.association_teacher  #g
+        name: name  #g
+
+      association_student:
+        association_pbl: :activerecord.models.association_pbl  #g
+        name: name  #g
+
+      association_teacher:
+        association_pbl: :activerecord.models.association_pbl  #g
+        name: name  #g
+
+      guarantor:
+        address: address  #g
+        name: name  #g
+        namekata: namekata  #g
+        relationship: relationship  #g
+        tel: tel  #g
+        zip: zip  #g
+
+      mibun:
+        absence_reason: absence_reason  #g
+        absence_time: absence_time  #g
+        status: status  #g
+
+      privacy:
+        address: address  #g
+        birthday: birthday  #g
+        block: block  #g
+        building: building  #g
+        city: city  #g
+        company: company  #g
+        company_address: company_address  #g
+        department: department  #g
+        eng_name: eng_name  #g
+        graduated_date: graduated_date  #g
+        graduated_school: graduated_school  #g
+        kana_name: kana_name  #g
+        mail_mobile: mail_mobile  #g
+        mail_pc: mail_pc  #g
+        mobile: mobile  #g
+        name: name  #g
+        nationality: nationality  #g
+        occupation: occupation  #g
+        sex: sex  #g
+        tel: tel  #g
+        zip_code: zip_code  #g
+
+      prospect:
+        event: イベント #g
+        infoyn: infoyn  #g
+        jusndt: jusndt  #g
+        kbsnko: kbsnko  #g
+        kbsryo: kbsryo  #g
+        raijdt: raijdt  #g
+        syugan: syugan  #g
+
+      student:
+        bikou: bikou  #g
+        bunri: bunri  #g
+        denwa_keitai: denwa_keitai  #g
+        denwa_zitaku: denwa_zitaku  #g
+        denwabangou: denwabangou  #g
+        emailadoresu: emailadoresu  #g
+        gakkoumei: gakkoumei  #g
+        gakubumei: gakubumei  #g
+        gakunen: gakunen  #g
+        gakuseki: gakuseki  #g
+        gakusyubango: gakusyubango  #g
+        goukeiten: goukeiten  #g
+        hanteiriyuu: hanteiriyuu  #g
+        hosyounin_yuubinbangou: hosyounin_yuubinbangou  #g
+        hurikaeiraisyo: hurikaeiraisyo  #g
+        itkisotisiki: itkisotisiki  #g
+        kana: kana  #g
+        kanasimei: kanasimei  #g
+        kanzi: kanzi  #g
+        kanzisimei: kanzisimei  #g
+        kinmusaki: kinmusaki  #g
+        kinmusakizyuusyo: kinmusakizyuusyo  #g
+        kokuseki: kokuseki  #g
+        kouki: kouki  #g
+        koukigennmen: koukigennmen  #g
+        kozinemairuadoresu: kozinemairuadoresu  #g
+        kuarsu: kuarsu  #g
+        kubun: kubun  #g
+        kyuugakukikan: kyuugakukikan  #g
+        mensetu: mensetu  #g
+        myozi: myozi  #g
+        nenrei: nenrei  #g
+        nenreisansyutuyou: nenreisansyutuyou  #g
+        nyuugakunengappi: nyuugakunengappi  #g
+        nyuusi: nyuusi  #g
+        purezentesyon: purezentesyon  #g
+        risyuukikan: risyuukikan  #g
+        seigetu: seigetu  #g
+        seireki: seireki  #g
+        sinsotu: sinsotu  #g
+        sotugyounendo: sotugyounendo  #g
+        syouronbun: syouronbun  #g
+        syuugyoukikan: syuugyoukikan  #g
+        syuuryouyoteibi: syuuryouyoteibi  #g
+        tantou: tantou  #g
+        tyoukirisyuu: tyoukirisyuu  #g
+        umu: umu  #g
+        yuubinbangou: yuubinbangou  #g
+        yuzaid: yuzaid  #g
+        zairyuusikaku: zairyuusikaku  #g
+        zenki: zenki  #g
+        zenkigenmenn: zenkigenmenn  #g
+        zokugarakubun: zokugarakubun  #g
+        zyukenbangou: zyukenbangou  #g
+        zyukennnendo: zyukennnendo  #g
+        zyusyo: zyusyo  #g
+        zyuusyo: zyuusyo  #g
+
+      user:
+        current_sign_in_at: current_sign_in_at  #g
+        current_sign_in_ip: current_sign_in_ip  #g
+        email: email  #g
+        encrypted_password: encrypted_password  #g
+        last_sign_in_at: last_sign_in_at  #g
+        last_sign_in_ip: last_sign_in_ip  #g
+        remember_created_at: remember_created_at  #g
+        reset_password_sent_at: reset_password_sent_at  #g
+        reset_password_token: reset_password_token  #g
