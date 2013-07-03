@@ -5,19 +5,19 @@ ja:
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
-      guarantor: guarantor  #g
-      mibun: mibun  #g
-      privacy: privacy  #g
-      prospect: 見込み学生  #g
-      student: student  #g
-      user: user  #g
+      guarantor: 保証人  #g
+      mibun: 身分移動情報  #g
+      privacy: 個人情報  #g
+      prospect: 見込み学生情報  #g
+      student: 学生情報#g
+      user: ユーザー情報  #g
 
     attributes:
       aiit_member:
-        birthday: birthday  #g
-        family_name: family_name  #g
-        given_name: given_name  #g
-        sex: sex  #g
+        birthday: 生年月日  #g
+        family_name: 姓  #g
+        given_name: 名  #g
+        sex: 性別  #g
 
       association_pbl:
         association_students: association_students  #g
@@ -33,16 +33,16 @@ ja:
         name: name  #g
 
       guarantor:
-        address: address  #g
-        name: name  #g
-        namekata: namekata  #g
-        relationship: relationship  #g
-        tel: tel  #g
-        zip: zip  #g
+        address: 住所  #g
+        name: 氏名  #g
+        namekata: カナ  #g
+        relationship: 続柄区分  #g
+        tel: 電話  #g
+        zip: 郵便番号 #g
 
       mibun:
-        absence_reason: absence_reason  #g
-        absence_time: absence_time  #g
+        absence_reason: 身分  #g
+        absence_time: 休学期間  #g
         status: status  #g
 
       privacy:
@@ -70,12 +70,12 @@ ja:
 
       prospect:
         event: イベント #g
-        infoyn: infoyn  #g
-        jusndt: jusndt  #g
-        kbsnko: kbsnko  #g
-        kbsryo: kbsryo  #g
-        raijdt: raijdt  #g
-        syugan: syugan  #g
+        infoyn: 情報連絡不要  #g
+        jusndt: 受信日 #g
+        kbsnko: 希望専攻  #g
+        kbsryo: 希望資料  #g
+        raijdt: 来場日  #g
+        syugan: 出願  #g
 
       student:
         bikou: bikou  #g
