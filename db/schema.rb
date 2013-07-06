@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130706064215) do
+ActiveRecord::Schema.define(:version => 20130706075954) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -173,6 +173,17 @@ ActiveRecord::Schema.define(:version => 20130706064215) do
     t.integer  "goukeiten"
     t.string   "umu"
     t.string   "hanteiriyuu"
+  end
+
+  create_table "tuitions", :force => true do |t|
+    t.string   "transfer_request"
+    t.string   "first_term_reduction"
+    t.string   "second_term_reduction"
+    t.string   "scholarship_division"
+    t.string   "loan_amount"
+    t.string   "memo"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "users", :force => true do |t|
