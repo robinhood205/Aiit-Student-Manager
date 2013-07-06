@@ -12,6 +12,7 @@ ja:
       prospect: 見込み学生情報  #g
       student: 学生情報  #g
       user: ユーザー情報  #g
+      student_list: 学生一覧  #g
 
     attributes:
       aiit_member:
@@ -54,6 +55,24 @@ ja:
         scholarship_division: 奨学金区分 #g
         second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
+        
+      student_list:
+        PBL_1st: PBL前期 #g
+        PBL_2nd: PBL後期 #g
+        PBL_teacher: PBL担任 #g
+        campus_email: 学内E-Mailアドレス #g
+        classification: 種別 #g
+        entrance_date: 入学年月日 #g
+        grade: 学年 #g
+        graduation_date: 終了予定日 #g
+        memo: 備考 #g
+        name: 名前 #g
+        nationality: 国籍 #g
+        program: クラス #g
+        student_account: ユーザID #g
+        student_id: 学修番号 #g
+        study_period: 履修期間 #g
+        visa:  在留資格 #g
 
       privacy:
         address: address  #g
