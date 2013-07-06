@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
-
   resources :student_lists
+
+
+  resources :privacies
+
 
   resources :mibuns
 
@@ -10,9 +13,6 @@ Students::Application.routes.draw do
   resources :prospects
 
   resources :guarantors
-
-  resources :privacies
-
   resources :aiit_members
 
 

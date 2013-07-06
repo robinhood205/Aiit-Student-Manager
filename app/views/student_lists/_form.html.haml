@@ -7,17 +7,17 @@
           %li= msg
 
   .field
-    = f.label :name
-    = f.text_field :name
-  .field
     = f.label :classification
     = f.text_field :classification
   .field
-    = f.label :gakusyu_no
-    = f.text_field :gakusyu_no
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :student_id
+    = f.text_field :student_id
   .field
     = f.label :grade
-    = f.text_field :grade
+    = f.number_field :grade
   .field
     = f.label :program
     = f.text_field :program
@@ -25,8 +25,8 @@
     = f.label :student_account
     = f.text_field :student_account
   .field
-    = f.label :Email
-    = f.text_field :Email
+    = f.label :campus_email
+    = f.text_field :campus_email
   .field
     = f.label :nationality
     = f.text_field :nationality
@@ -34,14 +34,14 @@
     = f.label :visa
     = f.text_field :visa
   .field
-    = f.label :nyugaku
-    = f.date_select :nyugaku
+    = f.label :entrance_date
+    = f.date_select :entrance_date
   .field
-    = f.label :risyukikan
-    = f.text_field :risyukikan
+    = f.label :study_period
+    = f.text_field :study_period
   .field
-    = f.label :syuryo
-    = f.date_select :syuryo
+    = f.label :graduation_date
+    = f.date_select :graduation_date
   .field
     = f.label :PBL_1st
     = f.text_field :PBL_1st
@@ -51,5 +51,8 @@
   .field
     = f.label :PBL_teacher
     = f.text_field :PBL_teacher
+  .field
+    = f.label :memo
+    = f.text_area :memo
   .actions
     = f.submit 'Save'

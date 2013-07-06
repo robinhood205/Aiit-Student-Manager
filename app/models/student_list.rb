@@ -1,3 +1,3 @@
 class StudentList < ActiveRecord::Base
-  attr_accessible :Email, :PBL_1st, :PBL_2nd, :PBL_teacher, :classification, :gakusyu_no, :grade, :name, :nationality, :nyugaku, :program, :risyukikan, :student_account, :syuryo, :visa
+  attr_accessible :PBL_1st, :PBL_2nd, :PBL_teacher, :campus_email, :classification, :entrance_date, :grade, :graduation_date, :memo, :name, :nationality, :program, :student_account, :student_id, :study_period, :visa
 end

@@ -2,42 +2,44 @@
 
 %table
   %tr
-    %th Name
     %th Classification
-    %th Gakusyu no
+    %th Name
+    %th Student
     %th Grade
     %th Program
     %th Student account
-    %th Email
+    %th Campus email
     %th Nationality
     %th Visa
-    %th Nyugaku
-    %th Risyukikan
-    %th Syuryo
+    %th Entrance date
+    %th Study period
+    %th Graduation date
     %th Pbl 1st
     %th Pbl 2nd
     %th Pbl teacher
+    %th Memo
     %th
     %th
     %th
 
   - @student_lists.each do |student_list|
     %tr
-      %td= student_list.name
       %td= student_list.classification
-      %td= student_list.gakusyu_no
+      %td= student_list.name
+      %td= student_list.student_id
       %td= student_list.grade
       %td= student_list.program
       %td= student_list.student_account
-      %td= student_list.Email
+      %td= student_list.campus_email
       %td= student_list.nationality
       %td= student_list.visa
-      %td= student_list.nyugaku
-      %td= student_list.risyukikan
-      %td= student_list.syuryo
+      %td= student_list.entrance_date
+      %td= student_list.study_period
+      %td= student_list.graduation_date
       %td= student_list.PBL_1st
       %td= student_list.PBL_2nd
       %td= student_list.PBL_teacher
+      %td= student_list.memo
       %td= link_to 'Show', student_list
       %td= link_to 'Edit', edit_student_list_path(student_list)
       %td= link_to 'Destroy', student_list, :method => :delete, :data => { :confirm => 'Are you sure?' }

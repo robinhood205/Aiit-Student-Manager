@@ -1,14 +1,14 @@
 %p#notice= notice
 
 %p
-  %b Name:
-  = @student_list.name
-%p
   %b Classification:
   = @student_list.classification
 %p
-  %b Gakusyu no:
-  = @student_list.gakusyu_no
+  %b Name:
+  = @student_list.name
+%p
+  %b Student:
+  = @student_list.student_id
 %p
   %b Grade:
   = @student_list.grade
@@ -19,8 +19,8 @@
   %b Student account:
   = @student_list.student_account
 %p
-  %b Email:
-  = @student_list.Email
+  %b Campus email:
+  = @student_list.campus_email
 %p
   %b Nationality:
   = @student_list.nationality
@@ -28,14 +28,14 @@
   %b Visa:
   = @student_list.visa
 %p
-  %b Nyugaku:
-  = @student_list.nyugaku
+  %b Entrance date:
+  = @student_list.entrance_date
 %p
-  %b Risyukikan:
-  = @student_list.risyukikan
+  %b Study period:
+  = @student_list.study_period
 %p
-  %b Syuryo:
-  = @student_list.syuryo
+  %b Graduation date:
+  = @student_list.graduation_date
 %p
   %b Pbl 1st:
   = @student_list.PBL_1st
@@ -45,6 +45,9 @@
 %p
   %b Pbl teacher:
   = @student_list.PBL_teacher
+%p
+  %b Memo:
+  = @student_list.memo
 
 = link_to 'Edit', edit_student_list_path(@student_list)
 \|
