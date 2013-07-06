@@ -7,6 +7,7 @@ ja:
       association_teacher: association_teacher  #g
       guarantor: 保証人  #g
       mibun: 身分移動情報  #g
+      tuition: 授業料関係 #g
       privacy: 個人情報  #g
       prospect: 見込み学生情報  #g
       student: 学生情報#g
@@ -40,10 +41,13 @@ ja:
         tel: 電話  #g
         zip: 郵便番号 #g
 
-      mibun:
-        absence_reason: 身分  #g
-        absence_time: 休学期間  #g
-        status: status  #g
+      tuition:
+        first_term_reduction: 前期減免 #g
+        loan_amount: 貸与額 #g
+        memo: 備考 #g
+        scholarship_division: 奨学金区分 #g
+        second_term_reduction: 後期減免 #g
+        transfer_request: 振替依頼書 #g
 
       privacy:
         address: address  #g
