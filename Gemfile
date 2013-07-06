@@ -45,10 +45,16 @@ gem "rails_admin"
 gem "devise"
 gem "rails_admin_import", :git => "git://github.com/stephskardal/rails_admin_import.git"
 
+##########################
+# bootstrap
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
-group :test do
-  gem "i18n_generators"
-end
+
+
+gem "i18n_generators"
+
 
 group :development, :test do
   gem "rspec" 
