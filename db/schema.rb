@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130702113812) do
+ActiveRecord::Schema.define(:version => 20130629061257) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -51,14 +51,6 @@ ActiveRecord::Schema.define(:version => 20130702113812) do
     t.string   "relationship"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
-  end
-
-  create_table "mibuns", :force => true do |t|
-    t.string   "status"
-    t.string   "absence_time"
-    t.string   "absence_reason"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
   end
 
   create_table "privacies", :force => true do |t|
