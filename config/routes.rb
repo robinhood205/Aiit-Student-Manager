@@ -5,10 +5,6 @@ Students::Application.routes.draw do
   resources :status_records
   resources :student_lists
 
-
-  resources :privacies
-
-
   resources :mibuns
   resources :guarantors
   resources :aiit_members
