@@ -46,8 +46,7 @@ ja:
         absence_time: 休学期間  #g
         status: status  #g
 
-	
-      tuition:
+	tuition:
         first_term_reduction: 前期減免 #g
         loan_amount: 貸与額 #g
         memo: 備考 #g
