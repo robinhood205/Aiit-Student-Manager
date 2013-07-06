@@ -7,25 +7,25 @@
           %li= msg
 
   .field
-    = f.label :jusndt
-    = f.date_select :jusndt
+    = f.label :received_date
+    = f.date_select :received_date
   .field
-    = f.label :kbsnko
-    = f.text_field :kbsnko
+    = f.label :wished_program
+    = f.text_field :wished_program
   .field
-    = f.label :kbsryo
-    = f.text_field :kbsryo
+    = f.label :wished_material
+    = f.text_field :wished_material
   .field
     = f.label :event
     = f.text_field :event
   .field
-    = f.label :raijdt
-    = f.date_select :raijdt
+    = f.label :visited_date
+    = f.date_select :visited_date
   .field
-    = f.label :infoyn
-    = f.check_box :infoyn
+    = f.label :contact_unnecessary
+    = f.check_box :contact_unnecessary
   .field
-    = f.label :syugan
-    = f.text_field :syugan
+    = f.label :applikation
+    = f.text_field :applikation
   .actions
     = f.submit 'Save'
