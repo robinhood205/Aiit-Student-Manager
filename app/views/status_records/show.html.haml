@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Status:
+  = @status_record.status
+%p
+  %b Absence time:
+  = @status_record.absence_time
+%p
+  %b Absence reason:
+  = @status_record.absence_reason
+%p
+  %b Memo:
+  = @status_record.memo
+
+= link_to 'Edit', edit_status_record_path(@status_record)
+\|
+= link_to 'Back', status_records_path

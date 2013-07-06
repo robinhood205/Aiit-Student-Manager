@@ -1,0 +1,28 @@
+= form_for @tuition do |f|
+  - if @tuition.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@tuition.errors.count, "error")} prohibited this tuition from being saved:"
+      %ul
+        - @tuition.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :transfer_request
+    = f.text_field :transfer_request
+  .field
+    = f.label :first_term_reduction
+    = f.text_field :first_term_reduction
+  .field
+    = f.label :second_term_reduction
+    = f.text_field :second_term_reduction
+  .field
+    = f.label :scholarship_division
+    = f.text_field :scholarship_division
+  .field
+    = f.label :loan_amount
+    = f.text_field :loan_amount
+  .field
+    = f.label :memo
+    = f.text_field :memo
+  .actions
+    = f.submit 'Save'
