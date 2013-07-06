@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130702113812) do
+ActiveRecord::Schema.define(:version => 20130706063647) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -65,9 +65,9 @@ ActiveRecord::Schema.define(:version => 20130702113812) do
     t.string   "name"
     t.string   "kana_name"
     t.string   "eng_name"
-    t.string   "sex"
+    t.string   "gender"
     t.date     "birthday"
-    t.string   "nationality"
+    t.string   "birthplace"
     t.string   "zip_code"
     t.string   "city"
     t.string   "block"
@@ -75,14 +75,18 @@ ActiveRecord::Schema.define(:version => 20130702113812) do
     t.string   "building"
     t.string   "tel"
     t.string   "mobile"
-    t.string   "mail_pc"
-    t.string   "mail_mobile"
+    t.string   "pc_email"
+    t.string   "mobile_email"
     t.string   "graduated_school"
     t.string   "department"
-    t.date     "graduated_date"
+    t.string   "stream"
+    t.string   "graduated_date"
+    t.boolean  "new_graduates"
     t.string   "occupation"
     t.string   "company"
     t.string   "company_address"
+    t.string   "work_period"
+    t.text     "memo"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -111,6 +115,27 @@ ActiveRecord::Schema.define(:version => 20130702113812) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "student_lists", :force => true do |t|
+    t.string   "classification"
+    t.string   "name"
+    t.string   "student_id"
+    t.integer  "grade"
+    t.string   "program"
+    t.string   "student_account"
+    t.string   "campus_email"
+    t.string   "nationality"
+    t.string   "visa"
+    t.date     "entrance_date"
+    t.string   "study_period"
+    t.date     "graduation_date"
+    t.string   "PBL_1st"
+    t.string   "PBL_2nd"
+    t.string   "PBL_teacher"
+    t.text     "memo"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "students", :force => true do |t|
     t.datetime "created_at",             :null => false
