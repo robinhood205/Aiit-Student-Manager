@@ -12,7 +12,7 @@ ja:
       prospect: 見込み学生情報  #g
       student: 学生情報#g
       user: ユーザー情報  #g
-      student_list: 学生一覧　#g
+      student_list: 学生一覧  #g
 
     attributes:
       aiit_member:
