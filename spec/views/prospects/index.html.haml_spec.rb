@@ -8,14 +8,14 @@ describe "prospects/index" do
         :wished_material => "Wished Material",
         :event => "Event",
         :contact_unnecessary => false,
-        :applikation => "Applikation"
+        :application => "Application"
       ),
       stub_model(Prospect,
         :wished_program => "Wished Program",
         :wished_material => "Wished Material",
         :event => "Event",
         :contact_unnecessary => false,
-        :applikation => "Applikation"
+        :application => "Application"
       )
     ])
   end
@@ -27,6 +27,6 @@ describe "prospects/index" do
     assert_select "tr>td", :text => "Wished Material".to_s, :count => 2
     assert_select "tr>td", :text => "Event".to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
-    assert_select "tr>td", :text => "Applikation".to_s, :count => 2
+    assert_select "tr>td", :text => "Application".to_s, :count => 2
   end
 end

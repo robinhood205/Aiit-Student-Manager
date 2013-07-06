@@ -7,7 +7,7 @@ describe "prospects/new" do
       :wished_material => "MyString",
       :event => "MyString",
       :contact_unnecessary => false,
-      :applikation => "MyString"
+      :application => "MyString"
     ).as_new_record)
   end
 
@@ -20,7 +20,7 @@ describe "prospects/new" do
       assert_select "input#prospect_wished_material[name=?]", "prospect[wished_material]"
       assert_select "input#prospect_event[name=?]", "prospect[event]"
       assert_select "input#prospect_contact_unnecessary[name=?]", "prospect[contact_unnecessary]"
-      assert_select "input#prospect_applikation[name=?]", "prospect[applikation]"
+      assert_select "input#prospect_application[name=?]", "prospect[application]"
     end
   end
 end

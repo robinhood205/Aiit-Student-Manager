@@ -6,9 +6,6 @@ Students::Application.routes.draw do
   resources :tuitions
 
   resources :status_records
-
-  resources :prospects
-
   resources :student_lists
 
 

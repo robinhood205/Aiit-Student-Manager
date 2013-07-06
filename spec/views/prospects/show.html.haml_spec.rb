@@ -7,7 +7,7 @@ describe "prospects/show" do
       :wished_material => "Wished Material",
       :event => "Event",
       :contact_unnecessary => false,
-      :applikation => "Applikation"
+      :application => "Application"
     ))
   end
 
@@ -18,6 +18,6 @@ describe "prospects/show" do
     rendered.should match(/Wished Material/)
     rendered.should match(/Event/)
     rendered.should match(/false/)
-    rendered.should match(/Applikation/)
+    rendered.should match(/Application/)
   end
 end

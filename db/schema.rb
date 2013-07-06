@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20130706081212) do
-=======
-ActiveRecord::Schema.define(:version => 20130706075954) do
->>>>>>> origin/develop
+ActiveRecord::Schema.define(:version => 20130706133913) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -94,7 +90,7 @@ ActiveRecord::Schema.define(:version => 20130706075954) do
     t.string   "event"
     t.date     "visited_date"
     t.boolean  "contact_unnecessary"
-    t.string   "applikation"
+    t.string   "application"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
   end
