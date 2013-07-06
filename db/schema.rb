@@ -83,18 +83,6 @@ ActiveRecord::Schema.define(:version => 20130706075954) do
     t.datetime "updated_at",       :null => false
   end
 
-  create_table "prospects", :force => true do |t|
-    t.date     "jusndt"
-    t.string   "kbsnko"
-    t.string   "kbsryo"
-    t.string   "event"
-    t.date     "raijdt"
-    t.boolean  "infoyn"
-    t.string   "syugan"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
     t.string   "username"
