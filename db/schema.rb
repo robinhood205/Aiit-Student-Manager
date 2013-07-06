@@ -53,14 +53,6 @@ ActiveRecord::Schema.define(:version => 20130706063647) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "mibuns", :force => true do |t|
-    t.string   "status"
-    t.string   "absence_time"
-    t.string   "absence_reason"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "privacies", :force => true do |t|
     t.string   "name"
     t.string   "kana_name"

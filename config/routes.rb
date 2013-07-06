@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
-<<<<<<< HEAD
-=======
+
   resources :student_lists
 
 
@@ -10,9 +9,6 @@ Students::Application.routes.draw do
 
   resources :mibuns
 
-
-
->>>>>>> chou
   resources :prospects
 
   resources :guarantors
