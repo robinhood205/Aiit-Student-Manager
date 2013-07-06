@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130706063647) do
+ActiveRecord::Schema.define(:version => 20130706081212) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -84,15 +84,15 @@ ActiveRecord::Schema.define(:version => 20130706063647) do
   end
 
   create_table "prospects", :force => true do |t|
-    t.date     "jusndt"
-    t.string   "kbsnko"
-    t.string   "kbsryo"
+    t.date     "received_date"
+    t.string   "wished_program"
+    t.string   "wished_material"
     t.string   "event"
-    t.date     "raijdt"
-    t.boolean  "infoyn"
-    t.string   "syugan"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.date     "visited_date"
+    t.boolean  "contact_unnecessary"
+    t.string   "applikation"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
   create_table "rails_admin_histories", :force => true do |t|

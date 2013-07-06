@@ -4,18 +4,18 @@ describe "prospects/index" do
   before(:each) do
     assign(:prospects, [
       stub_model(Prospect,
-        :kbsnko => "Kbsnko",
-        :kbsryo => "Kbsryo",
+        :wished_program => "Wished Program",
+        :wished_material => "Wished Material",
         :event => "Event",
-        :infoyn => false,
-        :syugan => "Syugan"
+        :contact_unnecessary => false,
+        :applikation => "Applikation"
       ),
       stub_model(Prospect,
-        :kbsnko => "Kbsnko",
-        :kbsryo => "Kbsryo",
+        :wished_program => "Wished Program",
+        :wished_material => "Wished Material",
         :event => "Event",
-        :infoyn => false,
-        :syugan => "Syugan"
+        :contact_unnecessary => false,
+        :applikation => "Applikation"
       )
     ])
   end
@@ -23,10 +23,10 @@ describe "prospects/index" do
   it "renders a list of prospects" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Kbsnko".to_s, :count => 2
-    assert_select "tr>td", :text => "Kbsryo".to_s, :count => 2
+    assert_select "tr>td", :text => "Wished Program".to_s, :count => 2
+    assert_select "tr>td", :text => "Wished Material".to_s, :count => 2
     assert_select "tr>td", :text => "Event".to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
-    assert_select "tr>td", :text => "Syugan".to_s, :count => 2
+    assert_select "tr>td", :text => "Applikation".to_s, :count => 2
   end
 end

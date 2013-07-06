@@ -23,7 +23,7 @@ describe ProspectsController do
   # This should return the minimal set of attributes required to create a valid
   # Prospect. As you add validations to Prospect, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "jusndt" => "2013-06-29" } }
+  let(:valid_attributes) { { "received_date" => "2013-07-06" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe ProspectsController do
       it "assigns a newly created but unsaved prospect as @prospect" do
         # Trigger the behavior that occurs when invalid params are submitted
         Prospect.any_instance.stub(:save).and_return(false)
-        post :create, {:prospect => { "jusndt" => "invalid value" }}, valid_session
+        post :create, {:prospect => { "received_date" => "invalid value" }}, valid_session
         assigns(:prospect).should be_a_new(Prospect)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Prospect.any_instance.stub(:save).and_return(false)
-        post :create, {:prospect => { "jusndt" => "invalid value" }}, valid_session
+        post :create, {:prospect => { "received_date" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe ProspectsController do
         # specifies that the Prospect created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Prospect.any_instance.should_receive(:update_attributes).with({ "jusndt" => "2013-06-29" })
-        put :update, {:id => prospect.to_param, :prospect => { "jusndt" => "2013-06-29" }}, valid_session
+        Prospect.any_instance.should_receive(:update_attributes).with({ "received_date" => "2013-07-06" })
+        put :update, {:id => prospect.to_param, :prospect => { "received_date" => "2013-07-06" }}, valid_session
       end
 
       it "assigns the requested prospect as @prospect" do
@@ -128,7 +128,7 @@ describe ProspectsController do
         prospect = Prospect.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Prospect.any_instance.stub(:save).and_return(false)
-        put :update, {:id => prospect.to_param, :prospect => { "jusndt" => "invalid value" }}, valid_session
+        put :update, {:id => prospect.to_param, :prospect => { "received_date" => "invalid value" }}, valid_session
         assigns(:prospect).should eq(prospect)
       end
 
@@ -136,7 +136,7 @@ describe ProspectsController do
         prospect = Prospect.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Prospect.any_instance.stub(:save).and_return(false)
-        put :update, {:id => prospect.to_param, :prospect => { "jusndt" => "invalid value" }}, valid_session
+        put :update, {:id => prospect.to_param, :prospect => { "received_date" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end
