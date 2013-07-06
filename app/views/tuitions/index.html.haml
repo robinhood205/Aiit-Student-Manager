@@ -1,0 +1,29 @@
+%h1 Listing tuitions
+
+%table
+  %tr
+    %th Transfer request
+    %th First term reduction
+    %th Second term reduction
+    %th Scholarship division
+    %th Loan amount
+    %th Memo
+    %th
+    %th
+    %th
+
+  - @tuitions.each do |tuition|
+    %tr
+      %td= tuition.transfer_request
+      %td= tuition.first_term_reduction
+      %td= tuition.second_term_reduction
+      %td= tuition.scholarship_division
+      %td= tuition.loan_amount
+      %td= tuition.memo
+      %td= link_to 'Show', tuition
+      %td= link_to 'Edit', edit_tuition_path(tuition)
+      %td= link_to 'Destroy', tuition, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Tuition', new_tuition_path

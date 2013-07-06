@@ -12,6 +12,7 @@
 # It's strongly recommended to check this file into your version control system.
 
 ActiveRecord::Schema.define(:version => 20130706063647) do
+ActiveRecord::Schema.define(:version => 20130706075954) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "family_name"
@@ -108,6 +109,7 @@ ActiveRecord::Schema.define(:version => 20130706063647) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
+<<<<<<< HEAD
   create_table "student_lists", :force => true do |t|
     t.string   "classification"
     t.string   "name"
@@ -127,6 +129,15 @@ ActiveRecord::Schema.define(:version => 20130706063647) do
     t.text     "memo"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+=======
+  create_table "status_records", :force => true do |t|
+    t.string   "status"
+    t.string   "absence_time"
+    t.string   "absence_reason"
+    t.string   "memo"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+>>>>>>> origin/develop
   end
 
   create_table "students", :force => true do |t|
@@ -189,6 +200,17 @@ ActiveRecord::Schema.define(:version => 20130706063647) do
     t.integer  "goukeiten"
     t.string   "umu"
     t.string   "hanteiriyuu"
+  end
+
+  create_table "tuitions", :force => true do |t|
+    t.string   "transfer_request"
+    t.string   "first_term_reduction"
+    t.string   "second_term_reduction"
+    t.string   "scholarship_division"
+    t.string   "loan_amount"
+    t.string   "memo"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "users", :force => true do |t|
