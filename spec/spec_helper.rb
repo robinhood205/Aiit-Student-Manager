@@ -4,6 +4,10 @@ require 'spork'
 #require 'spork/ext/ruby-debug'
 
 Spork.prefork do
+end
+
+Spork.each_run do
+  # This code will be run each time you run your specs.
   # This file is copied to spec/ when you run 'rails generate rspec:install'
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
@@ -42,9 +46,5 @@ Spork.prefork do
     #     --seed 1234
     config.order = "random"
   end
-end
-
-Spork.each_run do
-  # This code will be run each time you run your specs.
 end
 
