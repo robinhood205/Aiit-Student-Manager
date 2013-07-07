@@ -30,7 +30,7 @@ guard 'migrate' do
   watch('db/seeds.rb')
 end
 
-guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAILS_ENV' => 'test' } do
+guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAILS_ENV' => 'test' }, :test_unit => false do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
