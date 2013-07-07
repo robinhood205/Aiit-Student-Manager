@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Master:
+  = @prospect.master_id
+%p
+  %b Received date:
+  = @prospect.received_date
+%p
+  %b Wished program:
+  = @prospect.wished_program
+%p
+  %b Wished material:
+  = @prospect.wished_material
+%p
+  %b Event:
+  = @prospect.event
+%p
+  %b Visited date:
+  = @prospect.visited_date
+%p
+  %b Contact unnecessary:
+  = @prospect.contact_unnecessary
+%p
+  %b Applikation:
+  = @prospect.applikation
+%p
+  %b Memo:
+  = @prospect.memo
+
+= link_to 'Edit', edit_prospect_path(@prospect)
+\|
+= link_to 'Back', prospects_path

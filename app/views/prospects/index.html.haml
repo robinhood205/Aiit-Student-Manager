@@ -1,0 +1,35 @@
+%h1 Listing prospects
+
+%table
+  %tr
+    %th Master
+    %th Received date
+    %th Wished program
+    %th Wished material
+    %th Event
+    %th Visited date
+    %th Contact unnecessary
+    %th Applikation
+    %th Memo
+    %th
+    %th
+    %th
+
+  - @prospects.each do |prospect|
+    %tr
+      %td= prospect.master_id
+      %td= prospect.received_date
+      %td= prospect.wished_program
+      %td= prospect.wished_material
+      %td= prospect.event
+      %td= prospect.visited_date
+      %td= prospect.contact_unnecessary
+      %td= prospect.applikation
+      %td= prospect.memo
+      %td= link_to 'Show', prospect
+      %td= link_to 'Edit', edit_prospect_path(prospect)
+      %td= link_to 'Destroy', prospect, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Prospect', new_prospect_path
