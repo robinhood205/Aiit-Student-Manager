@@ -47,4 +47,3 @@ Spork.each_run do
     config.order = "random"
   end
 end
-
