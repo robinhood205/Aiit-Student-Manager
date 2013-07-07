@@ -41,7 +41,7 @@ ja:
         relationship: 続柄区分  #g
         tel: 電話  #g
         zip: 郵便番号 #g
-        
+
       status_record:
         absence_reason: 異動理由 #g
         absence_time: 休学期間 #g
@@ -55,7 +55,7 @@ ja:
         scholarship_division: 奨学金区分 #g
         second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
-        
+
       student_list:
         PBL_1st: PBL前期 #g
         PBL_2nd: PBL後期 #g
@@ -99,12 +99,12 @@ ja:
 
       prospect:
         event: イベント #g
-        infoyn: 情報連絡不要  #g
-        jusndt: 受信日 #g
-        kbsnko: 希望専攻  #g
-        kbsryo: 希望資料  #g
-        raijdt: 来場日  #g
-        syugan: 出願  #g
+        contact_unnecessary: 情報連絡不要  #g
+        received_date: 受信日 #g
+        wished_program: 希望専攻  #g
+        wished_material: 希望資料  #g
+        visited_date: 来場日  #g
+        applikation: 出願 #g
 
       student:
         bikou: bikou  #g

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
@@ -66,3 +67,21 @@ group :production do
   gem "pg"
 end
 
+# cucumber-rails - https://github.com/cucumber/cucumber-rails
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
+
+# Guard-rails - https://github.com/ranmocy/guard-rails
+group :development do
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-migrate'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'guard-cucumber'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+end
