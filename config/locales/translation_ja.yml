@@ -1,7 +1,7 @@
 ja:
   activerecord:
     models:
-      aiit_member: aiit_member  #g
+      aiit_member: AIIT会員  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
@@ -41,7 +41,7 @@ ja:
         relationship: 続柄区分  #g
         tel: 電話  #g
         zip: 郵便番号 #g
-        
+
       status_record:
         absence_reason: 異動理由 #g
         absence_time: 休学期間 #g
@@ -57,6 +57,24 @@ ja:
         transfer_request: 振替依頼書 #g
         
               
+      student_list:
+        PBL_1st: PBL前期 #g
+        PBL_2nd: PBL後期 #g
+        PBL_teacher: PBL担任 #g
+        campus_email: 学内E-Mailアドレス #g
+        classification: 種別 #g
+        entrance_date: 入学年月日 #g
+        grade: 学年 #g
+        graduation_date: 終了予定日 #g
+        memo: 備考 #g
+        name: 名前 #g
+        nationality: 国籍 #g
+        program: クラス #g
+        student_account: ユーザID #g
+        student_id: 学修番号 #g
+        study_period: 履修期間 #g
+        visa:  在留資格 #g
+
       student_list:
         PBL_1st: PBL前期 #g
         PBL_2nd: PBL後期 #g
