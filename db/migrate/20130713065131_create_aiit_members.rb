@@ -1,10 +1,10 @@
 class CreateAiitMembers < ActiveRecord::Migration
   def change
     create_table :aiit_members do |t|
-      t.string :family_name
-      t.string :given_name
+      t.string :name
       t.date :birthday
-      t.string :sex
+      t.string :gender
+      t.text :memo
 
       t.timestamps
     end

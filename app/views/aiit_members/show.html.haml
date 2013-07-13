@@ -1,17 +1,17 @@
 %p#notice= notice
 
 %p
-  %b Family name:
-  = @aiit_member.family_name
-%p
-  %b Given name:
-  = @aiit_member.given_name
+  %b Name:
+  = @aiit_member.name
 %p
   %b Birthday:
   = @aiit_member.birthday
 %p
-  %b Sex:
-  = @aiit_member.sex
+  %b Gender:
+  = @aiit_member.gender
+%p
+  %b Memo:
+  = @aiit_member.memo
 
 = link_to 'Edit', edit_aiit_member_path(@aiit_member)
 \|

@@ -7,16 +7,16 @@
           %li= msg
 
   .field
-    = f.label :family_name
-    = f.text_field :family_name
-  .field
-    = f.label :given_name
-    = f.text_field :given_name
+    = f.label :name
+    = f.text_field :name
   .field
     = f.label :birthday
     = f.date_select :birthday
   .field
-    = f.label :sex
-    = f.text_field :sex
+    = f.label :gender
+    = f.text_field :gender
+  .field
+    = f.label :memo
+    = f.text_area :memo
   .actions
     = f.submit 'Save'

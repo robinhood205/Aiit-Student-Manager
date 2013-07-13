@@ -1,8 +1,10 @@
+# coding: utf-8 
 class AiitMembersController < ApplicationController
   # GET /aiit_members
   # GET /aiit_members.json
   def index
     @aiit_members = AiitMember.all
+    @aiit_member = AiitMember.new
 
     respond_to do |format|
       format.html # index.html.erb

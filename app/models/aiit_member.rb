@@ -1,3 +1,3 @@
 class AiitMember < ActiveRecord::Base
-  attr_accessible :birthday, :family_name, :given_name, :sex
+  attr_accessible :birthday, :gender, :memo, :name
 end
