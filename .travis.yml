@@ -25,7 +25,7 @@ after_success:
   - heroku keys:clear
   - yes | heroku keys:add
   - yes | git branch -a
-  - yes | git pull heroku maste
+  - yes | git pull heroku master
   - yes | git push heroku master
   - heroku run rake db:migrate:reset
   - heroku restart
