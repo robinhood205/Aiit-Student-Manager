@@ -1,0 +1,45 @@
+%p#notice= notice
+
+%p
+  %b Examno:
+  = @exam_list.examno
+%p
+  %b Reviewflg:
+  = @exam_list.reviewflg
+%p
+  %b Decisionreason:
+  = @exam_list.decisionreason
+%p
+  %b Citizenoftokyo:
+  = @exam_list.citizenoftokyo
+%p
+  %b Examination:
+  = @exam_list.examination
+%p
+  %b Examyear:
+  = @exam_list.examyear
+%p
+  %b Basicknowledge:
+  = @exam_list.basicknowledge
+%p
+  %b Paper:
+  = @exam_list.paper
+%p
+  %b Presentation:
+  = @exam_list.presentation
+%p
+  %b Interview:
+  = @exam_list.interview
+%p
+  %b Testscore:
+  = @exam_list.testscore
+%p
+  %b Result:
+  = @exam_list.result
+%p
+  %b Memo:
+  = @exam_list.memo
+
+= link_to 'Edit', edit_exam_list_path(@exam_list)
+\|
+= link_to 'Back', exam_lists_path
