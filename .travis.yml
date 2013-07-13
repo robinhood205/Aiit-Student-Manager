@@ -26,6 +26,6 @@ after_success:
   - yes | heroku keys:add
   - yes | git push heroku master
   - git push heroku master
-  - heroku run rake db:reset
+  - heroku pg:reset
   - heroku run rake db:migrate
   - heroku restart
