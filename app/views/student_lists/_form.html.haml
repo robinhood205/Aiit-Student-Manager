@@ -7,14 +7,14 @@
           %li= msg
 
   .field
+    = f.label :aiit_member_id
+    = f.number_field :aiit_member_id
+  .field
     = f.label :classification
     = f.text_field :classification
   .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :student_id
-    = f.text_field :student_id
+    = f.label :student_no
+    = f.text_field :student_no
   .field
     = f.label :grade
     = f.number_field :grade
@@ -51,6 +51,9 @@
   .field
     = f.label :PBL_teacher
     = f.text_field :PBL_teacher
+  .field
+    = f.label :guarantor_id
+    = f.number_field :guarantor_id
   .field
     = f.label :memo
     = f.text_area :memo

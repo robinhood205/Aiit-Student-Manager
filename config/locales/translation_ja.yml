@@ -36,12 +36,13 @@ ja:
         name: name  #g
 
       guarantor:
-        address: 住所  #g
-        name: 氏名  #g
-        namekata: カナ  #g
+        guarantor_address: 住所（保証人）  #g
+        name: 保証人氏名  #g
+        guarantor_kana: 保証人カナ  #g
         relationship: 続柄区分  #g
-        tel: 電話  #g
-        zip: 郵便番号 #g
+        guarantor_tel: 電話（保証人） #g
+        guarantor_zip: 郵便番号（保証人） #g
+        memo: 備考 #g
 
       status_record:
         absence_reason: 異動理由 #g
@@ -71,7 +72,7 @@ ja:
         nationality: 国籍 #g
         program: クラス #g
         student_account: ユーザID #g
-        student_id: 学修番号 #g
+        student_no: 学修番号 #g
         study_period: 履修期間 #g
         visa:  在留資格 #g
 

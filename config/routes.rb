@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
+  resources :guarantors
+
+
+  resources :student_lists
+
+
   resources :privacies
 
 
@@ -12,8 +18,6 @@ Students::Application.routes.draw do
   resources :tuitions
 
   resources :status_records
-  resources :student_lists
-
   resources :mibuns
   resources :guarantors
   # password(パスワード確認),registration(サインアップ)機能へのルーティングを除外
