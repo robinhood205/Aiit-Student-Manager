@@ -26,6 +26,6 @@ after_success:
   - yes | heroku keys:add
   - yes | git push heroku master
   - git push heroku master
-  - heroku pg:reset
+  - heroku pg:reset --db SHARED_DATABASE_URL --app studentsmanager
   - heroku run rake db:migrate
   - heroku restart
