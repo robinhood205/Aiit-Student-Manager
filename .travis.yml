@@ -24,7 +24,7 @@ after_success:
   - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
   - heroku keys:clear
   - yes | heroku keys:add
-  - yes | git push heroku release
-  - git push heroku release
+  - yes | git push heroku release:master
+  - git push heroku release:master
   - heroku run rake db:migrate:reset
   - heroku restart
