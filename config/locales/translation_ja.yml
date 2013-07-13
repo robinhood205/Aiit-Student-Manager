@@ -7,7 +7,7 @@ ja:
       association_teacher: association_teacher  #g
       guarantor: 保証人  #g
       status_record: 身分異動情報  #g
-      tuition: 授業料関係 #g
+      tuition: 授業料master関係 #g
       privacy: 個人情報  #g
       prospect: 見込み学生情報  #g
       student: 学生情報  #g
