@@ -1,0 +1,49 @@
+= form_for @exam_list do |f|
+  - if @exam_list.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@exam_list.errors.count, "error")} prohibited this exam_list from being saved:"
+      %ul
+        - @exam_list.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :examno
+    = f.text_field :examno
+  .field
+    = f.label :reviewflg
+    = f.check_box :reviewflg
+  .field
+    = f.label :decisionreason
+    = f.text_field :decisionreason
+  .field
+    = f.label :citizenoftokyo
+    = f.check_box :citizenoftokyo
+  .field
+    = f.label :examination
+    = f.text_field :examination
+  .field
+    = f.label :examyear
+    = f.text_field :examyear
+  .field
+    = f.label :basicknowledge
+    = f.text_field :basicknowledge
+  .field
+    = f.label :paper
+    = f.text_field :paper
+  .field
+    = f.label :presentation
+    = f.text_field :presentation
+  .field
+    = f.label :interview
+    = f.text_field :interview
+  .field
+    = f.label :testscore
+    = f.text_field :testscore
+  .field
+    = f.label :result
+    = f.check_box :result
+  .field
+    = f.label :memo
+    = f.text_field :memo
+  .actions
+    = f.submit 'Save'
