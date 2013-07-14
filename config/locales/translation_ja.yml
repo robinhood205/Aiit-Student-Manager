@@ -146,6 +146,7 @@ ja:
         wished_material: 希望資料  #g
         visited_date: 来場日  #g
         applikation: 出願 #g
+        memo: 備考 #g
 
       student:
         bikou: bikou  #g
