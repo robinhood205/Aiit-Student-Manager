@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
-  resources :guarantors
+  resources :tuitions
 
 
   resources :student_lists
+
+
+  resources :guarantors
 
 
   resources :privacies
@@ -13,9 +16,6 @@ Students::Application.routes.draw do
 
 
   resources :prospects
-
-
-  resources :tuitions
 
   resources :status_records
   resources :mibuns
