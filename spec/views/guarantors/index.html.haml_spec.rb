@@ -5,19 +5,21 @@ describe "guarantors/index" do
     assign(:guarantors, [
       stub_model(Guarantor,
         :name => "Name",
-        :namekata => "Namekata",
-        :zip => 1,
-        :address => "Address",
-        :tel => 2,
-        :relationship => "Relationship"
+        :guarantor_kana => "Guarantor Kana",
+        :guarantor_zip => "Guarantor Zip",
+        :guarantor_address => "Guarantor Address",
+        :guarantor_tel => "Guarantor Tel",
+        :relationship => "Relationship",
+        :memo => "MyText"
       ),
       stub_model(Guarantor,
         :name => "Name",
-        :namekata => "Namekata",
-        :zip => 1,
-        :address => "Address",
-        :tel => 2,
-        :relationship => "Relationship"
+        :guarantor_kana => "Guarantor Kana",
+        :guarantor_zip => "Guarantor Zip",
+        :guarantor_address => "Guarantor Address",
+        :guarantor_tel => "Guarantor Tel",
+        :relationship => "Relationship",
+        :memo => "MyText"
       )
     ])
   end
@@ -26,10 +28,11 @@ describe "guarantors/index" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Name".to_s, :count => 2
-    assert_select "tr>td", :text => "Namekata".to_s, :count => 2
-    assert_select "tr>td", :text => 1.to_s, :count => 2
-    assert_select "tr>td", :text => "Address".to_s, :count => 2
-    assert_select "tr>td", :text => 2.to_s, :count => 2
+    assert_select "tr>td", :text => "Guarantor Kana".to_s, :count => 2
+    assert_select "tr>td", :text => "Guarantor Zip".to_s, :count => 2
+    assert_select "tr>td", :text => "Guarantor Address".to_s, :count => 2
+    assert_select "tr>td", :text => "Guarantor Tel".to_s, :count => 2
     assert_select "tr>td", :text => "Relationship".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
   end
 end

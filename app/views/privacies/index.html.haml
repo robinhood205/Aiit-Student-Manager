@@ -2,6 +2,7 @@
 
 %table
   %tr
+    %th Aiit member
     %th Name
     %th Kana name
     %th Eng name
@@ -33,6 +34,7 @@
 
   - @privacies.each do |privacy|
     %tr
+      %td= privacy.aiit_member_id
       %td= privacy.name
       %td= privacy.kana_name
       %td= privacy.eng_name

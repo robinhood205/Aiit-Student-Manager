@@ -1,8 +1,10 @@
+# coding: utf-8 
 class StudentListsController < ApplicationController
   # GET /student_lists
   # GET /student_lists.json
   def index
     @student_lists = StudentList.all
+    @student_list = StudentList.new
 
     respond_to do |format|
       format.html # index.html.erb

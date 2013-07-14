@@ -4,11 +4,12 @@ describe "guarantors/show" do
   before(:each) do
     @guarantor = assign(:guarantor, stub_model(Guarantor,
       :name => "Name",
-      :namekata => "Namekata",
-      :zip => 1,
-      :address => "Address",
-      :tel => 2,
-      :relationship => "Relationship"
+      :guarantor_kana => "Guarantor Kana",
+      :guarantor_zip => "Guarantor Zip",
+      :guarantor_address => "Guarantor Address",
+      :guarantor_tel => "Guarantor Tel",
+      :relationship => "Relationship",
+      :memo => "MyText"
     ))
   end
 
@@ -16,10 +17,11 @@ describe "guarantors/show" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Name/)
-    rendered.should match(/Namekata/)
-    rendered.should match(/1/)
-    rendered.should match(/Address/)
-    rendered.should match(/2/)
+    rendered.should match(/Guarantor Kana/)
+    rendered.should match(/Guarantor Zip/)
+    rendered.should match(/Guarantor Address/)
+    rendered.should match(/Guarantor Tel/)
     rendered.should match(/Relationship/)
+    rendered.should match(/MyText/)
   end
 end

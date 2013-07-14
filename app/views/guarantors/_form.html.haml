@@ -10,19 +10,22 @@
     = f.label :name
     = f.text_field :name
   .field
-    = f.label :namekata
-    = f.text_field :namekata
+    = f.label :guarantor_kana
+    = f.text_field :guarantor_kana
   .field
-    = f.label :zip
-    = f.number_field :zip
+    = f.label :guarantor_zip
+    = f.text_field :guarantor_zip
   .field
-    = f.label :address
-    = f.text_field :address
+    = f.label :guarantor_address
+    = f.text_field :guarantor_address
   .field
-    = f.label :tel
-    = f.number_field :tel
+    = f.label :guarantor_tel
+    = f.text_field :guarantor_tel
   .field
     = f.label :relationship
     = f.text_field :relationship
+  .field
+    = f.label :memo
+    = f.text_area :memo
   .actions
     = f.submit 'Save'

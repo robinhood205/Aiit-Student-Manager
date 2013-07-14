@@ -23,7 +23,7 @@ describe PrivaciesController do
   # This should return the minimal set of attributes required to create a valid
   # Privacy. As you add validations to Privacy, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "name" => "MyString" } }
+  let(:valid_attributes) { { "aiit_member_id" => "1" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe PrivaciesController do
       it "assigns a newly created but unsaved privacy as @privacy" do
         # Trigger the behavior that occurs when invalid params are submitted
         Privacy.any_instance.stub(:save).and_return(false)
-        post :create, {:privacy => { "name" => "invalid value" }}, valid_session
+        post :create, {:privacy => { "aiit_member_id" => "invalid value" }}, valid_session
         assigns(:privacy).should be_a_new(Privacy)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Privacy.any_instance.stub(:save).and_return(false)
-        post :create, {:privacy => { "name" => "invalid value" }}, valid_session
+        post :create, {:privacy => { "aiit_member_id" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe PrivaciesController do
         # specifies that the Privacy created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Privacy.any_instance.should_receive(:update_attributes).with({ "name" => "MyString" })
-        put :update, {:id => privacy.to_param, :privacy => { "name" => "MyString" }}, valid_session
+        Privacy.any_instance.should_receive(:update_attributes).with({ "aiit_member_id" => "1" })
+        put :update, {:id => privacy.to_param, :privacy => { "aiit_member_id" => "1" }}, valid_session
       end
 
       it "assigns the requested privacy as @privacy" do
@@ -128,7 +128,7 @@ describe PrivaciesController do
         privacy = Privacy.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Privacy.any_instance.stub(:save).and_return(false)
-        put :update, {:id => privacy.to_param, :privacy => { "name" => "invalid value" }}, valid_session
+        put :update, {:id => privacy.to_param, :privacy => { "aiit_member_id" => "invalid value" }}, valid_session
         assigns(:privacy).should eq(privacy)
       end
 
@@ -136,7 +136,7 @@ describe PrivaciesController do
         privacy = Privacy.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Privacy.any_instance.stub(:save).and_return(false)
-        put :update, {:id => privacy.to_param, :privacy => { "name" => "invalid value" }}, valid_session
+        put :update, {:id => privacy.to_param, :privacy => { "aiit_member_id" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

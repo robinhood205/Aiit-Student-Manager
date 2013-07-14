@@ -1,8 +1,10 @@
+# coding: utf-8 
 class GuarantorsController < ApplicationController
   # GET /guarantors
   # GET /guarantors.json
   def index
     @guarantors = Guarantor.all
+    @guarantor = Guarantor.new
 
     respond_to do |format|
       format.html # index.html.erb

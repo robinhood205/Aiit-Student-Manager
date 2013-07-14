@@ -4,6 +4,7 @@ describe "privacies/index" do
   before(:each) do
     assign(:privacies, [
       stub_model(Privacy,
+        :aiit_member_id => 1,
         :name => "Name",
         :kana_name => "Kana Name",
         :eng_name => "Eng Name",
@@ -30,6 +31,7 @@ describe "privacies/index" do
         :memo => "MyText"
       ),
       stub_model(Privacy,
+        :aiit_member_id => 1,
         :name => "Name",
         :kana_name => "Kana Name",
         :eng_name => "Eng Name",
@@ -61,6 +63,7 @@ describe "privacies/index" do
   it "renders a list of privacies" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
+    assert_select "tr>td", :text => 1.to_s, :count => 2
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Kana Name".to_s, :count => 2
     assert_select "tr>td", :text => "Eng Name".to_s, :count => 2
