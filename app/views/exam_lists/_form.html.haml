@@ -7,43 +7,46 @@
           %li= msg
 
   .field
-    = f.label :examno
-    = f.text_field :examno
+    = f.label :aiit_member_id
+    = f.number_field :aiit_member_id
   .field
-    = f.label :reviewflg
-    = f.check_box :reviewflg
+    = f.label :exam_no
+    = f.text_field :exam_no
   .field
-    = f.label :decisionreason
-    = f.text_field :decisionreason
+    = f.label :review_flg
+    = f.check_box :review_flg
   .field
-    = f.label :citizenoftokyo
-    = f.check_box :citizenoftokyo
+    = f.label :decision_reason
+    = f.text_field :decision_reason
+  .field
+    = f.label :citizen_of_tokyo
+    = f.check_box :citizen_of_tokyo
   .field
     = f.label :examination
     = f.text_field :examination
   .field
-    = f.label :examyear
-    = f.text_field :examyear
+    = f.label :exam_year
+    = f.number_field :exam_year
   .field
-    = f.label :basicknowledge
-    = f.text_field :basicknowledge
+    = f.label :basic_knowledge
+    = f.number_field :basic_knowledge
   .field
     = f.label :paper
-    = f.text_field :paper
+    = f.number_field :paper
   .field
     = f.label :presentation
-    = f.text_field :presentation
+    = f.number_field :presentation
   .field
     = f.label :interview
-    = f.text_field :interview
+    = f.number_field :interview
   .field
-    = f.label :testscore
-    = f.text_field :testscore
+    = f.label :test_score
+    = f.number_field :test_score
   .field
     = f.label :result
     = f.check_box :result
   .field
     = f.label :memo
-    = f.text_field :memo
+    = f.text_area :memo
   .actions
     = f.submit 'Save'
