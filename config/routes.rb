@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
+
   resources :guarantors
 
 
   resources :student_lists
+
+
+  resources :exam_lists
 
 
   resources :privacies
