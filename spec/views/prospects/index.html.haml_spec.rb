@@ -4,7 +4,7 @@ describe "prospects/index" do
   before(:each) do
     assign(:prospects, [
       stub_model(Prospect,
-        :master_id => 1,
+        :aiit_member_id => 1,
         :wished_program => "Wished Program",
         :wished_material => "Wished Material",
         :event => "Event",
@@ -13,7 +13,7 @@ describe "prospects/index" do
         :memo => "MyText"
       ),
       stub_model(Prospect,
-        :master_id => 1,
+        :aiit_member_id => 1,
         :wished_program => "Wished Program",
         :wished_material => "Wished Material",
         :event => "Event",

@@ -1,8 +1,10 @@
+# coding: utf-8 
 class StatusRecordsController < ApplicationController
   # GET /status_records
   # GET /status_records.json
   def index
     @status_records = StatusRecord.all
+    @status_record = StatusRecord.new
 
     respond_to do |format|
       format.html # index.html.erb

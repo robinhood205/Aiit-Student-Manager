@@ -37,19 +37,19 @@ ja:
         name: name  #g
         
       exam_list: 
-        basicknowledge: IT基礎知識  #g
-        citizenoftokyo: 都民  #g
-        decisionreason: 判定理由  #g
-        examno: 受験番号  #g
-        examyear: 受験年度  #g
+        basic_knowledge: IT基礎知識  #g
+        citizen_of_tokyo: 都民  #g
+        decision_reason: 判定理由  #g
+        exam_no: 受験番号  #g
+        exam_year: 受験年度  #g
         examination: 入試  #g
         interview: 面接  #g
         memo: 備考  #g
         paper: 小論文  #g
         presentation: プレゼンテーション  #g
         result: 合否  #g
-        reviewflg: 事前審査有無  #g
-        testscore: 合計点  #g
+        review_flg: 事前審査有無  #g
+        test_score: 合計点  #g
 
       guarantor:
         guarantor_address: 住所（保証人）  #g
