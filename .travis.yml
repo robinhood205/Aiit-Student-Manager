@@ -16,6 +16,7 @@ env:
 
 after_success:
   - if [[ "$TRAVIS_BRANCH" = "master" ]]; 
+  - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:studentsmanager2.git
   - echo "Host heroku.com" >> ~/.ssh/config
@@ -31,6 +32,7 @@ after_success:
   - heroku restart
   
   - elif [[ "$TRAVIS_BRANCH" = "release" ]]; then exit 0; fi
+  - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:studentsmanager.git
   - echo "Host heroku.com" >> ~/.ssh/config
