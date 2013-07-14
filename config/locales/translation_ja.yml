@@ -5,6 +5,7 @@ ja:
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
+      exam_list: 受験一覧  #g
       guarantor: 保証人  #g
       status_record: 身分異動情報  #g
       tuition: 授業料関係 #g
@@ -34,6 +35,21 @@ ja:
       association_teacher:
         association_pbl: :activerecord.models.association_pbl  #g
         name: name  #g
+        
+      exam_list: 
+        basicknowledge: IT基礎知識  #g
+        citizenoftokyo: 都民  #g
+        decisionreason: 判定理由  #g
+        examno: 受験番号  #g
+        examyear: 受験年度  #g
+        examination: 入試  #g
+        interview: 面接  #g
+        memo: 備考  #g
+        paper: 小論文  #g
+        presentation: プレゼンテーション  #g
+        result: 合否  #g
+        reviewflg: 事前審査有無  #g
+        testscore: 合計点  #g
 
       guarantor:
         guarantor_address: 住所（保証人）  #g
@@ -57,6 +73,25 @@ ja:
         scholarship_division: 奨学金区分 #g
         second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
+        
+              
+      student_list:
+        PBL_1st: PBL前期 #g
+        PBL_2nd: PBL後期 #g
+        PBL_teacher: PBL担任 #g
+        campus_email: 学内E-Mailアドレス #g
+        classification: 種別 #g
+        entrance_date: 入学年月日 #g
+        grade: 学年 #g
+        graduation_date: 終了予定日 #g
+        memo: 備考 #g
+        name: 名前 #g
+        nationality: 国籍 #g
+        program: クラス #g
+        student_account: ユーザID #g
+        student_id: 学修番号 #g
+        study_period: 履修期間 #g
+        visa:  在留資格 #g
 
       student_list:
         PBL_1st: PBL前期 #g

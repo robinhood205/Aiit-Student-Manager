@@ -17,7 +17,7 @@ env:
 after_success:
   - if [[ "$TRAVIS_BRANCH" != "master" ]]; then exit 0; fi
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-  - git remote add heroku git@heroku.com:studentsmanager.git
+  - git remote add heroku git@heroku.com:studentsmanager2.git
   - echo "Host heroku.com" >> ~/.ssh/config
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
   - echo "   CheckHostIP no" >> ~/.ssh/config
@@ -25,7 +25,7 @@ after_success:
   - heroku keys:clear
   - yes | heroku keys:add
   - yes | git push heroku master
-  - git push heroku master
-  - heroku run rake db:reset
+#  - heroku pg:reset DATABASE --confirm studentsmanager
   - heroku run rake db:migrate
+#  - heroku run rake db:seed
   - heroku restart
