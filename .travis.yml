@@ -15,6 +15,7 @@ env:
       XNg0venKJkldhfdAVH8VnVbxopzoQaRBoCD75JLx8aOJ045q5D8='
 
 after_success:
+  - echo "$TRAVIS_BRANCH"
   - if [[ "$TRAVIS_BRANCH" = "master" ]]; 
   - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
