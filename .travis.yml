@@ -44,4 +44,4 @@ after_success:
   - heroku run rake db:migrate
   - heroku restart
   - else
-  - then exit 0; fi
+  - exit 0; fi
