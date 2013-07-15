@@ -26,9 +26,9 @@ after_success:
   - heroku keys:clear
   - yes | heroku keys:add
   - yes | git push heroku master
-#  - heroku pg:reset DATABASE --confirm studentsmanager
+  - heroku pg:reset DATABASE --confirm studentsmanager
   - heroku run rake db:migrate
-#  - heroku run rake db:seed
+  - heroku run rake db:seed
   - heroku restart  
   - elif [[ "$TRAVIS_BRANCH" = "release" ]];
   - then
