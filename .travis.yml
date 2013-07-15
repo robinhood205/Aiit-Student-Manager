@@ -29,8 +29,7 @@ after_success:
 #  - heroku pg:reset DATABASE --confirm studentsmanager
   - heroku run rake db:migrate
 #  - heroku run rake db:seed
-  - heroku restart;
-  
+  - heroku restart  
   - elif [[ "$TRAVIS_BRANCH" = "release" ]];
   - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
@@ -43,8 +42,6 @@ after_success:
   - yes | heroku keys:add
   - yes | git push -f heroku HEAD:master
   - heroku run rake db:migrate
-  - heroku restart;  
-  
+  - heroku restart
   - else
-  - then exit 0; 
-  - fi
+  - then exit 0; fi
