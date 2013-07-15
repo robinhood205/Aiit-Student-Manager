@@ -31,7 +31,7 @@ after_success:
 #  - heroku run rake db:seed
   - heroku restart;
   
-  - elif [[ "$TRAVIS_BRANCH" = "release" ]]; then exit 0;
+  - elif [[ "$TRAVIS_BRANCH" = "release" ]];
   - then
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:studentsmanager.git
