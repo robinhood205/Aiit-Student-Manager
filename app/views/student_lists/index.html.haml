@@ -2,9 +2,9 @@
 
 %table
   %tr
+    %th Aiit member
     %th Classification
-    %th Name
-    %th Student
+    %th Student no
     %th Grade
     %th Program
     %th Student account
@@ -17,6 +17,7 @@
     %th Pbl 1st
     %th Pbl 2nd
     %th Pbl teacher
+    %th Guarantor
     %th Memo
     %th
     %th
@@ -24,9 +25,9 @@
 
   - @student_lists.each do |student_list|
     %tr
+      %td= student_list.aiit_member_id
       %td= student_list.classification
-      %td= student_list.name
-      %td= student_list.student_id
+      %td= student_list.student_no
       %td= student_list.grade
       %td= student_list.program
       %td= student_list.student_account
@@ -39,6 +40,7 @@
       %td= student_list.PBL_1st
       %td= student_list.PBL_2nd
       %td= student_list.PBL_teacher
+      %td= student_list.guarantor_id
       %td= student_list.memo
       %td= link_to 'Show', student_list
       %td= link_to 'Edit', edit_student_list_path(student_list)

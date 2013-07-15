@@ -23,7 +23,7 @@ describe StudentListsController do
   # This should return the minimal set of attributes required to create a valid
   # StudentList. As you add validations to StudentList, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "classification" => "MyString" } }
+  let(:valid_attributes) { { "aiit_member_id" => "1" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe StudentListsController do
       it "assigns a newly created but unsaved student_list as @student_list" do
         # Trigger the behavior that occurs when invalid params are submitted
         StudentList.any_instance.stub(:save).and_return(false)
-        post :create, {:student_list => { "classification" => "invalid value" }}, valid_session
+        post :create, {:student_list => { "aiit_member_id" => "invalid value" }}, valid_session
         assigns(:student_list).should be_a_new(StudentList)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         StudentList.any_instance.stub(:save).and_return(false)
-        post :create, {:student_list => { "classification" => "invalid value" }}, valid_session
+        post :create, {:student_list => { "aiit_member_id" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe StudentListsController do
         # specifies that the StudentList created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        StudentList.any_instance.should_receive(:update_attributes).with({ "classification" => "MyString" })
-        put :update, {:id => student_list.to_param, :student_list => { "classification" => "MyString" }}, valid_session
+        StudentList.any_instance.should_receive(:update_attributes).with({ "aiit_member_id" => "1" })
+        put :update, {:id => student_list.to_param, :student_list => { "aiit_member_id" => "1" }}, valid_session
       end
 
       it "assigns the requested student_list as @student_list" do
@@ -128,7 +128,7 @@ describe StudentListsController do
         student_list = StudentList.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         StudentList.any_instance.stub(:save).and_return(false)
-        put :update, {:id => student_list.to_param, :student_list => { "classification" => "invalid value" }}, valid_session
+        put :update, {:id => student_list.to_param, :student_list => { "aiit_member_id" => "invalid value" }}, valid_session
         assigns(:student_list).should eq(student_list)
       end
 
@@ -136,7 +136,7 @@ describe StudentListsController do
         student_list = StudentList.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         StudentList.any_instance.stub(:save).and_return(false)
-        put :update, {:id => student_list.to_param, :student_list => { "classification" => "invalid value" }}, valid_session
+        put :update, {:id => student_list.to_param, :student_list => { "aiit_member_id" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

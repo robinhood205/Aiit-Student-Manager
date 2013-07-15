@@ -1,18 +1,29 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
+
+  resources :guarantors
+
+
+  resources :student_lists
+
+
+  resources :exam_lists
+
+
+  resources :privacies
+
+
+  resources :aiit_members
+
+
   resources :prospects
 
 
   resources :tuitions
 
   resources :status_records
-  resources :student_lists
-
   resources :mibuns
   resources :guarantors
-  resources :aiit_members
-
-
   # password(パスワード確認),registration(サインアップ)機能へのルーティングを除外
   devise_for :users, only: [:session]
 

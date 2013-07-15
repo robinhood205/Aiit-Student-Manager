@@ -3,9 +3,10 @@ require 'spec_helper'
 describe "aiit_members/new" do
   before(:each) do
     assign(:aiit_member, stub_model(AiitMember,
-      :family_name => "MyString",
-      :given_name => "MyString",
-      :sex => "MyString"
+      :last_name => "MyString",
+      :first_name => "MyString",
+      :gender => "MyString",
+      :memo => "MyText"
     ).as_new_record)
   end
 
@@ -14,9 +15,10 @@ describe "aiit_members/new" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", aiit_members_path, "post" do
-      assert_select "input#aiit_member_family_name[name=?]", "aiit_member[family_name]"
-      assert_select "input#aiit_member_given_name[name=?]", "aiit_member[given_name]"
-      assert_select "input#aiit_member_sex[name=?]", "aiit_member[sex]"
+      assert_select "input#aiit_member_last_name[name=?]", "aiit_member[last_name]"
+      assert_select "input#aiit_member_first_name[name=?]", "aiit_member[first_name]"
+      assert_select "input#aiit_member_gender[name=?]", "aiit_member[gender]"
+      assert_select "textarea#aiit_member_memo[name=?]", "aiit_member[memo]"
     end
   end
 end

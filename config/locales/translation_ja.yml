@@ -1,10 +1,11 @@
 ja:
   activerecord:
     models:
-      aiit_member: aiit_member  #g
+      aiit_member: AIIT会員  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
+      exam_list: 受験一覧  #g
       guarantor: 保証人  #g
       status_record: 身分異動情報  #g
       tuition: 授業料release2関係 #g
@@ -17,9 +18,10 @@ ja:
     attributes:
       aiit_member:
         birthday: 生年月日  #g
-        family_name: 姓  #g
-        given_name: 名  #g
-        sex: 性別  #g
+        last_name: 姓  #g
+        first_name: 名  #g
+        gender: 性別  #g
+        memo: 備考 #g
 
       association_pbl:
         association_students: association_students  #g
@@ -33,15 +35,31 @@ ja:
       association_teacher:
         association_pbl: :activerecord.models.association_pbl  #g
         name: name  #g
+        
+      exam_list: 
+        basicknowledge: IT基礎知識  #g
+        citizenoftokyo: 都民  #g
+        decisionreason: 判定理由  #g
+        examno: 受験番号  #g
+        examyear: 受験年度  #g
+        examination: 入試  #g
+        interview: 面接  #g
+        memo: 備考  #g
+        paper: 小論文  #g
+        presentation: プレゼンテーション  #g
+        result: 合否  #g
+        reviewflg: 事前審査有無  #g
+        testscore: 合計点  #g
 
       guarantor:
-        address: 住所  #g
-        name: 氏名  #g
-        namekata: カナ  #g
+        guarantor_address: 住所（保証人）  #g
+        name: 保証人氏名  #g
+        guarantor_kana: 保証人カナ  #g
         relationship: 続柄区分  #g
-        tel: 電話  #g
-        zip: 郵便番号 #g
-        
+        guarantor_tel: 電話（保証人） #g
+        guarantor_zip: 郵便番号（保証人） #g
+        memo: 備考 #g
+
       status_record:
         absence_reason: 異動理由 #g
         absence_time: 休学期間 #g
@@ -75,28 +93,50 @@ ja:
         study_period: 履修期間 #g
         visa:  在留資格 #g
 
+      student_list:
+        PBL_1st: PBL前期 #g
+        PBL_2nd: PBL後期 #g
+        PBL_teacher: PBL担任 #g
+        campus_email: 学内E-Mailアドレス #g
+        classification: 種別 #g
+        entrance_date: 入学年月日 #g
+        grade: 学年 #g
+        graduation_date: 終了予定日 #g
+        memo: 備考 #g
+        name: 名前 #g
+        nationality: 国籍 #g
+        program: クラス #g
+        student_account: ユーザID #g
+        student_no: 学修番号 #g
+        study_period: 履修期間 #g
+        visa:  在留資格 #g
+
       privacy:
-        address: address  #g
-        birthday: birthday  #g
-        block: block  #g
-        building: building  #g
-        city: city  #g
-        company: company  #g
-        company_address: company_address  #g
-        department: department  #g
-        eng_name: eng_name  #g
-        graduated_date: graduated_date  #g
-        graduated_school: graduated_school  #g
-        kana_name: kana_name  #g
-        mail_mobile: mail_mobile  #g
-        mail_pc: mail_pc  #g
-        mobile: mobile  #g
-        name: name  #g
-        nationality: nationality  #g
-        occupation: occupation  #g
-        sex: sex  #g
-        tel: tel  #g
-        zip_code: zip_code  #g
+        address: 住所番地  #g
+        birthday: 生年月日  #g
+        block: 市区町村  #g
+        building: 建物名・部屋番号  #g
+        city: 都道府県  #g
+        company: 勤務先  #g
+        company_address: 勤務先住所  #g
+        work_period: 勤務期間 #g
+        department: 学部  #g
+        stream: 文理 #g
+        eng_name: 英字氏名  #g
+        graduated_date: 卒業年度  #g
+        new_graduates: 新卒 #g
+        graduated_school: 卒業学校  #g
+        kana_name: カナ氏名  #g
+        mobile_email: 個人Mail（携帯）  #g
+        pc_email: 個人Mail（PC）  #g
+        mobile: 電話番号（携帯）  #g
+        name: 漢字氏名  #g
+        birthplace: 出身  #g
+        occupation: 現職  #g
+        gender: 性別  #g
+        tel: 電話番号（自宅）  #g
+        zip_code: 郵便番号  #g
+        memo: 備考 #g
 
       prospect:
         event: イベント #g

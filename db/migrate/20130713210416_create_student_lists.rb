@@ -1,9 +1,9 @@
 class CreateStudentLists < ActiveRecord::Migration
   def change
     create_table :student_lists do |t|
+      t.integer :aiit_member_id
       t.string :classification
-      t.string :name
-      t.string :student_id
+      t.string :student_no
       t.integer :grade
       t.string :program
       t.string :student_account
@@ -16,6 +16,7 @@ class CreateStudentLists < ActiveRecord::Migration
       t.string :PBL_1st
       t.string :PBL_2nd
       t.string :PBL_teacher
+      t.integer :guarantor_id
       t.text :memo
 
       t.timestamps
