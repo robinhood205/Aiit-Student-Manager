@@ -1,9 +1,8 @@
-#!/bin/bash
-if [ ${TRAVIS_BRANCH} = "master" ]; 
-then
-echo "aaa"
-elif [ ${TRAVIS_BRANCH} = "release" ];
-then
-echo "bbb"
+#!/bin/sh
+if [ ${TRAVIS_BRANCH} = "master" ]; then
+    echo "it's Master!"
+elif [ ${TRAVIS_BRANCH} = "release" ]; then
+    echo "it's Release."
 else
-echo "ccc"; fi
+    echo "it's Other."
+fi
