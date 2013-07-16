@@ -1,5 +1,4 @@
 #!/bin/sh
-echo SHELL=${SHELL}
 echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
 if [ ${TRAVIS_BRANCH} = "master" ]; then
     echo "it's Master!"
