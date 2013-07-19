@@ -44,6 +44,7 @@ after_success:
   - yes | heroku keys:add
   - yes | git push -f heroku HEAD:master
   - heroku run rake db:migrate
+  - heroku run rake db:seed
   - heroku restart
   - else
   - exit 0; fi
