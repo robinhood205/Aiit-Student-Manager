@@ -15,7 +15,6 @@ env:
       XNg0venKJkldhfdAVH8VnVbxopzoQaRBoCD75JLx8aOJ045q5D8='
 
 after_success:
-<<<<<<< HEAD
   - ./heroku.sh
   - TRAVIS_BRANCH="master" ./heroku.sh
   - TRAVIS_BRANCH="release" ./heroku.sh
