@@ -16,6 +16,3 @@ env:
 
 after_success:
   - ./heroku.sh
-  - TRAVIS_BRANCH="master" ./heroku.sh
-  - TRAVIS_BRANCH="release" ./heroku.sh
-  - TRAVIS_BRANCH="other" ./heroku.sh
