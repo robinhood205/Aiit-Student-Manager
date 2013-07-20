@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "prospects/new" do
   before(:each) do
     assign(:prospect, stub_model(Prospect,
-      :master_id => 1,
+      :aiit_member_id => 1,
       :wished_program => "MyString",
       :wished_material => "MyString",
       :event => "MyString",
@@ -18,7 +18,7 @@ describe "prospects/new" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", prospects_path, "post" do
-      assert_select "input#prospect_master_id[name=?]", "prospect[master_id]"
+      assert_select "input#prospect_aiit_member_id[name=?]", "prospect[aiit_member_id]"
       assert_select "input#prospect_wished_program[name=?]", "prospect[wished_program]"
       assert_select "input#prospect_wished_material[name=?]", "prospect[wished_material]"
       assert_select "input#prospect_event[name=?]", "prospect[event]"

@@ -3,19 +3,20 @@ require 'spec_helper'
 describe "exam_lists/new" do
   before(:each) do
     assign(:exam_list, stub_model(ExamList,
-      :examno => "MyString",
-      :reviewflg => false,
-      :decisionreason => "MyString",
-      :citizenoftokyo => false,
+      :aiit_member_id => 1,
+      :exam_no => "MyString",
+      :review_flg => false,
+      :decision_reason => "MyString",
+      :citizen_of_tokyo => false,
       :examination => "MyString",
-      :examyear => "MyString",
-      :basicknowledge => "MyString",
-      :paper => "MyString",
-      :presentation => "MyString",
-      :interview => "MyString",
-      :testscore => "MyString",
+      :exam_year => 1,
+      :basic_knowledge => 1,
+      :paper => 1,
+      :presentation => 1,
+      :interview => 1,
+      :test_score => 1,
       :result => false,
-      :memo => "MyString"
+      :memo => "MyText"
     ).as_new_record)
   end
 
@@ -24,19 +25,20 @@ describe "exam_lists/new" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", exam_lists_path, "post" do
-      assert_select "input#exam_list_examno[name=?]", "exam_list[examno]"
-      assert_select "input#exam_list_reviewflg[name=?]", "exam_list[reviewflg]"
-      assert_select "input#exam_list_decisionreason[name=?]", "exam_list[decisionreason]"
-      assert_select "input#exam_list_citizenoftokyo[name=?]", "exam_list[citizenoftokyo]"
+      assert_select "input#exam_list_aiit_member_id[name=?]", "exam_list[aiit_member_id]"
+      assert_select "input#exam_list_exam_no[name=?]", "exam_list[exam_no]"
+      assert_select "input#exam_list_review_flg[name=?]", "exam_list[review_flg]"
+      assert_select "input#exam_list_decision_reason[name=?]", "exam_list[decision_reason]"
+      assert_select "input#exam_list_citizen_of_tokyo[name=?]", "exam_list[citizen_of_tokyo]"
       assert_select "input#exam_list_examination[name=?]", "exam_list[examination]"
-      assert_select "input#exam_list_examyear[name=?]", "exam_list[examyear]"
-      assert_select "input#exam_list_basicknowledge[name=?]", "exam_list[basicknowledge]"
+      assert_select "input#exam_list_exam_year[name=?]", "exam_list[exam_year]"
+      assert_select "input#exam_list_basic_knowledge[name=?]", "exam_list[basic_knowledge]"
       assert_select "input#exam_list_paper[name=?]", "exam_list[paper]"
       assert_select "input#exam_list_presentation[name=?]", "exam_list[presentation]"
       assert_select "input#exam_list_interview[name=?]", "exam_list[interview]"
-      assert_select "input#exam_list_testscore[name=?]", "exam_list[testscore]"
+      assert_select "input#exam_list_test_score[name=?]", "exam_list[test_score]"
       assert_select "input#exam_list_result[name=?]", "exam_list[result]"
-      assert_select "input#exam_list_memo[name=?]", "exam_list[memo]"
+      assert_select "textarea#exam_list_memo[name=?]", "exam_list[memo]"
     end
   end
 end

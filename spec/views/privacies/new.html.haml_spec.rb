@@ -4,7 +4,6 @@ describe "privacies/new" do
   before(:each) do
     assign(:privacy, stub_model(Privacy,
       :aiit_member_id => 1,
-      :name => "MyString",
       :kana_name => "MyString",
       :eng_name => "MyString",
       :gender => "MyString",
@@ -37,7 +36,6 @@ describe "privacies/new" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", privacies_path, "post" do
       assert_select "input#privacy_aiit_member_id[name=?]", "privacy[aiit_member_id]"
-      assert_select "input#privacy_name[name=?]", "privacy[name]"
       assert_select "input#privacy_kana_name[name=?]", "privacy[kana_name]"
       assert_select "input#privacy_eng_name[name=?]", "privacy[eng_name]"
       assert_select "input#privacy_gender[name=?]", "privacy[gender]"

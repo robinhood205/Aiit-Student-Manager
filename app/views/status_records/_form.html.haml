@@ -7,6 +7,9 @@
           %li= msg
 
   .field
+    = f.label :student_list_id
+    = f.number_field :student_list_id
+  .field
     = f.label :status
     = f.text_field :status
   .field
@@ -17,6 +20,6 @@
     = f.text_field :absence_reason
   .field
     = f.label :memo
-    = f.text_field :memo
+    = f.text_area :memo
   .actions
     = f.submit 'Save'

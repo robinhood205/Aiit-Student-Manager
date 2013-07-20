@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
+gem 'sqlite3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -22,6 +22,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem "composite_primary_keys", "~> 5.0.4"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -72,6 +74,9 @@ group :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  gem "factory_girl_rails"
+  gem "rspec" 
+  gem "rspec-rails"
 end
 
 # Guard-rails - https://github.com/ranmocy/guard-rails

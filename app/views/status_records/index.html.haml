@@ -2,6 +2,7 @@
 
 %table
   %tr
+    %th Student list
     %th Status
     %th Absence time
     %th Absence reason
@@ -12,6 +13,7 @@
 
   - @status_records.each do |status_record|
     %tr
+      %td= status_record.student_list_id
       %td= status_record.status
       %td= status_record.absence_time
       %td= status_record.absence_reason

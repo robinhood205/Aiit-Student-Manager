@@ -1,10 +1,11 @@
 class CreateStatusRecords < ActiveRecord::Migration
   def change
     create_table :status_records do |t|
+      t.integer :student_list_id
       t.string :status
       t.string :absence_time
       t.string :absence_reason
-      t.string :memo
+      t.text :memo
 
       t.timestamps
     end

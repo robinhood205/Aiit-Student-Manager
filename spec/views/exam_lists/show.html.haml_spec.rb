@@ -3,37 +3,39 @@ require 'spec_helper'
 describe "exam_lists/show" do
   before(:each) do
     @exam_list = assign(:exam_list, stub_model(ExamList,
-      :examno => "Examno",
-      :reviewflg => false,
-      :decisionreason => "Decisionreason",
-      :citizenoftokyo => false,
+      :aiit_member_id => 1,
+      :exam_no => "Exam No",
+      :review_flg => false,
+      :decision_reason => "Decision Reason",
+      :citizen_of_tokyo => false,
       :examination => "Examination",
-      :examyear => "Examyear",
-      :basicknowledge => "Basicknowledge",
-      :paper => "Paper",
-      :presentation => "Presentation",
-      :interview => "Interview",
-      :testscore => "Testscore",
+      :exam_year => 2,
+      :basic_knowledge => 3,
+      :paper => 4,
+      :presentation => 5,
+      :interview => 6,
+      :test_score => 7,
       :result => false,
-      :memo => "Memo"
+      :memo => "MyText"
     ))
   end
 
   it "renders attributes in <p>" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Examno/)
+    rendered.should match(/1/)
+    rendered.should match(/Exam No/)
     rendered.should match(/false/)
-    rendered.should match(/Decisionreason/)
+    rendered.should match(/Decision Reason/)
     rendered.should match(/false/)
     rendered.should match(/Examination/)
-    rendered.should match(/Examyear/)
-    rendered.should match(/Basicknowledge/)
-    rendered.should match(/Paper/)
-    rendered.should match(/Presentation/)
-    rendered.should match(/Interview/)
-    rendered.should match(/Testscore/)
+    rendered.should match(/2/)
+    rendered.should match(/3/)
+    rendered.should match(/4/)
+    rendered.should match(/5/)
+    rendered.should match(/6/)
+    rendered.should match(/7/)
     rendered.should match(/false/)
-    rendered.should match(/Memo/)
+    rendered.should match(/MyText/)
   end
 end

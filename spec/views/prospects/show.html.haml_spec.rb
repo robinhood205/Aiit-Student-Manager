@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "prospects/show" do
   before(:each) do
     @prospect = assign(:prospect, stub_model(Prospect,
-      :master_id => 1,
+      :aiit_member_id => 1,
       :wished_program => "Wished Program",
       :wished_material => "Wished Material",
       :event => "Event",

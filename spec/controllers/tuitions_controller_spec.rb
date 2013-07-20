@@ -23,7 +23,7 @@ describe TuitionsController do
   # This should return the minimal set of attributes required to create a valid
   # Tuition. As you add validations to Tuition, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "transfer_request" => "MyString" } }
+  let(:valid_attributes) { { "student_list_id" => "1" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe TuitionsController do
       it "assigns a newly created but unsaved tuition as @tuition" do
         # Trigger the behavior that occurs when invalid params are submitted
         Tuition.any_instance.stub(:save).and_return(false)
-        post :create, {:tuition => { "transfer_request" => "invalid value" }}, valid_session
+        post :create, {:tuition => { "student_list_id" => "invalid value" }}, valid_session
         assigns(:tuition).should be_a_new(Tuition)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Tuition.any_instance.stub(:save).and_return(false)
-        post :create, {:tuition => { "transfer_request" => "invalid value" }}, valid_session
+        post :create, {:tuition => { "student_list_id" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe TuitionsController do
         # specifies that the Tuition created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Tuition.any_instance.should_receive(:update_attributes).with({ "transfer_request" => "MyString" })
-        put :update, {:id => tuition.to_param, :tuition => { "transfer_request" => "MyString" }}, valid_session
+        Tuition.any_instance.should_receive(:update_attributes).with({ "student_list_id" => "1" })
+        put :update, {:id => tuition.to_param, :tuition => { "student_list_id" => "1" }}, valid_session
       end
 
       it "assigns the requested tuition as @tuition" do
@@ -128,7 +128,7 @@ describe TuitionsController do
         tuition = Tuition.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Tuition.any_instance.stub(:save).and_return(false)
-        put :update, {:id => tuition.to_param, :tuition => { "transfer_request" => "invalid value" }}, valid_session
+        put :update, {:id => tuition.to_param, :tuition => { "student_list_id" => "invalid value" }}, valid_session
         assigns(:tuition).should eq(tuition)
       end
 
@@ -136,7 +136,7 @@ describe TuitionsController do
         tuition = Tuition.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Tuition.any_instance.stub(:save).and_return(false)
-        put :update, {:id => tuition.to_param, :tuition => { "transfer_request" => "invalid value" }}, valid_session
+        put :update, {:id => tuition.to_param, :tuition => { "student_list_id" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

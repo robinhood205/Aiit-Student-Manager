@@ -2,8 +2,7 @@
 
 %table
   %tr
-    %th Last name
-    %th First name
+    %th Name
     %th Birthday
     %th Gender
     %th Memo
@@ -13,8 +12,7 @@
 
   - @aiit_members.each do |aiit_member|
     %tr
-      %td= aiit_member.last_name
-      %td= aiit_member.first_name
+      %td= aiit_member.name
       %td= aiit_member.birthday
       %td= aiit_member.gender
       %td= aiit_member.memo

@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
 
-  resources :guarantors
-
-
-  resources :student_lists
-
-
   resources :exam_lists
+
+
+  resources :status_records
+
+
+  resources :tuitions
 
 
   resources :privacies
@@ -16,11 +16,13 @@ Students::Application.routes.draw do
   resources :aiit_members
 
 
+  resources :student_lists
+
+
   resources :prospects
 
-
-  resources :tuitions
-
+  resources :guarantors
+  resources :guarantors
   resources :status_records
   resources :mibuns
   resources :guarantors

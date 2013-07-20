@@ -2,7 +2,7 @@
 
 %table
   %tr
-    %th Master
+    %th Aiit member
     %th Received date
     %th Wished program
     %th Wished material
@@ -17,7 +17,7 @@
 
   - @prospects.each do |prospect|
     %tr
-      %td= prospect.master_id
+      %td= prospect.aiit_member_id
       %td= prospect.received_date
       %td= prospect.wished_program
       %td= prospect.wished_material

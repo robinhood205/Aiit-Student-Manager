@@ -23,7 +23,7 @@ describe StatusRecordsController do
   # This should return the minimal set of attributes required to create a valid
   # StatusRecord. As you add validations to StatusRecord, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "status" => "MyString" } }
+  let(:valid_attributes) { { "student_list_id" => "1" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe StatusRecordsController do
       it "assigns a newly created but unsaved status_record as @status_record" do
         # Trigger the behavior that occurs when invalid params are submitted
         StatusRecord.any_instance.stub(:save).and_return(false)
-        post :create, {:status_record => { "status" => "invalid value" }}, valid_session
+        post :create, {:status_record => { "student_list_id" => "invalid value" }}, valid_session
         assigns(:status_record).should be_a_new(StatusRecord)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         StatusRecord.any_instance.stub(:save).and_return(false)
-        post :create, {:status_record => { "status" => "invalid value" }}, valid_session
+        post :create, {:status_record => { "student_list_id" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe StatusRecordsController do
         # specifies that the StatusRecord created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        StatusRecord.any_instance.should_receive(:update_attributes).with({ "status" => "MyString" })
-        put :update, {:id => status_record.to_param, :status_record => { "status" => "MyString" }}, valid_session
+        StatusRecord.any_instance.should_receive(:update_attributes).with({ "student_list_id" => "1" })
+        put :update, {:id => status_record.to_param, :status_record => { "student_list_id" => "1" }}, valid_session
       end
 
       it "assigns the requested status_record as @status_record" do
@@ -128,7 +128,7 @@ describe StatusRecordsController do
         status_record = StatusRecord.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         StatusRecord.any_instance.stub(:save).and_return(false)
-        put :update, {:id => status_record.to_param, :status_record => { "status" => "invalid value" }}, valid_session
+        put :update, {:id => status_record.to_param, :status_record => { "student_list_id" => "invalid value" }}, valid_session
         assigns(:status_record).should eq(status_record)
       end
 
@@ -136,7 +136,7 @@ describe StatusRecordsController do
         status_record = StatusRecord.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         StatusRecord.any_instance.stub(:save).and_return(false)
-        put :update, {:id => status_record.to_param, :status_record => { "status" => "invalid value" }}, valid_session
+        put :update, {:id => status_record.to_param, :status_record => { "student_list_id" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

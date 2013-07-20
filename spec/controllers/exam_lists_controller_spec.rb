@@ -23,7 +23,7 @@ describe ExamListsController do
   # This should return the minimal set of attributes required to create a valid
   # ExamList. As you add validations to ExamList, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "examno" => "MyString" } }
+  let(:valid_attributes) { { "aiit_member_id" => "1" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe ExamListsController do
       it "assigns a newly created but unsaved exam_list as @exam_list" do
         # Trigger the behavior that occurs when invalid params are submitted
         ExamList.any_instance.stub(:save).and_return(false)
-        post :create, {:exam_list => { "examno" => "invalid value" }}, valid_session
+        post :create, {:exam_list => { "aiit_member_id" => "invalid value" }}, valid_session
         assigns(:exam_list).should be_a_new(ExamList)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         ExamList.any_instance.stub(:save).and_return(false)
-        post :create, {:exam_list => { "examno" => "invalid value" }}, valid_session
+        post :create, {:exam_list => { "aiit_member_id" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe ExamListsController do
         # specifies that the ExamList created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        ExamList.any_instance.should_receive(:update_attributes).with({ "examno" => "MyString" })
-        put :update, {:id => exam_list.to_param, :exam_list => { "examno" => "MyString" }}, valid_session
+        ExamList.any_instance.should_receive(:update_attributes).with({ "aiit_member_id" => "1" })
+        put :update, {:id => exam_list.to_param, :exam_list => { "aiit_member_id" => "1" }}, valid_session
       end
 
       it "assigns the requested exam_list as @exam_list" do
@@ -128,7 +128,7 @@ describe ExamListsController do
         exam_list = ExamList.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         ExamList.any_instance.stub(:save).and_return(false)
-        put :update, {:id => exam_list.to_param, :exam_list => { "examno" => "invalid value" }}, valid_session
+        put :update, {:id => exam_list.to_param, :exam_list => { "aiit_member_id" => "invalid value" }}, valid_session
         assigns(:exam_list).should eq(exam_list)
       end
 
@@ -136,7 +136,7 @@ describe ExamListsController do
         exam_list = ExamList.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         ExamList.any_instance.stub(:save).and_return(false)
-        put :update, {:id => exam_list.to_param, :exam_list => { "examno" => "invalid value" }}, valid_session
+        put :update, {:id => exam_list.to_param, :exam_list => { "aiit_member_id" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

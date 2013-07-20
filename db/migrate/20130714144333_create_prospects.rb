@@ -1,7 +1,7 @@
 class CreateProspects < ActiveRecord::Migration
   def change
     create_table :prospects do |t|
-      t.integer :master_id
+      t.integer :aiit_member_id
       t.date :received_date
       t.string :wished_program
       t.string :wished_material
