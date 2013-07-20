@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
 
+  resources :exam_lists
+
+
   resources :status_records
 
 
@@ -17,9 +20,6 @@ Students::Application.routes.draw do
 
 
   resources :prospects
-
-
-  resources :exam_lists
 
   resources :guarantors
   resources :guarantors
