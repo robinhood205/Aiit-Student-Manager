@@ -5,7 +5,6 @@ describe "privacies/index" do
     assign(:privacies, [
       stub_model(Privacy,
         :aiit_member_id => 1,
-        :name => "Name",
         :kana_name => "Kana Name",
         :eng_name => "Eng Name",
         :gender => "Gender",
@@ -32,7 +31,6 @@ describe "privacies/index" do
       ),
       stub_model(Privacy,
         :aiit_member_id => 1,
-        :name => "Name",
         :kana_name => "Kana Name",
         :eng_name => "Eng Name",
         :gender => "Gender",
@@ -64,7 +62,6 @@ describe "privacies/index" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => 1.to_s, :count => 2
-    assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Kana Name".to_s, :count => 2
     assert_select "tr>td", :text => "Eng Name".to_s, :count => 2
     assert_select "tr>td", :text => "Gender".to_s, :count => 2

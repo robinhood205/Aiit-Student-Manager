@@ -4,8 +4,8 @@ describe "student_lists/edit" do
   before(:each) do
     @student_list = assign(:student_list, stub_model(StudentList,
       :aiit_member_id => 1,
+      :name => "MyString",
       :classification => "MyString",
-      :student_no => "MyString",
       :grade => 1,
       :program => "MyString",
       :student_account => "MyString",
@@ -27,8 +27,8 @@ describe "student_lists/edit" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", student_list_path(@student_list), "post" do
       assert_select "input#student_list_aiit_member_id[name=?]", "student_list[aiit_member_id]"
+      assert_select "input#student_list_name[name=?]", "student_list[name]"
       assert_select "input#student_list_classification[name=?]", "student_list[classification]"
-      assert_select "input#student_list_student_no[name=?]", "student_list[student_no]"
       assert_select "input#student_list_grade[name=?]", "student_list[grade]"
       assert_select "input#student_list_program[name=?]", "student_list[program]"
       assert_select "input#student_list_student_account[name=?]", "student_list[student_account]"

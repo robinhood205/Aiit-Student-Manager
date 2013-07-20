@@ -2,7 +2,7 @@
 
 %table
   %tr
-    %th Student no
+    %th Student list
     %th Transfer request
     %th First term reduction
     %th Second term reduction
@@ -15,7 +15,7 @@
 
   - @tuitions.each do |tuition|
     %tr
-      %td= tuition.student_no
+      %td= tuition.student_list_id
       %td= tuition.transfer_request
       %td= tuition.first_term_reduction
       %td= tuition.second_term_reduction

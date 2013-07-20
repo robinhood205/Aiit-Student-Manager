@@ -1,7 +1,7 @@
 class CreateTuitions < ActiveRecord::Migration
   def change
     create_table :tuitions do |t|
-      t.string :student_no
+      t.integer :student_list_id
       t.string :transfer_request
       t.string :first_term_reduction
       t.string :second_term_reduction

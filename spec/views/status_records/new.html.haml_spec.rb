@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "status_records/new" do
   before(:each) do
     assign(:status_record, stub_model(StatusRecord,
-      :student_no => "MyString",
+      :student_list_id => 1,
       :status => "MyString",
       :absence_time => "MyString",
       :absence_reason => "MyString",
@@ -16,7 +16,7 @@ describe "status_records/new" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", status_records_path, "post" do
-      assert_select "input#status_record_student_no[name=?]", "status_record[student_no]"
+      assert_select "input#status_record_student_list_id[name=?]", "status_record[student_list_id]"
       assert_select "input#status_record_status[name=?]", "status_record[status]"
       assert_select "input#status_record_absence_time[name=?]", "status_record[absence_time]"
       assert_select "input#status_record_absence_reason[name=?]", "status_record[absence_reason]"

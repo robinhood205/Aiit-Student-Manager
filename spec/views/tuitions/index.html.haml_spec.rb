@@ -4,7 +4,7 @@ describe "tuitions/index" do
   before(:each) do
     assign(:tuitions, [
       stub_model(Tuition,
-        :student_no => "Student No",
+        :student_list_id => 1,
         :transfer_request => "Transfer Request",
         :first_term_reduction => "First Term Reduction",
         :second_term_reduction => "Second Term Reduction",
@@ -13,7 +13,7 @@ describe "tuitions/index" do
         :memo => "MyText"
       ),
       stub_model(Tuition,
-        :student_no => "Student No",
+        :student_list_id => 1,
         :transfer_request => "Transfer Request",
         :first_term_reduction => "First Term Reduction",
         :second_term_reduction => "Second Term Reduction",
@@ -27,7 +27,7 @@ describe "tuitions/index" do
   it "renders a list of tuitions" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Student No".to_s, :count => 2
+    assert_select "tr>td", :text => 1.to_s, :count => 2
     assert_select "tr>td", :text => "Transfer Request".to_s, :count => 2
     assert_select "tr>td", :text => "First Term Reduction".to_s, :count => 2
     assert_select "tr>td", :text => "Second Term Reduction".to_s, :count => 2

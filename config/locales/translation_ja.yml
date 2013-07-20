@@ -18,8 +18,7 @@ ja:
     attributes:
       aiit_member:
         birthday: 生年月日  #g
-        last_name: 姓  #g
-        first_name: 名  #g
+        name: 名前  #g
         gender: 性別  #g
         memo: 備考 #g
 
@@ -85,7 +84,7 @@ ja:
         grade: 学年 #g
         graduation_date: 終了予定日 #g
         memo: 備考 #g
-        name: 名前 #g
+        name: 学修番号 #g
         nationality: 国籍 #g
         program: クラス #g
         student_account: ユーザID #g
@@ -93,23 +92,6 @@ ja:
         study_period: 履修期間 #g
         visa:  在留資格 #g
 
-      student_list:
-        PBL_1st: PBL前期 #g
-        PBL_2nd: PBL後期 #g
-        PBL_teacher: PBL担任 #g
-        campus_email: 学内E-Mailアドレス #g
-        classification: 種別 #g
-        entrance_date: 入学年月日 #g
-        grade: 学年 #g
-        graduation_date: 終了予定日 #g
-        memo: 備考 #g
-        name: 名前 #g
-        nationality: 国籍 #g
-        program: クラス #g
-        student_account: ユーザID #g
-        student_no: 学修番号 #g
-        study_period: 履修期間 #g
-        visa:  在留資格 #g
 
       privacy:
         address: 住所番地  #g

@@ -3,8 +3,8 @@
 %table
   %tr
     %th Aiit member
+    %th Name
     %th Classification
-    %th Student no
     %th Grade
     %th Program
     %th Student account
@@ -26,8 +26,8 @@
   - @student_lists.each do |student_list|
     %tr
       %td= student_list.aiit_member_id
+      %td= student_list.name
       %td= student_list.classification
-      %td= student_list.student_no
       %td= student_list.grade
       %td= student_list.program
       %td= student_list.student_account
