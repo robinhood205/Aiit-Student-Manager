@@ -88,7 +88,6 @@ ja:
         nationality: 国籍 #g
         program: クラス #g
         student_account: ユーザID #g
-        student_id: 学修番号 #g
         study_period: 履修期間 #g
         visa:  在留資格 #g
 
