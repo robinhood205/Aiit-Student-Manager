@@ -189,7 +189,7 @@ ja:
         zyuusyo: zyuusyo  #g
 
       user:
-      	current_sign_in_at: 今回ログインした日  #g
+        current_sign_in_at: 今回ログインした日  #g
         current_sign_in_ip: 今回ログインしたIPアドレス  #g
         email: E-mailアドレス  #g
         password: パスワード  #g
