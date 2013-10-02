@@ -1,15 +1,15 @@
 ja:
   activerecord:
     models:
-      aiit_member: AIIT会員  #g
+      aiit_member: AIIT会員(Master)  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
       exam_list: 受験一覧  #g
       guarantor: 保証人  #g
       status_record: 身分異動情報  #g
-      tuition: 授業料release2関係 #g
-      privacy: 個人release情報  #g
+      tuition: 授業料関係 #g
+      privacy: 個人情報  #g
       prospect: 見込み学生情報  #g
       student: 学生情報  #g
       user: ユーザー情報  #g
