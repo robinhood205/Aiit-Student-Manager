@@ -1,33 +1,35 @@
-%p#notice= notice
+%h1 見込み学生情報照会
 
-%p
-  %b Aiit member:
-  = @prospect.aiit_member_id
-%p
-  %b Received date:
-  = @prospect.received_date
-%p
-  %b Wished program:
-  = @prospect.wished_program
-%p
-  %b Wished material:
-  = @prospect.wished_material
-%p
-  %b Event:
-  = @prospect.event
-%p
-  %b Visited date:
-  = @prospect.visited_date
-%p
-  %b Contact unnecessary:
-  = @prospect.contact_unnecessary
-%p
-  %b Applikation:
-  = @prospect.applikation
-%p
-  %b Memo:
-  = @prospect.memo
+%table{:class => "table table-condensed table-bordered"}
+  %tr
+    %th Aiit 会員
+    %th= @prospect.aiit_member_id
+  %tr
+    %th 受信日
+    %th= @prospect.received_date
+  %tr
+    %th 希望専攻
+    %th= @prospect.wished_program
+  %tr
+    %th 希望資料
+    %th= @prospect.wished_material
+  %tr
+    %th イベント
+    %th= @prospect.event
+  %tr
+    %th 来場日
+    %th= @prospect.visited_date
+  %tr
+    %th 情報連絡不要
+    %th= @prospect.contact_unnecessary
+  %tr
+    %th 出願
+    %th= @prospect.applikation
+  %tr
+    %th 備考
+    %th= @prospect.memo
 
+%br
 = link_to '変更', edit_prospect_path(@prospect)
 \|
 = link_to '戻る', prospects_path

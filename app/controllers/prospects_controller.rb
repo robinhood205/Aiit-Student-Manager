@@ -19,7 +19,7 @@ class ProspectsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @prospect }
+      format.json { render json: @prospect}
     end
   end
 
