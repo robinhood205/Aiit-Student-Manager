@@ -1,16 +1,16 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b 名前:
   = @aiit_member.name
 %p
-  %b Birthday:
+  %b 生年月日:
   = @aiit_member.birthday
 %p
-  %b Gender:
+  %b 性別:
   = @aiit_member.gender
 %p
-  %b Memo:
+  %b 備考:
   = @aiit_member.memo
 
 = link_to 'Edit', edit_aiit_member_path(@aiit_member)
