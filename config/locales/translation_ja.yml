@@ -63,6 +63,8 @@ ja:
       status_record:
         absence_reason: 異動理由 #g
         absence_time: 休学期間 #g
+        beginning: 開始時間 #g
+        end: 終了時間 #g
         memo: 備考 #g
         status: 身分 #g
 
