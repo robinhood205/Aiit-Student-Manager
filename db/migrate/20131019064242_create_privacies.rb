@@ -2,10 +2,7 @@ class CreatePrivacies < ActiveRecord::Migration
   def change
     create_table :privacies do |t|
       t.integer :aiit_member_id
-      t.string :kana_name
       t.string :eng_name
-      t.string :gender
-      t.date :birthday
       t.string :birthplace
       t.string :zip_code
       t.string :city
