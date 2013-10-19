@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
 
+  resources :aiit_members
+
+
   resources :exam_lists
 
 
@@ -11,9 +14,6 @@ Students::Application.routes.draw do
 
 
   resources :privacies
-
-
-  resources :aiit_members
 
 
   resources :student_lists

@@ -3,6 +3,7 @@
 %table
   %tr
     %th Name
+    %th Kana name
     %th Birthday
     %th Gender
     %th Memo
@@ -13,6 +14,7 @@
   - @aiit_members.each do |aiit_member|
     %tr
       %td= aiit_member.name
+      %td= aiit_member.kana_name
       %td= aiit_member.birthday
       %td= aiit_member.gender
       %td= aiit_member.memo

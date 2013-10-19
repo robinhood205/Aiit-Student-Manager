@@ -19,6 +19,7 @@ ja:
       aiit_member:
         birthday: 生年月日  #g
         name: 名前  #g
+        kana_name: カナ氏名  #g
         gender: 性別  #g
         memo: 備考 #g
 
