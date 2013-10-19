@@ -51,12 +51,12 @@ ja:
         test_score: 合計点  #g
 
       guarantor:
-        guarantor_address: 住所（保証人）  #g
+        guarantor_address: 住所  #g
         name: 保証人氏名  #g
         guarantor_kana: 保証人カナ  #g
         relationship: 続柄区分  #g
-        guarantor_tel: 電話（保証人） #g
-        guarantor_zip: 郵便番号（保証人） #g
+        guarantor_tel: 電話 #g
+        guarantor_zip: 郵便番号 #g
         memo: 備考 #g
 
       status_record:
