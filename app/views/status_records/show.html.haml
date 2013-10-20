@@ -1,19 +1,19 @@
-%p#notice= notice
+%h1 身分異動情報　照会
 
 %p
   %b Student list:
   = @status_record.student_list_id
 %p
-  %b Status:
+  %b 身分:
   = @status_record.status
 %p
-  %b Absence time:
+  %b 休学期間:
   = @status_record.absence_time
 %p
-  %b Absence reason:
+  %b 休学理由:
   = @status_record.absence_reason
 %p
-  %b Memo:
+  %b 備考:
   = @status_record.memo
 
 = link_to '変更', edit_status_record_path(@status_record)
