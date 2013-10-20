@@ -1,20 +1,21 @@
 %h1 身分異動情報　照会
 
-%p
-  %b Student list:
-  = @status_record.student_list_id
-%p
-  %b 身分:
-  = @status_record.status
-%p
-  %b 休学期間:
-  = @status_record.absence_time
-%p
-  %b 休学理由:
-  = @status_record.absence_reason
-%p
-  %b 備考:
-  = @status_record.memo
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span3"} Student list:
+    %td= @status_record.student_list_id
+  %tr
+    %td 身分:
+    %td= @status_record.status
+  %tr
+    %td 休学期間:
+    %td= @status_record.absence_time
+  %tr
+    %td 休学理由:
+    %td= @status_record.absence_reason
+  %tr
+    %td 備考:
+    %td= @status_record.memo
 
 = link_to '変更', edit_status_record_path(@status_record)
 \|
