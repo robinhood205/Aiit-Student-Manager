@@ -1,16 +1,16 @@
 %table{:class => "table table-condensed"}
   %tr
-    %th 名前
-    %th= @aiit_member.name
+    %td 名前
+    %td= @aiit_member.name
   %tr
-    %th 生年月日
-    %th= @aiit_member.birthday
+    %td 生年月日
+    %td= @aiit_member.birthday
   %tr
-    %th 性別
-    %th= @aiit_member.gender
+    %td 性別
+    %td= @aiit_member.gender
   %tr
-    %b 備考
-    = @aiit_member.memo
+    %td 備考
+    %td= @aiit_member.memo
 
 = link_to '変更', edit_aiit_member_path(@aiit_member)
 \|
