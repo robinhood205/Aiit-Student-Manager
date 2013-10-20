@@ -1,17 +1,16 @@
-%p#notice= notice
-
-%p
-  %b 名前:
-  = @aiit_member.name
-%p
-  %b 生年月日:
-  = @aiit_member.birthday
-%p
-  %b 性別:
-  = @aiit_member.gender
-%p
-  %b 備考:
-  = @aiit_member.memo
+%table{:class => "table table-condensed"}
+  %tr
+    %th 名前
+    %th= @aiit_member.name
+  %tr
+    %th 生年月日
+    %th= @aiit_member.birthday
+  %tr
+    %th 性別
+    %th= @aiit_member.gender
+  %tr
+    %b 備考
+    = @aiit_member.memo
 
 = link_to '変更', edit_aiit_member_path(@aiit_member)
 \|
