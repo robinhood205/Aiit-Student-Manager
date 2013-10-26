@@ -19,7 +19,7 @@ class ProspectsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @prospect}
+      format.json { render json: @prospect }
     end
   end
 
@@ -46,7 +46,7 @@ class ProspectsController < ApplicationController
 
     respond_to do |format|
       if @prospect.save
-        format.html { redirect_to @prospect, notice: 'Prospect was successfully created.' }
+        format.html { redirect_to @prospect, notice: '作成完了' }
         format.json { render json: @prospect, status: :created, location: @prospect }
       else
         format.html { render action: "new" }
@@ -62,7 +62,7 @@ class ProspectsController < ApplicationController
 
     respond_to do |format|
       if @prospect.update_attributes(params[:prospect])
-        format.html { redirect_to @prospect, notice: 'Prospect was successfully updated.' }
+        format.html { redirect_to @prospect, notice: '変更完了' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

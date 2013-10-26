@@ -1,5 +1,5 @@
 !!! 5
-%html(lang="en")
+%html(lang="ja")
   %head
     %meta(charset="utf-8")
     %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
@@ -22,7 +22,8 @@
       .navbar-inner
         .container-fluid
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
-          %a.brand Students
+            %span.icon-bar
+          %a.brand(href="#") Students
           .container.nav-collapse
             %ul.nav
 
@@ -31,15 +32,9 @@
         .span9
           = bootstrap_flash
           = yield
-        .span3
-          .well.sidebar-nav
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "保証人t", "/guarantors"
-              %li= link_to "個人情報", "/privacies"
-              %li= link_to "授業料関係", "/tuitions"
+        
       %footer
-        %p &copy; 中鉢PBL 2013test
+        %p &copy; 中鉢PBL 2013 sign in
     /
       Javascripts
       \==================================================

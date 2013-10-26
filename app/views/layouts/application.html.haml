@@ -16,25 +16,38 @@
     = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
 
-
   %body
-    .navbar.navbar-fluid-top
+    .navbar.navbar-inverse.navbar-fluid-top
       .navbar-inner
         .container-fluid
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
-          %a.brand(href="#") Students
+          %a.brand(href="admin") Students
           .container.nav-collapse
             %ul.nav
 
     .container-fluid
       .row-fluid
+        .span2
+          .well.sidebar-nav
+            %ul.nav.nav-list
+              %li.nav-header SIDEBAR
+              %li= link_to "AIIT会員","/aiit_members"
+              %li= link_to "学生一覧","/student_lists"
+              %li= link_to "受験一覧","/exam_lists" 
+              %li= link_to "見込み学生情報","/prospects"
+
+              %li= link_to "身分異動情報","/status_records"
+              %li= link_to "授業料関係","/tuitions"
+              %li= link_to "保証人","/guarantors"
+              %li= link_to "個人情報","/privacies"
+ 
         .span9
           = bootstrap_flash
-          = yield
-        
+          = yield    
+
       %footer
-        %p &copy; 中鉢PBL 2013
+        %p &copy; 中鉢PBL 2013test
     /
       Javascripts
       \==================================================
