@@ -1,0 +1,51 @@
+%h1 Listing student_lists
+
+%table
+  %tr
+    %th Aiit member
+    %th Name
+    %th Classification
+    %th Grade
+    %th Program
+    %th Student account
+    %th Campus email
+    %th Nationality
+    %th Visa
+    %th Entrance date
+    %th Study period
+    %th Graduation date
+    %th Pbl 1st
+    %th Pbl 2nd
+    %th Pbl teacher
+    %th Guarantor
+    %th Memo
+    %th
+    %th
+    %th
+
+  - @student_lists.each do |student_list|
+    %tr
+      %td= student_list.aiit_member_id
+      %td= student_list.name
+      %td= student_list.classification
+      %td= student_list.grade
+      %td= student_list.program
+      %td= student_list.student_account
+      %td= student_list.campus_email
+      %td= student_list.nationality
+      %td= student_list.visa
+      %td= student_list.entrance_date
+      %td= student_list.study_period
+      %td= student_list.graduation_date
+      %td= student_list.PBL_1st
+      %td= student_list.PBL_2nd
+      %td= student_list.PBL_teacher
+      %td= student_list.guarantor_id
+      %td= student_list.memo
+      %td= link_to 'Show', student_list
+      %td= link_to 'Edit', edit_student_list_path(student_list)
+      %td= link_to 'Destroy', student_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Student list', new_student_list_path

@@ -1,0 +1,35 @@
+%h1 見込み学生情報　一覧
+
+%table{:class => "table table-condensed"}
+  %tr{:bgcolor => "#EBF5EC"}
+    %th AIIT 会員
+    %th 受信日
+    %th 希望専攻
+    %th 希望資料
+    %th イベント
+    %th 来場日
+    %th 情報連絡不要
+    %th 出願
+    %th 備考
+    %th
+    %th
+    %th
+
+  - @prospects.each do |prospect|
+    %tr
+      %td= prospect.aiit_member_id
+      %td= prospect.received_date
+      %td= prospect.wished_program
+      %td= prospect.wished_material
+      %td= prospect.event
+      %td= prospect.visited_date
+      %td= change_boolean(prospect.contact_unnecessary)
+      %td= prospect.applikation
+      %td= prospect.memo
+      %td= link_to '照会', prospect
+      %td= link_to '変更', edit_prospect_path(prospect)
+      %td= link_to '削除', prospect, :method => :delete, :data => { :confirm => '本当に削除してよろしいですか?' }
+
+%br
+
+= link_to '新規作成', new_prospect_path

@@ -1,0 +1,22 @@
+%h1 AIIT会員　照会
+
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span2"} 名前
+    %td= @aiit_member.name
+  %tr
+    %td カナ氏名
+    %td= @aiit_member.kana_name
+  %tr
+    %td 生年月日
+    %td= @aiit_member.birthday
+  %tr
+    %td 性別
+    %td= @aiit_member.gender
+  %tr
+    %td 備考
+    %td= @aiit_member.memo
+
+= link_to '変更', edit_aiit_member_path(@aiit_member)
+\|
+= link_to '戻る', aiit_members_path

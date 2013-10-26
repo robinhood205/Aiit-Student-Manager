@@ -1,0 +1,45 @@
+%h1 Listing exam_lists
+
+%table
+  %tr
+    %th Aiit member
+    %th Exam no
+    %th Review flg
+    %th Decision reason
+    %th Citizen of tokyo
+    %th Examination
+    %th Exam year
+    %th Basic knowledge
+    %th Paper
+    %th Presentation
+    %th Interview
+    %th Test score
+    %th Result
+    %th Memo
+    %th
+    %th
+    %th
+
+  - @exam_lists.each do |exam_list|
+    %tr
+      %td= exam_list.aiit_member_id
+      %td= exam_list.exam_no
+      %td= exam_list.review_flg
+      %td= exam_list.decision_reason
+      %td= exam_list.citizen_of_tokyo
+      %td= exam_list.examination
+      %td= exam_list.exam_year
+      %td= exam_list.basic_knowledge
+      %td= exam_list.paper
+      %td= exam_list.presentation
+      %td= exam_list.interview
+      %td= exam_list.test_score
+      %td= exam_list.result
+      %td= exam_list.memo
+      %td= link_to 'Show', exam_list
+      %td= link_to 'Edit', edit_exam_list_path(exam_list)
+      %td= link_to 'Destroy', exam_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Exam list', new_exam_list_path

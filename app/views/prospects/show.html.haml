@@ -1,0 +1,35 @@
+%h1 見込み学生情報　照会
+
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span2"} AIIT 会員
+    %td= @prospect.aiit_member_id
+  %tr
+    %td 受信日
+    %td= @prospect.received_date
+  %tr
+    %td 希望専攻
+    %td= @prospect.wished_program
+  %tr
+    %td 希望資料
+    %td= @prospect.wished_material
+  %tr
+    %td イベント
+    %td= @prospect.event
+  %tr
+    %td 来場日
+    %td= @prospect.visited_date
+  %tr
+    %td 情報連絡不要
+    %td= @prospect.contact_unnecessary
+  %tr
+    %td 出願
+    %td= @prospect.applikation
+  %tr
+    %td 備考
+    %td= @prospect.memo
+
+%br
+= link_to '変更', edit_prospect_path(@prospect)
+\|
+= link_to '戻る', prospects_path

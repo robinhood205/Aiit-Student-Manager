@@ -1,0 +1,160 @@
+ja:
+  activerecord:
+    models:
+      aiit_member: AIIT会員(Master)  #g
+      association_pbl: association_pbl  #g
+      association_student: association_student  #g
+      association_teacher: association_teacher  #g
+      exam_list: 受験情報  #g
+      guarantor: 保証人  #g
+      status_record: 身分異動  #g
+      tuition: 授業料関係 #g
+      privacy: 個人情報  #g
+      prospect: 見込み学生  #g
+      user: ユーザー情報  #g
+      student_list: 学生情報  #g
+
+    attributes:
+      aiit_member:
+        birthday: 生年月日  #g
+        name: 名前  #g
+        kana_name: カナ氏名  #g
+        gender: 性別  #g
+        memo: 備考 #g
+        exam_lists: 受験情報  
+        status_record: 身分異動  
+        privacy: 個人情報  
+        prospects: 見込み学生
+        student_lists: 学生情報  
+
+      association_pbl:
+        association_students: association_students  #g
+        association_teacher: :activerecord.models.association_teacher  #g
+        name: name  #g
+
+      association_student:
+        association_pbl: :activerecord.models.association_pbl  #g
+        name: name  #g
+
+      association_teacher:
+        association_pbl: :activerecord.models.association_pbl  #g
+        name: name  #g
+
+      exam_list: 
+        basic_knowledge: IT基礎知識  #g
+        citizen_of_tokyo: 都民  #g
+        decision_reason: 判定理由  #g
+        exam_no: 受験番号  #g
+        exam_year: 受験年度  #g
+        examination: 入試  #g
+        interview: 面接  #g
+        memo: 備考  #g
+        paper: 小論文  #g
+        presentation: プレゼンテーション  #g
+        result: 合否  #g
+        review_flg: 事前審査有無  #g
+        test_score: 合計点  #g
+        aiit_member: AIIT会員
+
+      guarantor:
+        guarantor_address: 住所  #g
+        name: 保証人氏名  #g
+        guarantor_kana: 保証人カナ  #g
+        relationship: 続柄区分  #g
+        guarantor_tel: 電話 #g
+        guarantor_zip: 郵便番号 #g
+        memo: 備考 #g
+        student_lists: 学生情報  #g
+
+      status_record:
+        absence_reason: 異動理由 #g
+        absence_time: 休学期間 #g
+        beginning: 開始時間 #g
+        end: 終了時間 #g
+        memo: 備考 #g
+        status: 身分 #g
+        student_list: 学生情報
+
+      tuition:
+        first_term_reduction: 前期減免 #g
+        loan_amount: 貸与額 #g
+        memo: 備考 #g
+        scholarship_division: 奨学金区分 #g
+        second_term_reduction: 後期減免 #g
+        transfer_request: 振替依頼書 #g
+        student_list: 学生情報
+
+      student_list:
+        PBL_1st: PBL前期 #g
+        PBL_2nd: PBL後期 #g
+        PBL_teacher: PBL担任 #g
+        campus_email: 学内E-Mailアドレス #g
+        classification: 種別 #g
+        entrance_date: 入学年月日 #g
+        grade: 学年 #g
+        graduation_date: 終了予定日 #g
+        memo: 備考 #g
+        name: 学修番号 #g
+        nationality: 国籍 #g
+        program: クラス #g
+        student_account: ユーザID #g
+        study_period: 履修期間 #g
+        visa:  在留資格 #g
+        status_records: 身分異動  #g
+        tuitions: 授業料関係 #g
+        aiit_member: AIIT会員
+        guarantor: 保証人
+
+      privacy:
+        address: 住所番地  #g
+        birthday: 生年月日  #g
+        block: 市区町村  #g
+        building: 建物名・部屋番号  #g
+        city: 都道府県  #g
+        company: 勤務先  #g
+        company_address: 勤務先住所  #g
+        work_period: 勤務期間 #g
+        department: 学部  #g
+        stream: 文理 #g
+        eng_name: 英字氏名  #g
+        graduated_date: 卒業年度  #g
+        new_graduates: 新卒 #g
+        graduated_school: 卒業学校  #g
+        kana_name: カナ氏名  #g
+        mobile_email: 個人Mail（携帯）  #g
+        pc_email: 個人Mail（PC）  #g
+        mobile: 電話番号（携帯）  #g
+        name: 漢字氏名  #g
+        birthplace: 出身  #g
+        occupation: 現職  #g
+        gender: 性別  #g
+        tel: 電話番号（自宅）  #g
+        zip_code: 郵便番号  #g
+        memo: 備考 #g
+        aiit_member: AIIT会員
+
+
+      prospect:
+        event: イベント #g
+        contact_unnecessary: 情報連絡不要  #g
+        received_date: 受信日 #g
+        wished_program: 希望専攻  #g
+        wished_material: 希望資料  #g
+        visited_date: 来場日  #g
+        applikation: 出願 #g
+        memo: 備考 #g
+        aiit_member: AIIT会員
+
+      user:
+        current_sign_in_at: 今回ログインした日  #g
+        current_sign_in_ip: 今回ログインしたIPアドレス  #g
+        email: E-mailアドレス  #g
+        password: パスワード  #g
+        password_confirmation: パスワード確認  #g
+        encrypted_password: 暗号化したパスワード  #g
+        last_sign_in_at: 前回ログインした日  #g
+        last_sign_in_ip: 前回ログインしたIPアドレス #g
+        remember_created_at: ログインを記憶した日  #g
+        reset_password_sent_at: パスワードリセットを送信した日  #g
+        reset_password_token: パスワードリセットのトークン  #g
+        sign_in_count: ログインした回数   #g

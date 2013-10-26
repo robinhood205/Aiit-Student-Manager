@@ -1,0 +1,11 @@
+
+ja:
+  admin:
+    actions:
+      import:
+        title: "インポート"
+        menu: "インポート"
+        breadcrumb: "インポート"
+        link: "インポート"
+        bulk_link: "インポート"
+        done: "インポートしました"

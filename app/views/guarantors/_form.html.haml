@@ -1,0 +1,31 @@
+= form_for @guarantor do |f|
+  - if @guarantor.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@guarantor.errors.count, "error")} prohibited this guarantor from being saved:"
+      %ul
+        - @guarantor.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :guarantor_kana
+    = f.text_field :guarantor_kana
+  .field
+    = f.label :guarantor_zip
+    = f.text_field :guarantor_zip
+  .field
+    = f.label :guarantor_address
+    = f.text_field :guarantor_address
+  .field
+    = f.label :guarantor_tel
+    = f.text_field :guarantor_tel
+  .field
+    = f.label :relationship
+    = f.text_field :relationship
+  .field
+    = f.label :memo
+    = f.text_area :memo
+  .actions
+    = f.submit 'Save'

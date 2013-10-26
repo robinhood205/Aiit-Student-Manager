@@ -1,0 +1,59 @@
+= form_for @prospect do |f|
+  - if @prospect.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@prospect.errors.count, "error")} prohibited this prospect from being saved:"
+      %ul
+        - @prospect.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :aiit_member_id
+    = f.number_field :aiit_member_id
+  .field
+    = f.label :received_date
+    = f.date_select :received_date
+
+  %table
+    %tr{:align => "left"}
+      %th
+        .field
+          = f.label :wished_program
+          = f.text_field :wished_program
+      %th
+        .field
+          = f.label :wished_material
+          = f.text_field :wished_material
+      %th
+        .field
+          = f.label :event
+          = f.text_field :event
+  .field
+    = f.label :visited_date
+    = f.date_select :visited_date
+
+  %table
+    %tr{:align => "left"}
+      %th
+        .field
+          = f.label :applikation
+      %th
+        .field
+          = f.label :contact_unnecessary
+    %tr{:align => "left"}
+      %td
+        .field
+          = f.text_field :applikation
+      %td{:align => "center", :valign => "top"}
+        .field
+          = f.check_box :contact_unnecessary
+
+  .field
+    = f.label :memo
+    = f.text_area :memo, :size=>"10x10", :class=>"span9"
+  .field    
+    = radio_button_tag(:age, "child")
+    = label_tag(:age_child, "I am younger than 21")
+    = radio_button_tag(:age, "adult")
+    = label_tag(:age_adult, "I'm over 21")
+  .actions
+    = f.submit '保存'

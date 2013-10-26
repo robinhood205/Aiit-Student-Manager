@@ -1,0 +1,61 @@
+= form_for @student_list do |f|
+  - if @student_list.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@student_list.errors.count, "error")} prohibited this student_list from being saved:"
+      %ul
+        - @student_list.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :aiit_member_id
+    = f.number_field :aiit_member_id
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :classification
+    = f.text_field :classification
+  .field
+    = f.label :grade
+    = f.number_field :grade
+  .field
+    = f.label :program
+    = f.text_field :program
+  .field
+    = f.label :student_account
+    = f.text_field :student_account
+  .field
+    = f.label :campus_email
+    = f.text_field :campus_email
+  .field
+    = f.label :nationality
+    = f.text_field :nationality
+  .field
+    = f.label :visa
+    = f.text_field :visa
+  .field
+    = f.label :entrance_date
+    = f.date_select :entrance_date
+  .field
+    = f.label :study_period
+    = f.text_field :study_period
+  .field
+    = f.label :graduation_date
+    = f.date_select :graduation_date
+  .field
+    = f.label :PBL_1st
+    = f.text_field :PBL_1st
+  .field
+    = f.label :PBL_2nd
+    = f.text_field :PBL_2nd
+  .field
+    = f.label :PBL_teacher
+    = f.text_field :PBL_teacher
+  .field
+    = f.label :guarantor_id
+    = f.number_field :guarantor_id
+  .field
+    = f.label :memo
+    = f.text_area :memo
+  .actions
+    = f.submit 'Save'
