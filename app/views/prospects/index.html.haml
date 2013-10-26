@@ -23,7 +23,7 @@
       %td= prospect.wished_material
       %td= prospect.event
       %td= prospect.visited_date
-      %td= prospect.contact_unnecessary
+      %td= change_boolean(prospect.contact_unnecessary)
       %td= prospect.applikation
       %td= prospect.memo
       %td= link_to '照会', prospect
