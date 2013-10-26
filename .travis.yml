@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 1.9.3
+notifications:
+  email: false
+bundler_args: --deployment
+script:
+  - bundle exec rake db:migrate
+  - bundle exec rake spec
