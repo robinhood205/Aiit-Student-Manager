@@ -25,7 +25,8 @@ ja:
         status_record: 身分異動  
         privacy: 個人情報  
         prospects: 見込み学生
-        student_lists: 学生情報  
+        student_lists: 学生情報 
+
 
       association_pbl:
         association_students: association_students  #g

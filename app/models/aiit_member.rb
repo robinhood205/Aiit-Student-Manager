@@ -15,6 +15,7 @@ class AiitMember < ActiveRecord::Base
 	      	field :gender, :enum do
 		        enum do
 		          ['Male', 'Female']
+		          #["男", "女"]
 		        end
 	     	 end
 	      	field :memo
@@ -27,6 +28,7 @@ class AiitMember < ActiveRecord::Base
 	      	field :gender, :enum do
 		        enum do
 		          ['Male', 'Female']
+		          #["男", "女"]
 		        end
 	     	 end
 	      	field :memo
