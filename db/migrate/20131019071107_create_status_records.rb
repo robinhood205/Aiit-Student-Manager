@@ -4,6 +4,8 @@ class CreateStatusRecords < ActiveRecord::Migration
       t.integer :student_list_id
       t.string :status
       t.string :absence_time
+      t.date :beginning
+      t.date :end
       t.string :absence_reason
       t.text :memo
 

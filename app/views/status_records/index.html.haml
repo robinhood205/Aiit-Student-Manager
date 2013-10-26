@@ -5,6 +5,8 @@
     %th Student list
     %th 身分
     %th 休学期間
+    %th Beginning
+    %th End
     %th 異動理由
     %th 備考
     %th
@@ -16,6 +18,8 @@
       %td= status_record.student_list_id
       %td= status_record.status
       %td= status_record.absence_time
+      %td= status_record.beginning
+      %td= status_record.end
       %td= status_record.absence_reason
       %td= status_record.memo
       %td= link_to '照会', status_record
