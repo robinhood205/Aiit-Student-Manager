@@ -17,7 +17,16 @@
     = f.date_select :birthday
   .field
     = f.label :gender
-    = f.text_field :gender
+    %table
+      %tr
+        %td
+          = f.radio_button :gender, '男', :checked => true
+        %td
+          = f.label :gender, '男', :value => '男'
+        %td
+          = f.radio_button :gender, '女'
+        %td
+          = f.label :gender, '女', :value => '女'
   .field
     = f.label :memo
     = f.text_area :memo

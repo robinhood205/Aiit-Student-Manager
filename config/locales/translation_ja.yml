@@ -93,7 +93,7 @@ ja:
         student_account: ユーザID #g
         study_period: 履修期間 #g
         visa:  在留資格 #g
-
+        guarantor: 保証人 #g
 
       privacy:
         address: 住所番地  #g
