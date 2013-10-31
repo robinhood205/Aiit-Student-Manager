@@ -1,8 +1,8 @@
-%h1 見込み学生情報一覧
+%h1 見込み学生情報　一覧
 
-%table{:class => "table table-condensed　table-striped"}
-  %tr
-    %th Aiit 会員
+%table{:class => "table table-condensed"}
+  %tr{:bgcolor => "#EBF5EC"}
+    %th AIIT 会員
     %th 受信日
     %th 希望専攻
     %th 希望資料
@@ -23,7 +23,7 @@
       %td= prospect.wished_material
       %td= prospect.event
       %td= prospect.visited_date
-      %td= prospect.contact_unnecessary
+      %td= change_boolean(prospect.contact_unnecessary)
       %td= prospect.applikation
       %td= prospect.memo
       %td= link_to '照会', prospect

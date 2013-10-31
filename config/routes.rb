@@ -4,7 +4,7 @@ Students::Application.routes.draw do
   resources :status_records
   resources :privacies
   resources :aiit_members
-  get "admin/aiit_member/new" => "aiit_members#new"
+#  get "admin/aiit_member/new" => "aiit_members#new"
 
   resources :exam_lists
   resources :tuitions

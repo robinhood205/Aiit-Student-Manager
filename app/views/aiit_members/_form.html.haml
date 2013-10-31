@@ -29,6 +29,6 @@
           = f.label :gender, '女', :value => '女'
   .field
     = f.label :memo
-    = f.text_area :memo
+    = f.text_area :memo, :size=>"10x10", :class=>"span9"
   .actions
-    = f.submit 'Save'
+    = f.submit '保存'

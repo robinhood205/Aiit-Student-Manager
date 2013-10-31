@@ -1,14 +1,14 @@
-%h1 Listing status_records
+%h1 身分異動情報　一覧
 
-%table
-  %tr
+%table{:class => "table table-condensed"}
+  %tr{:bgcolor => "#EBF5EC"}
     %th Student list
-    %th Status
-    %th Absence time
+    %th 身分
+    %th 休学期間
     %th Beginning
     %th End
-    %th Absence reason
-    %th Memo
+    %th 異動理由
+    %th 備考
     %th
     %th
     %th
@@ -22,10 +22,10 @@
       %td= status_record.end
       %td= status_record.absence_reason
       %td= status_record.memo
-      %td= link_to 'Show', status_record
-      %td= link_to 'Edit', edit_status_record_path(status_record)
-      %td= link_to 'Destroy', status_record, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to '照会', status_record
+      %td= link_to '変更', edit_status_record_path(status_record)
+      %td= link_to '削除', status_record, :method => :delete, :data => { :confirm => '本当に削除してよろしいですか?' }
 
 %br
 
-= link_to 'New Status record', new_status_record_path
+= link_to '新規作成', new_status_record_path

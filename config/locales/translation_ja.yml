@@ -1,19 +1,18 @@
 ja:
   activerecord:
     models:
-      aiit_member: AIIT会員(Master )  #g
+      aiit_member: AIIT会員(Master)  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
-      exam_list: 受験一覧  #g
+      exam_list: 受験情報  #g
       guarantor: 保証人  #g
-      status_record: 身分異動情報  #g
+      status_record: 身分異動  #g
       tuition: 授業料関係 #g
       privacy: 個人情報  #g
-      prospect: 見込み学生情報  #g
-      student: 学生情報  #g
+      prospect: 見込み学生  #g
       user: ユーザー情報  #g
-      student_list: 学生一覧  #g
+      student_list: 学生情報  #g
 
     attributes:
       aiit_member:
@@ -22,6 +21,11 @@ ja:
         kana_name: カナ氏名  #g
         gender: 性別  #g
         memo: 備考 #g
+        exam_lists: 受験情報  
+        status_record: 身分異動  
+        privacy: 個人情報  
+        prospects: 見込み学生
+        student_lists: 学生情報  
 
       association_pbl:
         association_students: association_students  #g
@@ -35,7 +39,7 @@ ja:
       association_teacher:
         association_pbl: :activerecord.models.association_pbl  #g
         name: name  #g
-        
+
       exam_list: 
         basic_knowledge: IT基礎知識  #g
         citizen_of_tokyo: 都民  #g
@@ -50,15 +54,17 @@ ja:
         result: 合否  #g
         review_flg: 事前審査有無  #g
         test_score: 合計点  #g
+        aiit_member: AIIT会員
 
       guarantor:
-        guarantor_address: 住所（保証人）  #g
+        guarantor_address: 住所  #g
         name: 保証人氏名  #g
         guarantor_kana: 保証人カナ  #g
         relationship: 続柄区分  #g
-        guarantor_tel: 電話（保証人） #g
-        guarantor_zip: 郵便番号（保証人） #g
+        guarantor_tel: 電話 #g
+        guarantor_zip: 郵便番号 #g
         memo: 備考 #g
+        student_lists: 学生情報  #g
 
       status_record:
         absence_reason: 異動理由 #g
@@ -67,6 +73,7 @@ ja:
         end: 終了時間 #g
         memo: 備考 #g
         status: 身分 #g
+        student_list: 学生情報
 
       tuition:
         first_term_reduction: 前期減免 #g
@@ -75,8 +82,8 @@ ja:
         scholarship_division: 奨学金区分 #g
         second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
-        
-              
+        student_list: 学生情報
+
       student_list:
         PBL_1st: PBL前期 #g
         PBL_2nd: PBL後期 #g
@@ -94,6 +101,10 @@ ja:
         study_period: 履修期間 #g
         visa:  在留資格 #g
         guarantor: 保証人 #g
+        status_records: 身分異動  #g
+        tuitions: 授業料関係 #g
+        aiit_member: AIIT会員
+        guarantor: 保証人
 
       privacy:
         address: 住所番地  #g
@@ -121,6 +132,8 @@ ja:
         tel: 電話番号（自宅）  #g
         zip_code: 郵便番号  #g
         memo: 備考 #g
+        aiit_member: AIIT会員
+
 
       prospect:
         event: イベント #g
@@ -131,65 +144,7 @@ ja:
         visited_date: 来場日  #g
         applikation: 出願 #g
         memo: 備考 #g
-
-      student:
-        bikou: bikou  #g
-        bunri: bunri  #g
-        denwa_keitai: denwa_keitai  #g
-        denwa_zitaku: denwa_zitaku  #g
-        denwabangou: denwabangou  #g
-        emailadoresu: emailadoresu  #g
-        gakkoumei: gakkoumei  #g
-        gakubumei: gakubumei  #g
-        gakunen: gakunen  #g
-        gakuseki: gakuseki  #g
-        gakusyubango: gakusyubango  #g
-        goukeiten: goukeiten  #g
-        hanteiriyuu: hanteiriyuu  #g
-        hosyounin_yuubinbangou: hosyounin_yuubinbangou  #g
-        hurikaeiraisyo: hurikaeiraisyo  #g
-        itkisotisiki: itkisotisiki  #g
-        kana: kana  #g
-        kanasimei: kanasimei  #g
-        kanzi: kanzi  #g
-        kanzisimei: kanzisimei  #g
-        kinmusaki: kinmusaki  #g
-        kinmusakizyuusyo: kinmusakizyuusyo  #g
-        kokuseki: kokuseki  #g
-        kouki: kouki  #g
-        koukigennmen: koukigennmen  #g
-        kozinemairuadoresu: kozinemairuadoresu  #g
-        kuarsu: kuarsu  #g
-        kubun: kubun  #g
-        kyuugakukikan: kyuugakukikan  #g
-        mensetu: mensetu  #g
-        myozi: myozi  #g
-        nenrei: nenrei  #g
-        nenreisansyutuyou: nenreisansyutuyou  #g
-        nyuugakunengappi: nyuugakunengappi  #g
-        nyuusi: nyuusi  #g
-        purezentesyon: purezentesyon  #g
-        risyuukikan: risyuukikan  #g
-        seigetu: seigetu  #g
-        seireki: seireki  #g
-        sinsotu: sinsotu  #g
-        sotugyounendo: sotugyounendo  #g
-        syouronbun: syouronbun  #g
-        syuugyoukikan: syuugyoukikan  #g
-        syuuryouyoteibi: syuuryouyoteibi  #g
-        tantou: tantou  #g
-        tyoukirisyuu: tyoukirisyuu  #g
-        umu: umu  #g
-        yuubinbangou: yuubinbangou  #g
-        yuzaid: yuzaid  #g
-        zairyuusikaku: zairyuusikaku  #g
-        zenki: zenki  #g
-        zenkigenmenn: zenkigenmenn  #g
-        zokugarakubun: zokugarakubun  #g
-        zyukenbangou: zyukenbangou  #g
-        zyukennnendo: zyukennnendo  #g
-        zyusyo: zyusyo  #g
-        zyuusyo: zyuusyo  #g
+        aiit_member: AIIT会員
 
       user:
         current_sign_in_at: 今回ログインした日  #g
