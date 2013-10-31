@@ -1,4 +1,12 @@
 ja:
+　　enumerize:
+      gender:
+        male: 男
+        female: 女
+      absence_time:
+        halfyear: 半年
+        oneyear: 一年
+        other: その他
   activerecord:
     models:
       aiit_member: AIIT会員(Master)  #g
