@@ -71,7 +71,7 @@ describe "privacies/index" do
     assert_select "tr>td", :text => "Mobile Email".to_s, :count => 2
     assert_select "tr>td", :text => "Graduated School".to_s, :count => 2
     assert_select "tr>td", :text => "Department".to_s, :count => 2
-    assert_select "tr>td", :text => "Stream".to_s, :count => 2
+    assert_select "tr>td", :text => "Stream".to_s, :count => 1
     assert_select "tr>td", :text => "Graduated Date".to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
     assert_select "tr>td", :text => "Occupation".to_s, :count => 2
