@@ -7,10 +7,10 @@ ja:
       halfyear: 半年
       oneyear: 一年
       other: その他
-    wished_program:
-      innovation: 創造技術専攻
-      information: 情報アーキテクチャ専攻
-      unknown: 不明
+    stream:
+      literature: 文科
+      science: 理科
+      else: その他
   activerecord:
     models:
       aiit_member: AIIT会員(Master)  #g
