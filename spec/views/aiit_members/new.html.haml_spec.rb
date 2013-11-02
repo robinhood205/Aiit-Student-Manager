@@ -5,7 +5,7 @@ describe "aiit_members/new" do
     assign(:aiit_member, stub_model(AiitMember,
       :name => "MyString",
       :kana_name => "MyString",
-      :gender => "MyString",
+      :gender => "男",
       :memo => "MyText"
     ).as_new_record)
   end
