@@ -18,7 +18,7 @@ describe "privacies/index" do
         :mobile_email => "Mobile Email",
         :graduated_school => "Graduated School",
         :department => "Department",
-        :stream => "Stream",
+        :stream => "science",
         :graduated_date => "Graduated Date",
         :new_graduates => false,
         :occupation => "Occupation",
@@ -42,7 +42,7 @@ describe "privacies/index" do
         :mobile_email => "Mobile Email",
         :graduated_school => "Graduated School",
         :department => "Department",
-        :stream => "Stream",
+        :stream => "science",
         :graduated_date => "Graduated Date",
         :new_graduates => false,
         :occupation => "Occupation",
@@ -71,7 +71,7 @@ describe "privacies/index" do
     assert_select "tr>td", :text => "Mobile Email".to_s, :count => 2
     assert_select "tr>td", :text => "Graduated School".to_s, :count => 2
     assert_select "tr>td", :text => "Department".to_s, :count => 2
-    assert_select "tr>td", :text => "Stream".to_s, :count => 2
+    assert_select "tr>td", :text => "science".to_s, :count => 2
     assert_select "tr>td", :text => "Graduated Date".to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
     assert_select "tr>td", :text => "Occupation".to_s, :count => 2
