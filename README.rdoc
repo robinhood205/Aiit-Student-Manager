@@ -22,7 +22,7 @@ Prospect　見込学生
 
 Privacy　個人情報
 
-Student　学生一覧
+Student list　学生一覧
 
 Tuition　授業料
 
