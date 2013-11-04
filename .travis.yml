@@ -9,9 +9,7 @@ script:
   - bundle exec rake spec
 env:
   global:
-    secure: ! '1f9orHZkf0fP1N/HiN9UzW6h1xPx/SzBS2X2zsO8Yf63381hH+lW2z4txNmE
-      X5Ouyw8BZ5ufJpp86GPitYIRxaykafDdpGjoJKNEwRKJM1yq9dhBCuEr4IjR
-      XNg0venKJkldhfdAVH8VnVbxopzoQaRBoCD75JLx8aOJ045q5D8='
-
+    secure: "Ch6JzqQoZs1hzWhxJ/VYYQuIovxsxISFu4/uCoQlplqhWWJ50epP/KyaNKjHyTIAmFfX2gGYF4tCw70fSII1Mvl/lp5aR46JdC1RC79H1n9usJv8GyKWtgcCBSV/cxAeo+XPfKGEgR07loND7AY0u5Mj+ToKwO0zzNzgqvknsTI="
+    
 after_success:
   - ./heroku.sh
