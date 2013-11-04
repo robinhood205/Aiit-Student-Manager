@@ -75,13 +75,12 @@ ja:
         student_list: 学生一覧
 
       tuition:
-        first_term_reduction: 前期減免 #g
-        loan_amount: 貸与額 #g
+        loan_amount: 免除額 #g
         memo: 備考 #g
         scholarship_division: 奨学金区分 #g
-        second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
         student_list: 学生一覧
+        exemption_type: 免除種類
 
       student_list:
         PBL_1st: PBL前期 #g

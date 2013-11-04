@@ -991,3 +991,993 @@ Processing by RailsAdmin::MainController#new as HTML
   Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_submit_buttons.html.haml (0.8ms)
   Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (31.7ms)
 Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DeviseCreateUsers (20130529073557)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130529073557')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateRailsAdminHistoriesTable (20130529073558)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "rails_admin_histories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar(255), "item" integer, "table" varchar(255), "month" integer(2), "year" integer(5), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130529073558')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateVersions (20130530142925)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130530142925')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateGuarantors (20130713211519)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "guarantors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "guarantor_kana" varchar(255), "guarantor_zip" varchar(255), "guarantor_address" varchar(255), "guarantor_tel" varchar(255), "relationship" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130713211519')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateProspects (20130714144333)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "prospects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "received_date" date, "wished_program" varchar(255), "wished_material" varchar(255), "event" varchar(255), "visited_date" date, "contact_unnecessary" boolean, "applikation" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130714144333')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateStudentLists (20130720045154)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "student_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "name" varchar(255), "classification" varchar(255), "grade" integer, "program" varchar(255), "student_account" varchar(255), "campus_email" varchar(255), "nationality" varchar(255), "visa" varchar(255), "entrance_date" date, "study_period" varchar(255), "graduation_date" date, "PBL_1st" varchar(255), "PBL_2nd" varchar(255), "PBL_teacher" varchar(255), "guarantor_id" integer, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130720045154')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateExamLists (20130720054955)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "exam_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "exam_no" varchar(255), "review_flg" boolean, "decision_reason" varchar(255), "citizen_of_tokyo" boolean, "examination" varchar(255), "exam_year" integer, "basic_knowledge" integer, "paper" integer, "presentation" integer, "interview" integer, "test_score" integer, "result" boolean, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130720054955')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateAiitMembers (20131019055101)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "aiit_members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthday" date, "gender" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131019055101')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreatePrivacies (20131019064242)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "privacies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "eng_name" varchar(255), "birthplace" varchar(255), "zip_code" varchar(255), "city" varchar(255), "block" varchar(255), "address" varchar(255), "building" varchar(255), "tel" varchar(255), "mobile" varchar(255), "pc_email" varchar(255), "mobile_email" varchar(255), "graduated_school" varchar(255), "department" varchar(255), "stream" varchar(255), "graduated_date" varchar(255), "new_graduates" boolean, "occupation" varchar(255), "company" varchar(255), "company_address" varchar(255), "work_period" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131019064242')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateStatusRecords (20131019071107)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "status_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "status" varchar(255), "absence_time" varchar(255), "beginning" date, "end" date, "absence_reason" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131019071107')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateTuitions (20131104065517)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "tuitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "transfer_request" boolean, "exemption_type" varchar(255), "scholarship_division" varchar(255), "loan_amount" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131104065517')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (27.7ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 04 Nov 2013 15:56:16 JST +09:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$10$hYa4s77ciZqRwDa2GlD3peZlnDeOmwwbGjORWxdpVuEhfNWaHdmoO"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 04 Nov 2013 15:56:16 JST +09:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 401 Unauthorized in 48ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/devise (7.0ms)
+Completed 200 OK in 183ms (Views: 182.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /exam_lists.css - 200 OK (3ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /guarantors.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /privacies.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /aiit_members.css - 200 OK (1ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /prospects.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /status_records.css - 200 OK (2ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /student_lists.css - 200 OK (1ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /tuitions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /aiit_members.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /exam_lists.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /guarantors.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /privacies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /prospects.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /status_records.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /student_lists.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /tuitions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:28 +0900
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-11-04 15:56:30 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jemtaOrVq4G1ahdodu/H+pz8FY0FObAfiihYGh/u2Xg=", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (4.9ms)[0m  [1mUPDATE "users" SET "remember_created_at" = '2013-11-04 06:56:30.600749', "updated_at" = '2013-11-04 06:56:30.604252' WHERE "users"."id" = 1[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-11-04 06:56:30.617562', "current_sign_in_at" = '2013-11-04 06:56:30.617562', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-11-04 06:56:30.618217' WHERE "users"."id" = 1
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 138ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 15:56:30 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "aiit_members" [0m
+  [1m[35mAiitMember Load (0.2ms)[0m  SELECT "aiit_members".* FROM "aiit_members" ORDER BY aiit_members.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "guarantors" [0m
+  [1m[35mGuarantor Load (0.1ms)[0m  SELECT "guarantors".* FROM "guarantors" ORDER BY guarantors.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "privacies" [0m
+  [1m[35mPrivacy Load (0.1ms)[0m  SELECT "privacies".* FROM "privacies" ORDER BY privacies.updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "exam_lists" [0m
+  [1m[35mExamList Load (0.2ms)[0m  SELECT "exam_lists".* FROM "exam_lists" ORDER BY exam_lists.updated_at desc LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "student_lists" [0m
+  [1m[35mStudentList Load (0.2ms)[0m  SELECT "student_lists".* FROM "student_lists" ORDER BY student_lists.updated_at desc LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "tuitions" [0m
+  [1m[35mTuition Load (0.2ms)[0m  SELECT "tuitions".* FROM "tuitions" ORDER BY tuitions.updated_at desc LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "prospects" [0m
+  [1m[35mProspect Load (0.2ms)[0m  SELECT "prospects".* FROM "prospects" ORDER BY prospects.updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "status_records" [0m
+  [1m[35mStatusRecord Load (0.2ms)[0m  SELECT "status_records".* FROM "status_records" ORDER BY status_records.updated_at desc LIMIT 1
+  [1m[36mRailsAdmin::History Load (0.3ms)[0m  [1mSELECT "rails_admin_histories".* FROM "rails_admin_histories" ORDER BY id DESC LIMIT 100[0m
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_dashboard_history.html.haml (4.5ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (46.0ms)
+  Rendered layouts/rails_admin/_secondary_navigation.html.haml (5.8ms)
+  Rendered layouts/rails_admin/pjax.html.haml (4.0ms)
+Completed 200 OK in 398ms (Views: 222.8ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.iframe-transport.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.core.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.effect.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/jquery.remotipart.fixed.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.widget.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.mouse.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.sortable.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.position.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.menu.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /jquery_nested_form.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/rails_admin/ra.i18n.js" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /rails_admin/ra.i18n.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails_admin/ra.i18n.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-11-04 15:56:31 +0900
+Served asset /fontawesome-webfont.woff - 304 Not Modified (4ms)
+
+
+Started GET "/admin/tuition?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2013-11-04 15:56:32 +0900
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"tuition"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTuition Load (0.1ms)[0m  [1mSELECT "tuitions".* FROM "tuitions" ORDER BY tuitions.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tuitions" 
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (28.4ms)
+Completed 200 OK in 49ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/tuition/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2013-11-04 15:56:33 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"tuition"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.9ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_text.html.haml (2.0ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_submit_buttons.html.haml (3.2ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (23.8ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/tuition/new" for 127.0.0.1 at 2013-11-04 16:01:32 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"tuition"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (1.2ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_enumeration.html.haml (2.9ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_enumeration.html.haml (0.8ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_text.html.haml (2.3ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_submit_buttons.html.haml (3.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (40.5ms)
+  Rendered layouts/rails_admin/_secondary_navigation.html.haml (6.6ms)
+  Rendered layouts/rails_admin/pjax.html.haml (7.3ms)
+Completed 200 OK in 513ms (Views: 237.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.iframe-transport.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/jquery.remotipart.fixed.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.effect.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.core.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.widget.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.mouse.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.sortable.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.position.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.menu.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /jquery_nested_form.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/rails_admin/ra.i18n.js" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/ra.i18n.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails_admin/ra.i18n.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/rails_admin/aristo/images/ui-icons_454545_256x240.png" for 127.0.0.1 at 2013-11-04 16:01:33 +0900
+Served asset /rails_admin/aristo/images/ui-icons_454545_256x240.png - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/exam_list" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"exam_list"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExamList Load (0.2ms)[0m  SELECT "exam_lists".* FROM "exam_lists" ORDER BY exam_lists.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "exam_lists" [0m
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (73.0ms)
+  Rendered layouts/rails_admin/_secondary_navigation.html.haml (6.4ms)
+  Rendered layouts/rails_admin/pjax.html.haml (6.6ms)
+Completed 200 OK in 497ms (Views: 210.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/admin/exam_list" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"exam_list"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExamList Load (0.1ms)[0m  [1mSELECT "exam_lists".* FROM "exam_lists" ORDER BY exam_lists.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "exam_lists" 
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (12.9ms)
+  Rendered layouts/rails_admin/_secondary_navigation.html.haml (2.0ms)
+  Rendered layouts/rails_admin/pjax.html.haml (4.3ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/jquery.remotipart.fixed.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.iframe-transport.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.effect.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.core.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.widget.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.mouse.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.sortable.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.position.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.menu.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:10 +0900
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /jquery_nested_form.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /rails_admin/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/rails_admin/ra.i18n.js" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /rails_admin/ra.i18n.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails_admin/ra.i18n.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-11-04 16:04:11 +0900
+Served asset /fontawesome-webfont.woff - 304 Not Modified (1ms)
+
+
+Started GET "/admin/exam_list/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2013-11-04 16:04:12 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"exam_list"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "aiit_members" 
+  [1m[36mAiitMember Load (0.1ms)[0m  [1mSELECT "aiit_members".* FROM "aiit_members" ORDER BY aiit_members.id desc[0m
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_filtering_select.html.haml (46.8ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_form_text.html.haml (2.0ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_submit_buttons.html.haml (3.0ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (86.7ms)
+Completed 200 OK in 100ms (Views: 95.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/rails_admin/aristo/images/ui-icons_454545_256x240.png" for 127.0.0.1 at 2013-11-04 16:04:13 +0900
+Served asset /rails_admin/aristo/images/ui-icons_454545_256x240.png - 304 Not Modified (1ms)
