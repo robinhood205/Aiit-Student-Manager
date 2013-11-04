@@ -19,8 +19,8 @@ describe "status_records/new" do
     assert_select "form[action=?][method=?]", status_records_path, "post" do
       assert_select "input#status_record_student_list_id[name=?]", "status_record[student_list_id]"
       assert_select "input#status_record_status[name=?]", "status_record[status]"
-      assert_select "select#status_record_absence_time[name=?]", "status_record[absence_time]"
-      assert_select "select#status_record_absence_reason[name=?]", "status_record[absence_reason]"
+      assert_select "input#status_record_absence_time[name=?]", "status_record[absence_time]"
+      assert_select "input#status_record_absence_reason[name=?]", "status_record[absence_reason]"
       assert_select "input#status_record_return_reason[name=?]", "status_record[return_reason]"
       assert_select "textarea#status_record_memo[name=?]", "status_record[memo]"
     end
