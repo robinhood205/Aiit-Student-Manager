@@ -12,7 +12,7 @@ case ${TRAVIS_BRANCH} in
 	heroku keys:clear
 	yes | heroku keys:add
 	yes | git push -f heroku master
-	heroku pg:reset DATABASE --confirm studentsmanager2
+	heroku pg:reset DATABASE --confirm aiitstudents
 	heroku run rake db:migrate
 	heroku run rake db:seed
 	heroku restart  
