@@ -9,7 +9,7 @@ case ${TRAVIS_BRANCH} in
 	echo "   StrictHostKeyChecking no" >> ~/.ssh/config
 	echo "   CheckHostIP no" >> ~/.ssh/config
 	echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-	heroku keys:clear
+	heroku keys:remove
 	yes | heroku keys:add
 	yes | git push -f heroku master
 	heroku pg:reset DATABASE --confirm aiitstudents
@@ -26,7 +26,7 @@ case ${TRAVIS_BRANCH} in
 	echo "   StrictHostKeyChecking no" >> ~/.ssh/config
 	echo "   CheckHostIP no" >> ~/.ssh/config
 	echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-	heroku keys:clear
+	heroku keys:remove
 	yes | heroku keys:add
 	yes | git push -f heroku HEAD:master
 	heroku run rake db:migrate
