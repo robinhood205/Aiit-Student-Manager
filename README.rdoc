@@ -6,7 +6,7 @@
 
 == Scrum Team
 === Scrum Master
-kaneko
+金子
 
 === Member
 チョウ、ギュウ、ヨウ、柴田、リョウ、
