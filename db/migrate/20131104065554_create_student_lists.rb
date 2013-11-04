@@ -11,7 +11,8 @@ class CreateStudentLists < ActiveRecord::Migration
       t.string :nationality
       t.string :visa
       t.date :entrance_date
-      t.string :study_period
+      t.date :beginning
+      t.date :end
       t.date :graduation_date
       t.string :PBL_1st
       t.string :PBL_2nd

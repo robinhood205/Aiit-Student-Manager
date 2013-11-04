@@ -103,7 +103,9 @@ ja:
         status_records: 身分異動  #g
         tuitions: 授業料関係 #g
         aiit_member: AIIT会員
-        guarantor: 保証人
+        guarantor: 保証人 #g
+        beginning: 開始時間 #g
+        end: 終了時間 #g
 
       privacy:
         address: 住所番地  #g
