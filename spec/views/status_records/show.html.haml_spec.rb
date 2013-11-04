@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe "status_records/show" do
@@ -7,6 +8,7 @@ describe "status_records/show" do
       :status => "Status",
       :absence_time => "Absence Time",
       :absence_reason => "Absence Reason",
+      :return_reason => "業務都合",
       :memo => "MyText"
     ))
   end
@@ -18,6 +20,7 @@ describe "status_records/show" do
     rendered.should match(/Status/)
     rendered.should match(/Absence Time/)
     rendered.should match(/Absence Reason/)
+    rendered.should match(/業務都合/)
     rendered.should match(/MyText/)
   end
 end
