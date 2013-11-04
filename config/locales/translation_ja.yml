@@ -106,6 +106,7 @@ ja:
         guarantor: 保証人 #g
         beginning: 開始時間 #g
         end: 終了時間 #g
+        longterm: 長期履修 #g
 
       privacy:
         address: 住所番地  #g
