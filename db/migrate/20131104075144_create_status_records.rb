@@ -7,6 +7,7 @@ class CreateStatusRecords < ActiveRecord::Migration
       t.date :beginning
       t.date :end
       t.string :absence_reason
+      t.string :return_reason
       t.text :memo
 
       t.timestamps

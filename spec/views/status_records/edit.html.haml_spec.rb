@@ -7,6 +7,7 @@ describe "status_records/edit" do
       :status => "MyString",
       :absence_time => "MyString",
       :absence_reason => "MyString",
+      :return_reason => "MyString",
       :memo => "MyText"
     ))
   end
@@ -20,6 +21,7 @@ describe "status_records/edit" do
       assert_select "input#status_record_status[name=?]", "status_record[status]"
       assert_select "select#status_record_absence_time[name=?]", "status_record[absence_time]"
       assert_select "select#status_record_absence_reason[name=?]", "status_record[absence_reason]"
+      assert_select "input#status_record_return_reason[name=?]", "status_record[return_reason]"
       assert_select "textarea#status_record_memo[name=?]", "status_record[memo]"
     end
   end

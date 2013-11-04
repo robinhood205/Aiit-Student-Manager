@@ -73,6 +73,7 @@ ja:
         memo: 備考 #g
         status: 身分 #g
         student_list: 学生一覧
+        return_reason: 復学理由
 
       tuition:
         loan_amount: 免除額 #g
