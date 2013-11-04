@@ -12,7 +12,6 @@ describe "student_lists/edit" do
       :campus_email => "MyString",
       :nationality => "MyString",
       :visa => "MyString",
-      :study_period => "MyString",
       :PBL_1st => "MyString",
       :PBL_2nd => "MyString",
       :PBL_teacher => "MyString",
@@ -35,7 +34,6 @@ describe "student_lists/edit" do
       assert_select "input#student_list_campus_email[name=?]", "student_list[campus_email]"
       assert_select "input#student_list_nationality[name=?]", "student_list[nationality]"
       assert_select "input#student_list_visa[name=?]", "student_list[visa]"
-      assert_select "input#student_list_study_period[name=?]", "student_list[study_period]"
       assert_select "input#student_list_PBL_1st[name=?]", "student_list[PBL_1st]"
       assert_select "input#student_list_PBL_2nd[name=?]", "student_list[PBL_2nd]"
       assert_select "input#student_list_PBL_teacher[name=?]", "student_list[PBL_teacher]"
