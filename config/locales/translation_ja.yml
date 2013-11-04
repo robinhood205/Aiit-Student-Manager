@@ -1,4 +1,16 @@
 ja:
+  enumerize:
+    gender:
+      male: 男
+      female: 女
+    absence_time:
+      halfyear: 半年
+      oneyear: 一年
+      other: その他
+    stream:
+      literature: 文科
+      science: 理科
+      else: その他
   activerecord:
     models:
       aiit_member: AIIT会員(Master)  #g
@@ -12,7 +24,7 @@ ja:
       privacy: 個人情報  #g
       prospect: 見込み学生  #g
       user: ユーザー情報  #g
-      student_list: 学生情報  #g
+      student_list: 学生一覧  #g
 
     attributes:
       aiit_member:
@@ -25,20 +37,7 @@ ja:
         status_record: 身分異動  
         privacy: 個人情報  
         prospects: 見込み学生
-        student_lists: 学生情報  
-
-      association_pbl:
-        association_students: association_students  #g
-        association_teacher: :activerecord.models.association_teacher  #g
-        name: name  #g
-
-      association_student:
-        association_pbl: :activerecord.models.association_pbl  #g
-        name: name  #g
-
-      association_teacher:
-        association_pbl: :activerecord.models.association_pbl  #g
-        name: name  #g
+        student_lists: 学生一覧 
 
       exam_list: 
         basic_knowledge: IT基礎知識  #g
@@ -64,7 +63,7 @@ ja:
         guarantor_tel: 電話 #g
         guarantor_zip: 郵便番号 #g
         memo: 備考 #g
-        student_lists: 学生情報  #g
+        student_lists: 学生一覧  #g
 
       status_record:
         absence_reason: 異動理由 #g
@@ -73,7 +72,7 @@ ja:
         end: 終了時間 #g
         memo: 備考 #g
         status: 身分 #g
-        student_list: 学生情報
+        student_list: 学生一覧
 
       tuition:
         first_term_reduction: 前期減免 #g
@@ -82,7 +81,7 @@ ja:
         scholarship_division: 奨学金区分 #g
         second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
-        student_list: 学生情報
+        student_list: 学生一覧
 
       student_list:
         PBL_1st: PBL前期 #g
@@ -100,6 +99,7 @@ ja:
         student_account: ユーザID #g
         study_period: 履修期間 #g
         visa:  在留資格 #g
+        guarantor: 保証人 #g
         status_records: 身分異動  #g
         tuitions: 授業料関係 #g
         aiit_member: AIIT会員

@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 
-gem "composite_primary_keys", "~> 5.0.4"
+gem 'composite_primary_keys', '~> 5.0.4'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -42,30 +42,30 @@ gem "composite_primary_keys", "~> 5.0.4"
 
 ##########################
 # 追加,修正
-gem "fastercsv"
-gem "rails_admin"
-gem "devise"
-gem "rails_admin_import", :git => "git://github.com/stephskardal/rails_admin_import.git"
-#gem "rails_admin_import", :git => "git://github.com/joelvh/rails_admin_import.git"
+gem 'fastercsv'
+gem 'rails_admin'
+gem 'devise'
+gem 'rails_admin_import', :git => 'git://github.com/stephskardal/rails_admin_import.git'
+#gem 'rails_admin_import', :git => 'git://github.com/joelvh/rails_admin_import.git'
 ##########################
 # bootstrap
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
+gem 'therubyracer'
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails'
 
+gem 'enumerize'
 
-
-gem "i18n_generators"
+gem 'i18n_generators'
 
 
 group :development, :test do
-  gem "rspec" 
-  gem "rspec-rails"
+  gem 'rspec' 
+  gem 'rspec-rails'
   gem 'sqlite3'
 end
 
 group :production do
-  gem "pg"
+  gem 'pg'
 end
 
 # cucumber-rails - https://github.com/cucumber/cucumber-rails
@@ -73,9 +73,9 @@ group :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
-  gem "factory_girl_rails"
-  gem "rspec" 
-  gem "rspec-rails"
+  gem 'factory_girl_rails'
+  gem 'rspec' 
+  gem 'rspec-rails'
 end
 
 # Guard-rails - https://github.com/ranmocy/guard-rails
