@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131104075144) do
+ActiveRecord::Schema.define(:version => 20131106055526) do
 
   create_table "aiit_members", :force => true do |t|
     t.string   "name"
@@ -111,10 +111,10 @@ ActiveRecord::Schema.define(:version => 20131104075144) do
   create_table "status_records", :force => true do |t|
     t.integer  "student_list_id"
     t.string   "status"
+    t.string   "absence_reason"
     t.string   "absence_time"
     t.date     "beginning"
     t.date     "end"
-    t.string   "absence_reason"
     t.string   "return_reason"
     t.text     "memo"
     t.datetime "created_at",      :null => false
@@ -131,9 +131,9 @@ ActiveRecord::Schema.define(:version => 20131104075144) do
     t.string   "campus_email"
     t.string   "nationality"
     t.string   "visa"
-    t.date     "entrance_date"
-    t.string   "study_period"
-    t.date     "graduation_date"
+    t.date     "beginning"
+    t.date     "end"
+    t.string   "longterm"
     t.string   "PBL_1st"
     t.string   "PBL_2nd"
     t.string   "PBL_teacher"
@@ -144,6 +144,7 @@ ActiveRecord::Schema.define(:version => 20131104075144) do
   end
 
   create_table "tuitions", :force => true do |t|
+    t.integer  "student_list_id"
     t.boolean  "transfer_request"
     t.string   "exemption_type"
     t.string   "scholarship_division"

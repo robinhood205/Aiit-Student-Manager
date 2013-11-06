@@ -10,9 +10,9 @@ class CreateStudentLists < ActiveRecord::Migration
       t.string :campus_email
       t.string :nationality
       t.string :visa
-      t.date :entrance_date
-      t.string :study_period
-      t.date :graduation_date
+      t.date :beginning
+      t.date :end
+      t.string :longterm
       t.string :PBL_1st
       t.string :PBL_2nd
       t.string :PBL_teacher

@@ -12,6 +12,7 @@ describe "student_lists/show" do
       :campus_email => "Campus Email",
       :nationality => "Nationality",
       :visa => "Visa",
+      :longterm => "Longterm",
       :PBL_1st => "Pbl 1st",
       :PBL_2nd => "Pbl 2nd",
       :PBL_teacher => "Pbl Teacher",
@@ -32,6 +33,7 @@ describe "student_lists/show" do
     rendered.should match(/Campus Email/)
     rendered.should match(/Nationality/)
     rendered.should match(/Visa/)
+    rendered.should match(/Longterm/)
     rendered.should match(/Pbl 1st/)
     rendered.should match(/Pbl 2nd/)
     rendered.should match(/Pbl Teacher/)

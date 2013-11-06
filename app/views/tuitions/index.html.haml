@@ -4,9 +4,8 @@
   %tr
     %th Student list
     %th Transfer request
-    %th 前期減免
-    %th 後期減免
-    %th 奨学金区分
+    %th Exemption type
+    %th Scholarship division
     %th Loan amount
     %th Memo
     %th
@@ -17,8 +16,7 @@
     %tr
       %td= tuition.student_list_id
       %td= tuition.transfer_request
-      %td= tuition.first_term_reduction
-      %td= tuition.second_term_reduction
+      %td= tuition.exemption_type
       %td= tuition.scholarship_division
       %td= tuition.loan_amount
       %td= tuition.memo
