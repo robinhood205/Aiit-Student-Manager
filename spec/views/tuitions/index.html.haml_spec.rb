@@ -7,16 +7,16 @@ describe "tuitions/index" do
         :student_list_id => 1,
         :transfer_request => false,
         :exemption_type => "Exemption Type",
-        :scholarship_division => "Scholarship Division",
         :loan_amount => "Loan Amount",
+        :scholarship_division => "Scholarship Division",
         :memo => "MyText"
       ),
       stub_model(Tuition,
         :student_list_id => 1,
         :transfer_request => false,
         :exemption_type => "Exemption Type",
-        :scholarship_division => "Scholarship Division",
         :loan_amount => "Loan Amount",
+        :scholarship_division => "Scholarship Division",
         :memo => "MyText"
       )
     ])
@@ -28,8 +28,8 @@ describe "tuitions/index" do
     assert_select "tr>td", :text => 1.to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
     assert_select "tr>td", :text => "Exemption Type".to_s, :count => 2
-    assert_select "tr>td", :text => "Scholarship Division".to_s, :count => 2
     assert_select "tr>td", :text => "Loan Amount".to_s, :count => 2
+    assert_select "tr>td", :text => "Scholarship Division".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
   end
 end
