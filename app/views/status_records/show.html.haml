@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-%p#notice= notice
-
-%p
-  %b Student list:
-  = @status_record.student_list_id
-%p
-  %b Status:
-  = @status_record.status
-%p
-  %b Absence time:
-  = @status_record.absence_time
-%p
-  %b Beginning:
-  = @status_record.beginning
-%p
-  %b End:
-  = @status_record.end
-%p
-  %b Absence reason:
-  = @status_record.absence_reason
-%p
-  %b Return reason:
-  = @status_record.return_reason
-%p
-  %b Memo:
-  = @status_record.memo
-
-= link_to 'Edit', edit_status_record_path(@status_record)
-\|
-= link_to 'Back', status_records_path
-=======
 %h1 身分異動情報　照会
 
 %table{:class => "table table-condensed"}
@@ -58,4 +26,3 @@
 = link_to '変更', edit_status_record_path(@status_record)
 \|
 = link_to '戻る', status_records_path
->>>>>>> origin/chou

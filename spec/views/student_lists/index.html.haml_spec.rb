@@ -13,10 +13,6 @@ describe "student_lists/index" do
         :campus_email => "Campus Email",
         :nationality => "Nationality",
         :visa => "Visa",
-<<<<<<< HEAD
-        :study_period => "Study Period",
-=======
->>>>>>> origin/chou
         :PBL_1st => "Pbl 1st",
         :PBL_2nd => "Pbl 2nd",
         :PBL_teacher => "Pbl Teacher",
@@ -33,10 +29,6 @@ describe "student_lists/index" do
         :campus_email => "Campus Email",
         :nationality => "Nationality",
         :visa => "Visa",
-<<<<<<< HEAD
-        :study_period => "Study Period",
-=======
->>>>>>> origin/chou
         :PBL_1st => "Pbl 1st",
         :PBL_2nd => "Pbl 2nd",
         :PBL_teacher => "Pbl Teacher",
@@ -58,10 +50,6 @@ describe "student_lists/index" do
     assert_select "tr>td", :text => "Campus Email".to_s, :count => 2
     assert_select "tr>td", :text => "Nationality".to_s, :count => 2
     assert_select "tr>td", :text => "Visa".to_s, :count => 2
-<<<<<<< HEAD
-    assert_select "tr>td", :text => "Study Period".to_s, :count => 2
-=======
->>>>>>> origin/chou
     assert_select "tr>td", :text => "Pbl 1st".to_s, :count => 2
     assert_select "tr>td", :text => "Pbl 2nd".to_s, :count => 2
     assert_select "tr>td", :text => "Pbl Teacher".to_s, :count => 2

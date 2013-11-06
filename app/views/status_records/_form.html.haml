@@ -14,11 +14,7 @@
     = f.text_field :status
   .field
     = f.label :absence_time
-<<<<<<< HEAD
-    = f.text_field :absence_time
-=======
     = f.select :absence_time, [["一年", "一年"], ["半年", "半年"], ["その他", "その他"]]
->>>>>>> origin/chou
   .field
     = f.label :beginning
     = f.date_select :beginning
@@ -27,21 +23,12 @@
     = f.date_select :end
   .field
     = f.label :absence_reason
-<<<<<<< HEAD
-    = f.text_field :absence_reason
+    = f.select :absence_reason, [["業務都合", "業務都合"], ["経済的理由", "経済的理由"], ["家庭の事情", "家庭の事情"], ["健康上の理由", "健康上の理由"], ["その他", "その他"]]
   .field
     = f.label :return_reason
     = f.text_field :return_reason
   .field
     = f.label :memo
-    = f.text_area :memo
-  .actions
-    = f.submit 'Save'
-=======
-    = f.select :absence_reason, [["業務都合", "業務都合"], ["経済的理由", "経済的理由"], ["家庭の事情", "家庭の事情"], ["健康上の理由", "健康上の理由"], ["その他", "その他"]]
-  .field
-    = f.label :memo
     = f.text_area :memo, :size=>"10x10", :class=>"span9"
   .actions
     = f.submit '保存'
->>>>>>> origin/chou

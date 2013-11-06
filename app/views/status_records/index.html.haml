@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-%h1 Listing status_records
-
-%table
-  %tr
-    %th Student list
-    %th Status
-    %th Absence time
-    %th Beginning
-    %th End
-    %th Absence reason
-    %th Return reason
-    %th Memo
-=======
 %h1 身分異動情報　一覧
 
 %table{:class => "table table-condensed"}
@@ -23,7 +9,6 @@
     %th End
     %th 異動理由
     %th 備考
->>>>>>> origin/chou
     %th
     %th
     %th
@@ -36,17 +21,6 @@
       %td= status_record.beginning
       %td= status_record.end
       %td= status_record.absence_reason
-<<<<<<< HEAD
-      %td= status_record.return_reason
-      %td= status_record.memo
-      %td= link_to 'Show', status_record
-      %td= link_to 'Edit', edit_status_record_path(status_record)
-      %td= link_to 'Destroy', status_record, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Status record', new_status_record_path
-=======
       %td= status_record.memo
       %td= link_to '照会', status_record
       %td= link_to '変更', edit_status_record_path(status_record)
@@ -55,4 +29,3 @@
 %br
 
 = link_to '新規作成', new_status_record_path
->>>>>>> origin/chou

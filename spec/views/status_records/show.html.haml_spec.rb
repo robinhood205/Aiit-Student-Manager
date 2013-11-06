@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # coding: utf-8
-=======
->>>>>>> origin/chou
 require 'spec_helper'
 
 describe "status_records/show" do
@@ -11,10 +8,7 @@ describe "status_records/show" do
       :status => "Status",
       :absence_time => "Absence Time",
       :absence_reason => "Absence Reason",
-<<<<<<< HEAD
       :return_reason => "業務都合",
-=======
->>>>>>> origin/chou
       :memo => "MyText"
     ))
   end
@@ -26,10 +20,7 @@ describe "status_records/show" do
     rendered.should match(/Status/)
     rendered.should match(/Absence Time/)
     rendered.should match(/Absence Reason/)
-<<<<<<< HEAD
     rendered.should match(/業務都合/)
-=======
->>>>>>> origin/chou
     rendered.should match(/MyText/)
   end
 end

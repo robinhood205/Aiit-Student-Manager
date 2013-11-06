@@ -1,16 +1,7 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
 
-<<<<<<< HEAD
-  resources :status_records
-
-
-  resources :tuitions
-=======
   resources :student_lists
->>>>>>> origin/chou
-
-
   resources :status_records
   resources :privacies
   resources :aiit_members
