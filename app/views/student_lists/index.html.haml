@@ -1,24 +1,24 @@
-%h1 Listing student_lists
+%h1 学生一覧
 
-%table
-  %tr
-    %th Aiit member
-    %th Name
-    %th Classification
-    %th Grade
-    %th Program
-    %th Student account
-    %th Campus email
-    %th Nationality
-    %th Visa
-    %th Beginning
-    %th End
-    %th Longterm
-    %th Pbl 1st
-    %th Pbl 2nd
-    %th Pbl teacher
-    %th Guarantor
-    %th Memo
+%table{:class => "table table-condensed"}
+  %tr{:bgcolor => "#EBF5EC"}
+    %th AIIT 会員
+    %th 学修番号
+    %th 種別
+    %th 学年
+    %th クラス
+    %th ユーザID
+    %th 学内E-Mailアドレス
+    %th 国籍
+    %th 在留資格
+    %th 開始時間
+    %th 終了時間
+    %th 長期履修
+    %th PBL前期
+    %th PBL後期
+    %th PBL担任
+    %th 保証人
+    %th 備考
     %th
     %th
     %th
@@ -42,10 +42,10 @@
       %td= student_list.PBL_teacher
       %td= student_list.guarantor_id
       %td= student_list.memo
-      %td= link_to 'Show', student_list
-      %td= link_to 'Edit', edit_student_list_path(student_list)
-      %td= link_to 'Destroy', student_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to '照会', student_list
+      %td= link_to '変更', edit_student_list_path(student_list)
+      %td= link_to '削除', student_list, :method => :delete, :data => { :confirm => '本当に削除してよろしいですか?' }
 
 %br
 
-= link_to 'New Student list', new_student_list_path
+= link_to '新規作成', new_student_list_path

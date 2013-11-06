@@ -14,7 +14,7 @@
     = f.text_field :name
   .field
     = f.label :classification
-    = f.text_field :classification
+    = f.select :classification, [["正規生", "正規生"], ["科目等履修生", "科目等履修生"], ["特別科目等履修生", "特別科目等履修生"], ["履修証明プログラム生", "履修証明プログラム生"], ["enPiT生", "enPiT生"], ["聴講生", "聴講生"]]
   .field
     = f.label :grade
     = f.number_field :grade
@@ -41,7 +41,7 @@
     = f.date_select :end
   .field
     = f.label :longterm
-    = f.text_field :longterm
+    = f.select :longterm, [["なし", "なし"], ["2.5年", "2.5年"], ["3年", "3年"]]
   .field
     = f.label :PBL_1st
     = f.text_field :PBL_1st

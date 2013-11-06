@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe "student_lists/index" do
@@ -6,14 +7,14 @@ describe "student_lists/index" do
       stub_model(StudentList,
         :aiit_member_id => 1,
         :name => "Name",
-        :classification => "Classification",
+        :classification => "正規生",
         :grade => 2,
         :program => "Program",
         :student_account => "Student Account",
         :campus_email => "Campus Email",
         :nationality => "Nationality",
         :visa => "Visa",
-        :longterm => "Longterm",
+        :longterm => "なし",
         :PBL_1st => "Pbl 1st",
         :PBL_2nd => "Pbl 2nd",
         :PBL_teacher => "Pbl Teacher",
@@ -23,14 +24,14 @@ describe "student_lists/index" do
       stub_model(StudentList,
         :aiit_member_id => 1,
         :name => "Name",
-        :classification => "Classification",
+        :classification => "正規生",
         :grade => 2,
         :program => "Program",
         :student_account => "Student Account",
         :campus_email => "Campus Email",
         :nationality => "Nationality",
         :visa => "Visa",
-        :longterm => "Longterm",
+        :longterm => "なし",
         :PBL_1st => "Pbl 1st",
         :PBL_2nd => "Pbl 2nd",
         :PBL_teacher => "Pbl Teacher",
@@ -45,14 +46,14 @@ describe "student_lists/index" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => 1.to_s, :count => 2
     assert_select "tr>td", :text => "Name".to_s, :count => 2
-    assert_select "tr>td", :text => "Classification".to_s, :count => 2
+    assert_select "tr>td", :text => "正規生".to_s, :count => 2
     assert_select "tr>td", :text => 2.to_s, :count => 2
     assert_select "tr>td", :text => "Program".to_s, :count => 2
     assert_select "tr>td", :text => "Student Account".to_s, :count => 2
     assert_select "tr>td", :text => "Campus Email".to_s, :count => 2
     assert_select "tr>td", :text => "Nationality".to_s, :count => 2
     assert_select "tr>td", :text => "Visa".to_s, :count => 2
-    assert_select "tr>td", :text => "Longterm".to_s, :count => 2
+    assert_select "tr>td", :text => "なし".to_s, :count => 2
     assert_select "tr>td", :text => "Pbl 1st".to_s, :count => 2
     assert_select "tr>td", :text => "Pbl 2nd".to_s, :count => 2
     assert_select "tr>td", :text => "Pbl Teacher".to_s, :count => 2
