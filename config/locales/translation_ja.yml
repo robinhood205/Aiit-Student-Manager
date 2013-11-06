@@ -13,7 +13,7 @@ ja:
       else: その他
   activerecord:
     models:
-      aiit_member: AIIT会員(Master123)  #g
+      aiit_member: AIIT会員(Master111)  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
