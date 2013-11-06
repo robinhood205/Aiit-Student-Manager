@@ -6,8 +6,8 @@ describe "tuitions/show" do
       :student_list_id => 1,
       :transfer_request => false,
       :exemption_type => "Exemption Type",
-      :scholarship_division => "Scholarship Division",
       :loan_amount => "Loan Amount",
+      :scholarship_division => "Scholarship Division",
       :memo => "MyText"
     ))
   end
@@ -18,8 +18,8 @@ describe "tuitions/show" do
     rendered.should match(/1/)
     rendered.should match(/false/)
     rendered.should match(/Exemption Type/)
-    rendered.should match(/Scholarship Division/)
     rendered.should match(/Loan Amount/)
+    rendered.should match(/Scholarship Division/)
     rendered.should match(/MyText/)
   end
 end
