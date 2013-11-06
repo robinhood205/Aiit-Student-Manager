@@ -2,9 +2,17 @@
 
 %table
   %tr
+<<<<<<< HEAD
     %th Transfer request
     %th Exemption type
     %th Scholarship division
+=======
+    %th Student list
+    %th Transfer request
+    %th 前期減免
+    %th 後期減免
+    %th 奨学金区分
+>>>>>>> origin/chou
     %th Loan amount
     %th Memo
     %th
@@ -13,8 +21,15 @@
 
   - @tuitions.each do |tuition|
     %tr
+<<<<<<< HEAD
       %td= tuition.transfer_request
       %td= tuition.exemption_type
+=======
+      %td= tuition.student_list_id
+      %td= tuition.transfer_request
+      %td= tuition.first_term_reduction
+      %td= tuition.second_term_reduction
+>>>>>>> origin/chou
       %td= tuition.scholarship_division
       %td= tuition.loan_amount
       %td= tuition.memo

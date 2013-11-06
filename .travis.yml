@@ -7,6 +7,7 @@ bundler_args: --deployment
 script:
   - bundle exec rake db:migrate
   - bundle exec rake spec
+<<<<<<< HEAD
 env:
   global:
     - secure: XbVqaIM7QgEXh+Yjf+1NtlfCoNgge9PnwfuwrpoXGOpSnKTFa0AhX0A1Y0wKJKOpvXf6I2r6dBGS6gBXXFNo8iZwrVZD3gPOqTSs4GAqbUMFgYiEv3za0CheGliHeoa4G22G8MInPrHV8gFR7PjKz/yt1/QByNOTtg84RBknqiQ=
@@ -14,3 +15,14 @@ env:
     
 after_success:
   - ./heroku.sh
+=======
+
+env:
+  global:
+    secure: ! '1f9orHZkf0fP1N/HiN9UzW6h1xPx/SzBS2X2zsO8Yf63381hH+lW2z4txNmE
+      X5Ouyw8BZ5ufJpp86GPitYIRxaykafDdpGjoJKNEwRKJM1yq9dhBCuEr4IjR
+      XNg0venKJkldhfdAVH8VnVbxopzoQaRBoCD75JLx8aOJ045q5D8='
+
+after_success:
+  - ./heroku.sh
+>>>>>>> origin/chou
