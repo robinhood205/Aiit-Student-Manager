@@ -2,7 +2,7 @@
 echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
 case ${TRAVIS_BRANCH} in
     release)
-	echo "it's Master!"
+	echo "it's Release."
    	wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 	git remote add heroku git@heroku.com:aiitstudents.git
 	echo "Host heroku.com" >> ~/.ssh/config
@@ -19,7 +19,7 @@ case ${TRAVIS_BRANCH} in
 	;;
 
     master)
-	echo "it's Release."
+	echo "It's Master!"
 	wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 	git remote add heroku git@heroku.com:aiitstudentstest.git
 	echo "Host heroku.com" >> ~/.ssh/config
@@ -29,6 +29,7 @@ case ${TRAVIS_BRANCH} in
 	heroku keys:remove
 	yes | heroku keys:add
 	yes | git push -f heroku HEAD:master
+	heroku pg:reset DATABASE --confirm aiitstudentstest
 	heroku run rake db:migrate
 	heroku restart
 	;;
