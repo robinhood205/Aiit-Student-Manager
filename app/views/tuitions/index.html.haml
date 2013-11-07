@@ -1,13 +1,13 @@
-%h1 Listing tuitions
+%h1 授業料関係
 
-%table
-  %tr
-    %th Student list
-    %th Transfer request
-    %th Exemption type
-    %th Loan amount
-    %th Scholarship division
-    %th Memo
+%table{:class => "table table-condensed"}
+  %tr{:bgcolor => "#EBF5EC"}
+    %th 学生一覧
+    %th 振替依頼書
+    %th 免除種類
+    %th 免除額
+    %th 奨学金区分
+    %th 備考
     %th
     %th
     %th
@@ -20,10 +20,10 @@
       %td= tuition.loan_amount
       %td= tuition.scholarship_division
       %td= tuition.memo
-      %td= link_to 'Show', tuition
-      %td= link_to 'Edit', edit_tuition_path(tuition)
-      %td= link_to 'Destroy', tuition, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to '照会', tuition
+      %td= link_to '変更', edit_tuition_path(tuition)
+      %td= link_to '削除', tuition, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Tuition', new_tuition_path
+= link_to '新規作成', new_tuition_path
