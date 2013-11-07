@@ -1,7 +1,7 @@
 #!/bin/bash
 echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
 case ${TRAVIS_BRANCH} in
-    master)
+    release)
 	echo "it's Master!"
    	wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 	git remote add heroku git@heroku.com:aiitstudents.git
@@ -18,7 +18,7 @@ case ${TRAVIS_BRANCH} in
 	heroku restart  
 	;;
 
-    release)
+    master)
 	echo "it's Release."
 	wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 	git remote add heroku git@heroku.com:aiitstudentstest.git
