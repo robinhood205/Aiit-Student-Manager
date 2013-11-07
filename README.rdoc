@@ -4,17 +4,20 @@
 === 開発チーム
 チョウ、ギュウ、ヨウ、リョウ、金子
 
-== Scrum Team
 === Scrum Master
 金子
 
 === Member
-チョウ、ギュウ、ヨウ、リョウ、
+チョウ、ギュウ、ヨウ、リョウ、中鉢
 
 === Product Owner
 AIIT 教務
 
 === 和英対照
+AiitMember AIIT会員
+
+Examinee 受験生
+
 Guarantor　保証人
 
 Prospect　見込学生
@@ -23,11 +26,6 @@ Privacy　個人情報
 
 Student list　学生一覧
 
-Tuition　授業料
-
 StatusRecord 身分異動
 
-Examinee 受験生
-
-AiitMember AIIT会員
-
+Tuition　授業料
