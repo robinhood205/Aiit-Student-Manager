@@ -19,8 +19,8 @@ describe "tuitions/new" do
     assert_select "form[action=?][method=?]", tuitions_path, "post" do
       assert_select "input#tuition_student_list_id[name=?]", "tuition[student_list_id]"
       assert_select "input#tuition_transfer_request[name=?]", "tuition[transfer_request]"
-      assert_select "input#tuition_exemption_type[name=?]", "tuition[exemption_type]"
-      assert_select "input#tuition_loan_amount[name=?]", "tuition[loan_amount]"
+      assert_select "select#tuition_exemption_type[name=?]", "tuition[exemption_type]"
+      assert_select "select#tuition_loan_amount[name=?]", "tuition[loan_amount]"
       assert_select "input#tuition_scholarship_division[name=?]", "tuition[scholarship_division]"
       assert_select "textarea#tuition_memo[name=?]", "tuition[memo]"
     end

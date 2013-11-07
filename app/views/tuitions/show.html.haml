@@ -1,24 +1,25 @@
-%p#notice= notice
+%h1 授業料関係　照会
 
-%p
-  %b Student list:
-  = @tuition.student_list_id
-%p
-  %b Transfer request:
-  = @tuition.transfer_request
-%p
-  %b Exemption type:
-  = @tuition.exemption_type
-%p
-  %b Loan amount:
-  = @tuition.loan_amount
-%p
-  %b Scholarship division:
-  = @tuition.scholarship_division
-%p
-  %b Memo:
-  = @tuition.memo
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span2"} 学生一覧
+    %td= @tuition.student_list_id
+  %tr
+    %td 振替依頼書
+    %td= @tuition.transfer_request
+  %tr
+    %td 免除種類
+    %td= @tuition.exemption_type
+  %tr
+    %td 免除額
+    %td= @tuition.loan_amount
+  %tr
+    %td 奨学金区分
+    %td= @tuition.scholarship_division
+  %tr
+    %td 備考
+    %td= @tuition.memo
 
-= link_to 'Edit', edit_tuition_path(@tuition)
+= link_to '変更', edit_tuition_path(@tuition)
 \|
-= link_to 'Back', tuitions_path
+= link_to '戻る', tuitions_path
