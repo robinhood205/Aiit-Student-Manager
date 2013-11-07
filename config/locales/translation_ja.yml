@@ -11,6 +11,8 @@ ja:
       literature: 文科
       science: 理科
       else: その他
+    classification:
+      enPiT: enPiT生
   activerecord:
     models:
       aiit_member: AIIT会員(Master111)  #g
