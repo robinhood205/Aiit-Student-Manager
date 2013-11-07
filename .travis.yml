@@ -7,3 +7,10 @@ bundler_args: --deployment
 script:
   - bundle exec rake db:migrate
   - bundle exec rake spec
+env:
+  global:
+    - secure: XbVqaIM7QgEXh+Yjf+1NtlfCoNgge9PnwfuwrpoXGOpSnKTFa0AhX0A1Y0wKJKOpvXf6I2r6dBGS6gBXXFNo8iZwrVZD3gPOqTSs4GAqbUMFgYiEv3za0CheGliHeoa4G22G8MInPrHV8gFR7PjKz/yt1/QByNOTtg84RBknqiQ=
+    
+    
+after_success:
+  - ./heroku.sh
