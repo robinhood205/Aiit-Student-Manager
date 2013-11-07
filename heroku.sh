@@ -31,6 +31,7 @@ case ${TRAVIS_BRANCH} in
 	yes | git push -f heroku HEAD:master
 	heroku pg:reset DATABASE --confirm aiitstudentstest
 	heroku run rake db:migrate
+	heroku run rake db:seed
 	heroku restart
 	;;
 
