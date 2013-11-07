@@ -9,6 +9,6 @@ extend Enumerize
   belongs_to :aiit_member
   belongs_to :guarantor
 
-  enumerize :classification, in: [:正規生, :科目等履修生, :特別科目等履修生, :履修証明プログラム生, :'enPiT生', :聴講生]
+  enumerize :classification, in: [:正規生, :科目等履修生, :特別科目等履修生, :履修証明プログラム生, :'enPiT', :聴講生]
   enumerize :longterm, in: [:なし, :'2.5年', :'3年'], :default => :なし
 end
