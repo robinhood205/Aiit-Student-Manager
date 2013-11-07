@@ -1,5 +1,6 @@
 class CreateStatusRecords < ActiveRecord::Migration
   def change
+    drop_table :status_records
     create_table :status_records do |t|
       t.integer :student_list_id
       t.string :status

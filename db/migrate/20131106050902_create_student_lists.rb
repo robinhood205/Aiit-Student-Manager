@@ -1,5 +1,6 @@
 class CreateStudentLists < ActiveRecord::Migration
   def change
+    drop_table :student_lists
     create_table :student_lists do |t|
       t.integer :aiit_member_id
       t.string :name

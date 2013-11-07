@@ -15,4 +15,3 @@ env:
     
 after_success:
   - ./heroku.sh
-
