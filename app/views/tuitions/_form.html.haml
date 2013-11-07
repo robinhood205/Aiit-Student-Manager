@@ -11,19 +11,16 @@
     = f.number_field :student_list_id
   .field
     = f.label :transfer_request
-    = f.text_field :transfer_request
+    = f.check_box :transfer_request
   .field
-    = f.label :first_term_reduction
-    = f.text_field :first_term_reduction
+    = f.label :exemption_type
+    = f.select :exemption_type, [["全免", "全免"], ["半免", "半免"], ["分納", "分納"], ["不承認", "不承認"]]
   .field
-    = f.label :second_term_reduction
-    = f.text_field :second_term_reduction
+    = f.label :loan_amount
+    = f.select :loan_amount, [["260,400", "260,400"], ["130,200", "130,200"], ["208,320", "208,320"], ["104,160", "104,160"], ["173,600", "173,600"], ["86,800", "86,800"]]
   .field
     = f.label :scholarship_division
     = f.text_field :scholarship_division
-  .field
-    = f.label :loan_amount
-    = f.text_field :loan_amount
   .field
     = f.label :memo
     = f.text_area :memo

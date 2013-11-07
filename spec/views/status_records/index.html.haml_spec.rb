@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe "status_records/index" do
@@ -6,15 +7,17 @@ describe "status_records/index" do
       stub_model(StatusRecord,
         :student_list_id => 1,
         :status => "Status",
-        :absence_time => "Absence Time",
-        :absence_reason => "Absence Reason",
+        :absence_reason => "業務都合",
+        :absence_time => "一年",
+        :return_reason => "経済的理由",
         :memo => "MyText"
       ),
       stub_model(StatusRecord,
         :student_list_id => 1,
         :status => "Status",
-        :absence_time => "Absence Time",
-        :absence_reason => "Absence Reason",
+        :absence_reason => "業務都合",
+        :absence_time => "一年",
+        :return_reason => "経済的理由",
         :memo => "MyText"
       )
     ])
@@ -25,8 +28,9 @@ describe "status_records/index" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => 1.to_s, :count => 2
     assert_select "tr>td", :text => "Status".to_s, :count => 2
-    assert_select "tr>td", :text => "Absence Time".to_s, :count => 2
-    assert_select "tr>td", :text => "Absence Reason".to_s, :count => 2
+    assert_select "tr>td", :text => "業務都合".to_s, :count => 2
+    assert_select "tr>td", :text => "一年".to_s, :count => 2
+    assert_select "tr>td", :text => "経済的理由".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
   end
 end

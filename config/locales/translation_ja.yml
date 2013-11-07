@@ -11,9 +11,15 @@ ja:
       literature: 文科
       science: 理科
       else: その他
+    classification:
+      enPiT: enPiT生
   activerecord:
     models:
+<<<<<<< HEAD
       aiit_member: AIIT会員(release)  #g
+=======
+      aiit_member: AIIT会員(Master111)  #g
+>>>>>>> origin/master
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
@@ -73,15 +79,15 @@ ja:
         memo: 備考 #g
         status: 身分 #g
         student_list: 学生一覧
+        return_reason: 復学理由
 
       tuition:
-        first_term_reduction: 前期減免 #g
-        loan_amount: 貸与額 #g
+        loan_amount: 免除額 #g
         memo: 備考 #g
         scholarship_division: 奨学金区分 #g
-        second_term_reduction: 後期減免 #g
         transfer_request: 振替依頼書 #g
         student_list: 学生一覧
+        exemption_type: 免除種類
 
       student_list:
         PBL_1st: PBL前期 #g
@@ -103,7 +109,10 @@ ja:
         status_records: 身分異動  #g
         tuitions: 授業料関係 #g
         aiit_member: AIIT会員
-        guarantor: 保証人
+        guarantor: 保証人 #g
+        beginning: 開始時間 #g
+        end: 終了時間 #g
+        longterm: 長期履修 #g
 
       privacy:
         address: 住所番地  #g

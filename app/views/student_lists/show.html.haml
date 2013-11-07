@@ -1,57 +1,58 @@
-%p#notice= notice
+%h1 学生一覧　照会
 
-%p
-  %b Aiit member:
-  = @student_list.aiit_member_id
-%p
-  %b Name:
-  = @student_list.name
-%p
-  %b Classification:
-  = @student_list.classification
-%p
-  %b Grade:
-  = @student_list.grade
-%p
-  %b Program:
-  = @student_list.program
-%p
-  %b Student account:
-  = @student_list.student_account
-%p
-  %b Campus email:
-  = @student_list.campus_email
-%p
-  %b Nationality:
-  = @student_list.nationality
-%p
-  %b Visa:
-  = @student_list.visa
-%p
-  %b Entrance date:
-  = @student_list.entrance_date
-%p
-  %b Study period:
-  = @student_list.study_period
-%p
-  %b Graduation date:
-  = @student_list.graduation_date
-%p
-  %b Pbl 1st:
-  = @student_list.PBL_1st
-%p
-  %b Pbl 2nd:
-  = @student_list.PBL_2nd
-%p
-  %b Pbl teacher:
-  = @student_list.PBL_teacher
-%p
-  %b Guarantor:
-  = @student_list.guarantor_id
-%p
-  %b Memo:
-  = @student_list.memo
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span2"} AIIT 会員
+    %td= @student_list.aiit_member_id
+  %tr
+    %td 学修番号
+    %td= @student_list.name
+  %tr
+    %td 種別
+    %td= @student_list.classification
+  %tr
+    %td 学年
+    %td= @student_list.grade
+  %tr
+    %td クラス
+    %td= @student_list.program
+  %tr
+    %td ユーザID
+    %td= @student_list.student_account
+  %tr
+    %td 学内E-Mailアドレス
+    %td= @student_list.campus_email
+  %tr
+    %td 国籍
+    %td= @student_list.nationality
+  %tr
+    %td 在留資格
+    %td= @student_list.visa
+  %tr
+    %td 開始時間
+    %td= @student_list.beginning
+  %tr
+    %td 終了時間
+    %td= @student_list.end
+  %tr
+    %td 長期履修
+    %td= @student_list.longterm
+  %tr
+    %td PBL前期
+    %td= @student_list.PBL_1st
+  %tr
+    %td PBL後期
+    %td= @student_list.PBL_2nd
+  %tr
+    %td PBL担任
+    %td= @student_list.PBL_teacher
+  %tr
+    %td 保証人
+    %td= @student_list.guarantor_id
+  %tr
+    %td 備考
+    %td= @student_list.memo
 
-= link_to 'Edit', edit_student_list_path(@student_list)
+= link_to '変更', edit_student_list_path(@student_list)
 \|
-= link_to 'Back', student_lists_path
+= link_to '戻る', student_lists_path

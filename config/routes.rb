@@ -1,6 +1,16 @@
 # -*- coding: utf-8 -*-
 Students::Application.routes.draw do
 
+  resources :tuitions
+
+
+  resources :status_records
+
+
+  resources :student_lists
+
+
+  resources :student_lists
   resources :status_records
   resources :privacies
   resources :aiit_members
