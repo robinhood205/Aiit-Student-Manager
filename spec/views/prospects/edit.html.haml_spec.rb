@@ -20,7 +20,7 @@ describe "prospects/edit" do
     assert_select "form[action=?][method=?]", prospect_path(@prospect), "post" do
       assert_select "input#prospect_aiit_member_id[name=?]", "prospect[aiit_member_id]"
       assert_select "select#prospect_wished_program[name=?]", "prospect[wished_program]"
-      assert_select "select#prospect_wished_material[name=?]", "prospect[wished_material]"
+      assert_select "input#prospect_wished_material[name=?]", "prospect[wished_material]"
       assert_select "input#prospect_event[name=?]", "prospect[event]"
       assert_select "input#prospect_contact_unnecessary[name=?]", "prospect[contact_unnecessary]"
       assert_select "input#prospect_applikation[name=?]", "prospect[applikation]"

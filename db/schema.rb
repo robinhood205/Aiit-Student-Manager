@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20131019071107) do
-=======
 ActiveRecord::Schema.define(:version => 20131106065823) do
->>>>>>> origin/master
 
   create_table "aiit_members", :force => true do |t|
     t.string   "name"
@@ -115,18 +111,11 @@ ActiveRecord::Schema.define(:version => 20131106065823) do
   create_table "status_records", :force => true do |t|
     t.integer  "student_list_id"
     t.string   "status"
-<<<<<<< HEAD
-    t.string   "absence_time"
-    t.date     "beginning"
-    t.date     "end"
-    t.string   "absence_reason"
-=======
     t.string   "absence_reason"
     t.string   "absence_time"
     t.date     "beginning"
     t.date     "end"
     t.string   "return_reason"
->>>>>>> origin/master
     t.text     "memo"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
@@ -142,15 +131,9 @@ ActiveRecord::Schema.define(:version => 20131106065823) do
     t.string   "campus_email"
     t.string   "nationality"
     t.string   "visa"
-<<<<<<< HEAD
-    t.date     "entrance_date"
-    t.string   "study_period"
-    t.date     "graduation_date"
-=======
     t.date     "beginning"
     t.date     "end"
     t.string   "longterm"
->>>>>>> origin/master
     t.string   "PBL_1st"
     t.string   "PBL_2nd"
     t.string   "PBL_teacher"
@@ -162,16 +145,6 @@ ActiveRecord::Schema.define(:version => 20131106065823) do
 
   create_table "tuitions", :force => true do |t|
     t.integer  "student_list_id"
-<<<<<<< HEAD
-    t.string   "transfer_request"
-    t.string   "first_term_reduction"
-    t.string   "second_term_reduction"
-    t.string   "scholarship_division"
-    t.string   "loan_amount"
-    t.text     "memo"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
-=======
     t.boolean  "transfer_request"
     t.string   "exemption_type"
     t.string   "loan_amount"
@@ -179,7 +152,6 @@ ActiveRecord::Schema.define(:version => 20131106065823) do
     t.text     "memo"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
->>>>>>> origin/master
   end
 
   create_table "users", :force => true do |t|
