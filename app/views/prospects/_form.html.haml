@@ -18,11 +18,11 @@
       %th
         .field
           = f.label :wished_program
-          = f.text_field :wished_program
+          = f.select :wished_program, [["創造技術専攻", "創造技術専攻"], ["情報アーキテクチャ専攻", "情報アーキテクチャ専攻"], ["不明", "不明"]]
       %th
         .field
           = f.label :wished_material
-          = f.text_field :wished_material
+          = f.select :wished_material, [["創造技術専攻", "創造技術専攻"], ["情報アーキテクチャ専攻", "情報アーキテクチャ専攻"], ["両方", "両方"]]
       %th
         .field
           = f.label :event
