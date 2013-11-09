@@ -8,8 +8,8 @@ ja:
       oneyear: 一年
       other: その他
     stream:
-      literature: 文科
-      science: 理科
+      literature: 文系
+      science: 理系
       else: その他
     classification:
       enPiT: enPiT生
