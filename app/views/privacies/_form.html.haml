@@ -50,7 +50,7 @@
     = f.text_field :department
   .field
     = f.label :stream
-    = f.text_field :stream
+    = f.select :stream, [["文系", "文系"], ["理系", "理系"], ["その他", "その他"]]
   .field
     = f.label :graduated_date
     = f.text_field :graduated_date
@@ -73,4 +73,4 @@
     = f.label :memo
     = f.text_area :memo
   .actions
-    = f.submit 'Save'
+    = f.submit '保存'
