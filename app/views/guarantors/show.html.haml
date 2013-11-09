@@ -1,27 +1,28 @@
-%p#notice= notice
+%h1 保証人　照会
 
-%p
-  %b Name:
-  = @guarantor.name
-%p
-  %b Guarantor kana:
-  = @guarantor.guarantor_kana
-%p
-  %b Guarantor zip:
-  = @guarantor.guarantor_zip
-%p
-  %b Guarantor address:
-  = @guarantor.guarantor_address
-%p
-  %b Guarantor tel:
-  = @guarantor.guarantor_tel
-%p
-  %b Relationship:
-  = @guarantor.relationship
-%p
-  %b Memo:
-  = @guarantor.memo
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span2"} 保証人氏名
+    %td= @guarantor.name
+  %tr
+    %td 保証人カナ
+    %td= @guarantor.guarantor_kana
+  %tr
+    %td 郵便番号
+    %td= @guarantor.guarantor_zip
+  %tr
+    %td 住所
+    %td= @guarantor.guarantor_address
+  %tr
+    %td 電話
+    %td= @guarantor.guarantor_tel
+  %tr
+    %td 続柄区分
+    %td= @guarantor.relationship
+  %tr
+    %td 備考
+    %td= @guarantor.memo
 
-= link_to 'Edit', edit_guarantor_path(@guarantor)
+= link_to '変更', edit_guarantor_path(@guarantor)
 \|
-= link_to 'Back', guarantors_path
+= link_to '戻る', guarantors_path
