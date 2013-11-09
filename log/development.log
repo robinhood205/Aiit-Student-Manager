@@ -60736,3 +60736,3297 @@ Connecting to database specified by database.yml
   [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131019064242')[0m
   [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131106050902')
   [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106054345')[0m
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[36mStatusRecord Load (0.2ms)[0m  [1mSELECT "status_records".* FROM "status_records" [0m
+  Rendered status_records/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 120ms (Views: 118.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /aiit_members.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /exam_lists.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:33 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records/new" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Processing by StatusRecordsController#new as HTML
+  Rendered status_records/_form.html.haml (19.7ms)
+  Rendered status_records/new.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 118ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /guarantors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /prospects.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:37 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /aiit_members.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /privacies.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:38 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[35mStatusRecord Load (0.2ms)[0m  SELECT "status_records".* FROM "status_records" 
+  Rendered status_records/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /guarantors.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:41 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:42 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:42 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:42 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:42 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:42 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/status_records/1/edit" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Processing by StatusRecordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatusRecord Load (0.1ms)[0m  [1mSELECT "status_records".* FROM "status_records" WHERE "status_records"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered status_records/_form.html.haml (13.6ms)
+  Rendered status_records/edit.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /application.css - 304 Not Modified (83ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /privacies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:44 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /exam_lists.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /prospects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:45 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records/1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Processing by StatusRecordsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStatusRecord Load (0.1ms)[0m  SELECT "status_records".* FROM "status_records" WHERE "status_records"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered status_records/show.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:52 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /prospects.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /exam_lists.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /privacies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /prospects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:15:53 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[36mStatusRecord Load (0.2ms)[0m  [1mSELECT "status_records".* FROM "status_records" [0m
+  Rendered status_records/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /aiit_members.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /aiit_members.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /privacies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:28 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/status_records/1" for 127.0.0.1 at 2013-11-09 15:23:31 +0900
+Processing by StatusRecordsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStatusRecord Load (0.1ms)[0m  SELECT "status_records".* FROM "status_records" WHERE "status_records"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered status_records/show.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /aiit_members.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /privacies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /guarantors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /privacies.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:32 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[36mStatusRecord Load (0.2ms)[0m  [1mSELECT "status_records".* FROM "status_records" [0m
+  Rendered status_records/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /aiit_members.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /privacies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:37 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/status_records/new" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Processing by StatusRecordsController#new as HTML
+  Rendered status_records/_form.html.haml (39.1ms)
+  Rendered status_records/new.html.haml within layouts/application (45.1ms)
+Completed 200 OK in 92ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /privacies.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /privacies.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:42 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[35mStatusRecord Load (0.2ms)[0m  SELECT "status_records".* FROM "status_records" 
+  Rendered status_records/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /privacies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /aiit_members.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /privacies.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:46 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/status_records/1/edit" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Processing by StatusRecordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatusRecord Load (0.2ms)[0m  [1mSELECT "status_records".* FROM "status_records" WHERE "status_records"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered status_records/_form.html.haml (14.6ms)
+  Rendered status_records/edit.html.haml within layouts/application (19.9ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /privacies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /guarantors.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /exam_lists.js - 304 Not Modified (71ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:49 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[35mStatusRecord Load (0.2ms)[0m  SELECT "status_records".* FROM "status_records" 
+  Rendered status_records/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /exam_lists.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /privacies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /prospects.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /application.js - 304 Not Modified (70ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:53 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/status_records/1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Processing by StatusRecordsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatusRecord Load (0.2ms)[0m  [1mSELECT "status_records".* FROM "status_records" WHERE "status_records"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered status_records/show.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /privacies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:55 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:56 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:56 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:56 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:56 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[35mStatusRecord Load (0.2ms)[0m  SELECT "status_records".* FROM "status_records" 
+  Rendered status_records/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /privacies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /exam_lists.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:23:58 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/tuitions" for 127.0.0.1 at 2013-11-09 15:24:03 +0900
+Processing by TuitionsController#index as HTML
+  [1m[36mTuition Load (0.2ms)[0m  [1mSELECT "tuitions".* FROM "tuitions" [0m
+  Rendered tuitions/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 133ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /guarantors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /privacies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /prospects.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /prospects.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:04 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/status_records" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Processing by StatusRecordsController#index as HTML
+  [1m[35mStatusRecord Load (0.2ms)[0m  SELECT "status_records".* FROM "status_records" 
+  Rendered status_records/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /exam_lists.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /prospects.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /prospects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:06 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/prospects" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Processing by ProspectsController#index as HTML
+  [1m[36mProspect Load (0.3ms)[0m  [1mSELECT "prospects".* FROM "prospects" [0m
+  Rendered prospects/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /privacies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /aiit_members.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /prospects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:07 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/exam_lists" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Processing by ExamListsController#index as HTML
+  [1m[35mExamList Load (0.2ms)[0m  SELECT "exam_lists".* FROM "exam_lists" 
+  Rendered exam_lists/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /prospects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:08 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/student_lists" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Processing by StudentListsController#index as HTML
+  [1m[36mStudentList Load (0.2ms)[0m  [1mSELECT "student_lists".* FROM "student_lists" [0m
+  Rendered student_lists/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 92ms (Views: 90.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /guarantors.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:09 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /privacies.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /status_records.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:10 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/aiit_members" for 127.0.0.1 at 2013-11-09 15:24:11 +0900
+Processing by AiitMembersController#index as HTML
+  [1m[35mAiitMember Load (0.2ms)[0m  SELECT "aiit_members".* FROM "aiit_members" 
+  Rendered aiit_members/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:11 +0900
+Served asset /application.css - 304 Not Modified (87ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /aiit_members.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /privacies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:12 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/privacies" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Processing by PrivaciesController#index as HTML
+  [1m[36mPrivacy Load (0.2ms)[0m  [1mSELECT "privacies".* FROM "privacies" [0m
+  Rendered privacies/index.html.haml within layouts/application (19.2ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /application.css - 304 Not Modified (77ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /aiit_members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /exam_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /privacies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /guarantors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /prospects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /status_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /student_lists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /tuitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /aiit_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /exam_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /guarantors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /privacies.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /prospects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /status_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /tuitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /student_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 15:24:15 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (6.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "aiit_members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthday" date, "gender" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "exam_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "exam_no" varchar(255), "review_flg" boolean, "decision_reason" varchar(255), "citizen_of_tokyo" boolean, "examination" varchar(255), "exam_year" integer, "basic_knowledge" integer, "paper" integer, "presentation" integer, "interview" integer, "test_score" integer, "result" boolean, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "guarantors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "guarantor_kana" varchar(255), "guarantor_zip" varchar(255), "guarantor_address" varchar(255), "guarantor_tel" varchar(255), "relationship" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "privacies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "eng_name" varchar(255), "birthplace" varchar(255), "zip_code" varchar(255), "city" varchar(255), "block" varchar(255), "address" varchar(255), "building" varchar(255), "tel" varchar(255), "mobile" varchar(255), "pc_email" varchar(255), "mobile_email" varchar(255), "graduated_school" varchar(255), "department" varchar(255), "stream" varchar(255), "graduated_date" varchar(255), "new_graduates" boolean, "occupation" varchar(255), "company" varchar(255), "company_address" varchar(255), "work_period" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "prospects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "received_date" date, "wished_program" varchar(255), "wished_material" varchar(255), "event" varchar(255), "visited_date" date, "contact_unnecessary" boolean, "applikation" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "rails_admin_histories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar(255), "item" integer, "table" varchar(255), "month" integer(2), "year" integer(5), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "status_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "status" varchar(255), "absence_reason" varchar(255), "absence_time" varchar(255), "beginning" date, "end" date, "return_reason" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "student_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "name" varchar(255), "classification" varchar(255), "grade" integer, "program" varchar(255), "student_account" varchar(255), "campus_email" varchar(255), "nationality" varchar(255), "visa" varchar(255), "beginning" date, "end" date, "longterm" varchar(255), "PBL_1st" varchar(255), "PBL_2nd" varchar(255), "PBL_teacher" varchar(255), "guarantor_id" integer, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "tuitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "transfer_request" boolean, "exemption_type" varchar(255), "loan_amount" varchar(255), "scholarship_division" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106065823')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130529073557')
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130529073558')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130530142925')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130713211519')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130714144333')
+  [1m[36m (1.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130720054955')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131019055101')
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131019064242')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131106050902')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106054345')[0m
