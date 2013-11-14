@@ -68264,3 +68264,486 @@ Connecting to database specified by database.yml
   [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131019064242')[0m
   [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131106050902')
   [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106054345')[0m
+Connecting to database specified by database.yml
+  [1m[36m (7.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "aiit_members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthday" date, "gender" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "exam_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "exam_no" varchar(255), "review_flg" boolean, "decision_reason" varchar(255), "citizen_of_tokyo" boolean, "examination" varchar(255), "exam_year" integer, "basic_knowledge" integer, "paper" integer, "presentation" integer, "interview" integer, "test_score" integer, "result" boolean, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "guarantors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "guarantor_kana" varchar(255), "guarantor_zip" varchar(255), "guarantor_address" varchar(255), "guarantor_tel" varchar(255), "relationship" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "privacies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "eng_name" varchar(255), "birthplace" varchar(255), "zip_code" varchar(255), "city" varchar(255), "block" varchar(255), "address" varchar(255), "building" varchar(255), "tel" varchar(255), "mobile" varchar(255), "pc_email" varchar(255), "mobile_email" varchar(255), "graduated_school" varchar(255), "department" varchar(255), "stream" varchar(255), "graduated_date" varchar(255), "new_graduates" boolean, "occupation" varchar(255), "company" varchar(255), "company_address" varchar(255), "work_period" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "prospects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "received_date" date, "wished_program" varchar(255), "wished_material" varchar(255), "event" varchar(255), "visited_date" date, "contact_unnecessary" boolean, "applikation" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "rails_admin_histories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar(255), "item" integer, "table" varchar(255), "month" integer(2), "year" integer(5), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "status_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "status" varchar(255), "absence_reason" varchar(255), "absence_time" varchar(255), "beginning" date, "end" date, "return_reason" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "student_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "name" varchar(255), "classification" varchar(255), "grade" integer, "program" varchar(255), "student_account" varchar(255), "campus_email" varchar(255), "nationality" varchar(255), "visa" varchar(255), "beginning" date, "end" date, "longterm" varchar(255), "PBL_1st" varchar(255), "PBL_2nd" varchar(255), "PBL_teacher" varchar(255), "guarantor_id" integer, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "tuitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "transfer_request" boolean, "exemption_type" varchar(255), "loan_amount" varchar(255), "scholarship_division" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106065823')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130529073557')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130529073558')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130530142925')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130713211519')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130714144333')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130720054955')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131019055101')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131019064242')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131106050902')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106054345')[0m
+Connecting to database specified by database.yml
+  [1m[36m (4.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130529073557)
+Migrating to CreateRailsAdminHistoriesTable (20130529073558)
+Migrating to CreateVersions (20130530142925)
+Migrating to CreateGuarantors (20130713211519)
+Migrating to CreateProspects (20130714144333)
+Migrating to CreateExamLists (20130720054955)
+Migrating to CreateAiitMembers (20131019055101)
+Migrating to CreatePrivacies (20131019064242)
+Migrating to CreateStudentLists (20131106050902)
+Migrating to CreateStatusRecords (20131106054345)
+Migrating to CreateTuitions (20131106065823)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-09 16:53:53 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 401 Unauthorized in 51ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-11-09 16:53:53 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/devise (8.0ms)
+Compiled application.js  (44ms)  (pid 1962)
+Completed 200 OK in 202ms (Views: 201.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /application.css - 200 OK (14ms)
+
+
+Started GET "/assets/exam_lists.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /exam_lists.css - 200 OK (1ms)
+
+
+Started GET "/assets/guarantors.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /guarantors.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /bootstrap_and_overrides.css - 200 OK (4ms)
+
+
+Started GET "/assets/privacies.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /privacies.css - 200 OK (1ms)
+
+
+Started GET "/assets/aiit_members.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /aiit_members.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/prospects.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /prospects.css - 200 OK (1ms)
+
+
+Started GET "/assets/status_records.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /status_records.css - 200 OK (1ms)
+
+
+Started GET "/assets/student_lists.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /student_lists.css - 200 OK (1ms)
+
+
+Started GET "/assets/tuitions.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /tuitions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /jquery_ujs.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (1ms)
+
+
+Started GET "/assets/aiit_members.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /aiit_members.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /twitter/bootstrap.js - 200 OK (13ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/exam_lists.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /exam_lists.js - 200 OK (2ms)
+
+
+Started GET "/assets/guarantors.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /guarantors.js - 200 OK (1ms)
+
+
+Started GET "/assets/privacies.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /privacies.js - 200 OK (1ms)
+
+
+Started GET "/assets/prospects.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /prospects.js - 200 OK (3ms)
+
+
+Started GET "/assets/status_records.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /status_records.js - 200 OK (1ms)
+
+
+Started GET "/assets/student_lists.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /student_lists.js - 200 OK (1ms)
+
+
+Started GET "/assets/tuitions.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /tuitions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /application.js - 200 OK (18ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-09 16:53:54 +0900
+Served asset /favicon.ico - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZCH2xmZDZP09sPIwi13KtkxhSC4sTEryhiqDhEV3rv8=", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  UPDATE "users" SET "remember_created_at" = '2013-11-09 07:53:56.191608', "updated_at" = '2013-11-09 07:53:56.196496' WHERE "users"."id" = 1
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = '2013-11-09 07:53:56.211151', "sign_in_count" = 2, "updated_at" = '2013-11-09 07:53:56.211944' WHERE "users"."id" = 1[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 112ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "aiit_members" 
+  [1m[36mAiitMember Load (0.2ms)[0m  [1mSELECT "aiit_members".* FROM "aiit_members" ORDER BY aiit_members.updated_at desc LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "guarantors" 
+  [1m[36mGuarantor Load (0.2ms)[0m  [1mSELECT "guarantors".* FROM "guarantors" ORDER BY guarantors.updated_at desc LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "privacies" 
+  [1m[36mPrivacy Load (0.2ms)[0m  [1mSELECT "privacies".* FROM "privacies" ORDER BY privacies.updated_at desc LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "exam_lists" 
+  [1m[36mExamList Load (0.1ms)[0m  [1mSELECT "exam_lists".* FROM "exam_lists" ORDER BY exam_lists.updated_at desc LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "student_lists" 
+  [1m[36mStudentList Load (0.2ms)[0m  [1mSELECT "student_lists".* FROM "student_lists" ORDER BY student_lists.updated_at desc LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "tuitions" 
+  [1m[36mTuition Load (0.2ms)[0m  [1mSELECT "tuitions".* FROM "tuitions" ORDER BY tuitions.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "prospects" 
+  [1m[36mProspect Load (0.1ms)[0m  [1mSELECT "prospects".* FROM "prospects" ORDER BY prospects.updated_at desc LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "status_records" 
+  [1m[36mStatusRecord Load (0.3ms)[0m  [1mSELECT "status_records".* FROM "status_records" ORDER BY status_records.updated_at desc LIMIT 1[0m
+  [1m[35mRailsAdmin::History Load (0.5ms)[0m  SELECT "rails_admin_histories".* FROM "rails_admin_histories" ORDER BY id DESC LIMIT 100
+  [1m[36mExamList Load (0.1ms)[0m  [1mSELECT "exam_lists".* FROM "exam_lists" WHERE "exam_lists"."id" = 1 LIMIT 1[0m
+  [1m[35mPrivacy Load (0.2ms)[0m  SELECT "privacies".* FROM "privacies" WHERE "privacies"."id" = 1 LIMIT 1
+  [1m[36mProspect Load (0.1ms)[0m  [1mSELECT "prospects".* FROM "prospects" WHERE "prospects"."id" = 1 LIMIT 1[0m
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/_dashboard_history.html.haml (18.7ms)
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (90.9ms)
+  Rendered layouts/rails_admin/_secondary_navigation.html.haml (4.7ms)
+  Rendered layouts/rails_admin/pjax.html.haml (3.8ms)
+Completed 200 OK in 524ms (Views: 247.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/rails_admin.css - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/jquery.remotipart.fixed.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.effect.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.iframe-transport.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.core.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.widget.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.mouse.js - 200 OK (45ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.sortable.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.position.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.menu.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.autocomplete.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /jquery.ui.datepicker.js - 200 OK (7ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/jquery.ui.timepicker.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/ra.datetimepicker.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/jquery.colorpicker.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/ra.filter-box.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/ra.filtering-multiselect.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:56 +0900
+Served asset /rails_admin/ra.filtering-select.js - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/ra.remote-form.js - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/jquery.pjax.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/ra.nested-form-hooks.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/ra.widgets.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/ui.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/custom/ui.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/rails_admin.js - 200 OK (55ms)
+
+
+Started GET "/assets/rails_admin/ra.i18n.js" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /rails_admin/ra.i18n.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails_admin/ra.i18n.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/napoleonyjl/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-11-09 16:53:57 +0900
+Served asset /fontawesome-webfont.woff - 200 OK (3ms)
+
+
+Started GET "/admin/aiit_member?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2013-11-09 16:53:59 +0900
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"aiit_member"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAiitMember Load (0.2ms)[0m  [1mSELECT "aiit_members".* FROM "aiit_members" ORDER BY aiit_members.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "aiit_members" 
+  Rendered /Users/napoleonyjl/.rvm/gems/ruby-1.9.3-p448/gems/rails_admin-0.4.9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (40.3ms)
+Completed 200 OK in 68ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+Connecting to database specified by database.yml
+  [1m[36m (6.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "aiit_members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "kana_name" varchar(255), "birthday" date, "gender" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "exam_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "exam_no" varchar(255), "review_flg" boolean, "decision_reason" varchar(255), "citizen_of_tokyo" boolean, "examination" varchar(255), "exam_year" integer, "basic_knowledge" integer, "paper" integer, "presentation" integer, "interview" integer, "test_score" integer, "result" boolean, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "guarantors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "guarantor_kana" varchar(255), "guarantor_zip" varchar(255), "guarantor_address" varchar(255), "guarantor_tel" varchar(255), "relationship" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "privacies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "eng_name" varchar(255), "birthplace" varchar(255), "zip_code" varchar(255), "city" varchar(255), "block" varchar(255), "address" varchar(255), "building" varchar(255), "tel" varchar(255), "mobile" varchar(255), "pc_email" varchar(255), "mobile_email" varchar(255), "graduated_school" varchar(255), "department" varchar(255), "stream" varchar(255), "graduated_date" varchar(255), "new_graduates" boolean, "occupation" varchar(255), "company" varchar(255), "company_address" varchar(255), "work_period" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "prospects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "received_date" date, "wished_program" varchar(255), "wished_material" varchar(255), "event" varchar(255), "visited_date" date, "contact_unnecessary" boolean, "applikation" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "rails_admin_histories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar(255), "item" integer, "table" varchar(255), "month" integer(2), "year" integer(5), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "status_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "status" varchar(255), "absence_reason" varchar(255), "absence_time" varchar(255), "beginning" date, "end" date, "return_reason" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "student_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "aiit_member_id" integer, "name" varchar(255), "classification" varchar(255), "grade" integer, "program" varchar(255), "student_account" varchar(255), "campus_email" varchar(255), "nationality" varchar(255), "visa" varchar(255), "beginning" date, "end" date, "longterm" varchar(255), "PBL_1st" varchar(255), "PBL_2nd" varchar(255), "PBL_teacher" varchar(255), "guarantor_id" integer, "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "tuitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_list_id" integer, "transfer_request" boolean, "exemption_type" varchar(255), "loan_amount" varchar(255), "scholarship_division" varchar(255), "memo" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106065823')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130529073557')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130529073558')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130530142925')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130713211519')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130714144333')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130720054955')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131019055101')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131019064242')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131106050902')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131106054345')[0m
+Connecting to database specified by database.yml
+  [1m[36m (2.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130529073557)
+Migrating to CreateRailsAdminHistoriesTable (20130529073558)
+Migrating to CreateVersions (20130530142925)
+Migrating to CreateGuarantors (20130713211519)
+Migrating to CreateProspects (20130714144333)
+Migrating to CreateExamLists (20130720054955)
+Migrating to CreateAiitMembers (20131019055101)
+Migrating to CreatePrivacies (20131019064242)
+Migrating to CreateStudentLists (20131106050902)
+Migrating to CreateStatusRecords (20131106054345)
+Migrating to CreateTuitions (20131106065823)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
