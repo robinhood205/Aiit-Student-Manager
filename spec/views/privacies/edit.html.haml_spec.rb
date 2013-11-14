@@ -47,7 +47,7 @@ describe "privacies/edit" do
       assert_select "input#privacy_mobile_email[name=?]", "privacy[mobile_email]"
       assert_select "input#privacy_graduated_school[name=?]", "privacy[graduated_school]"
       assert_select "input#privacy_department[name=?]", "privacy[department]"
-      assert_select "input#privacy_stream[name=?]", "privacy[stream]"
+      assert_select "select#privacy_stream[name=?]", "privacy[stream]"
       assert_select "input#privacy_graduated_date[name=?]", "privacy[graduated_date]"
       assert_select "input#privacy_new_graduates[name=?]", "privacy[new_graduates]"
       assert_select "input#privacy_occupation[name=?]", "privacy[occupation]"

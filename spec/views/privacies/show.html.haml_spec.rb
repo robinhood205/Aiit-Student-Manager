@@ -17,7 +17,7 @@ describe "privacies/show" do
       :mobile_email => "Mobile Email",
       :graduated_school => "Graduated School",
       :department => "Department",
-      :stream => "Stream",
+      :stream => "science",
       :graduated_date => "Graduated Date",
       :new_graduates => false,
       :occupation => "Occupation",
@@ -45,7 +45,7 @@ describe "privacies/show" do
     rendered.should match(/Mobile Email/)
     rendered.should match(/Graduated School/)
     rendered.should match(/Department/)
-    rendered.should match(/Stream/)
+    rendered.should match(/science/)
     rendered.should match(/Graduated Date/)
     rendered.should match(/false/)
     rendered.should match(/Occupation/)

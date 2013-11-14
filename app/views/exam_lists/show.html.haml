@@ -1,48 +1,49 @@
-%p#notice= notice
+%h1 受験一覧　照会
 
-%p
-  %b Aiit member:
-  = @exam_list.aiit_member_id
-%p
-  %b Exam no:
-  = @exam_list.exam_no
-%p
-  %b Review flg:
-  = @exam_list.review_flg
-%p
-  %b Decision reason:
-  = @exam_list.decision_reason
-%p
-  %b Citizen of tokyo:
-  = @exam_list.citizen_of_tokyo
-%p
-  %b Examination:
-  = @exam_list.examination
-%p
-  %b Exam year:
-  = @exam_list.exam_year
-%p
-  %b Basic knowledge:
-  = @exam_list.basic_knowledge
-%p
-  %b Paper:
-  = @exam_list.paper
-%p
-  %b Presentation:
-  = @exam_list.presentation
-%p
-  %b Interview:
-  = @exam_list.interview
-%p
-  %b Test score:
-  = @exam_list.test_score
-%p
-  %b Result:
-  = @exam_list.result
-%p
-  %b Memo:
-  = @exam_list.memo
+%table{:class => "table table-condensed"}
+  %tr
+    %td{:class=>"span2"} AIIT 会員
+    %td= @exam_list.aiit_member_id
+  %tr
+    %td 受験番号
+    %td= @exam_list.exam_no
+  %tr
+    %td 事前審査有無
+    %td= @exam_list.review_flg
+  %tr
+    %td 判定理由
+    %td= @exam_list.decision_reason
+  %tr
+    %td 都民
+    %td= @exam_list.citizen_of_tokyo
+  %tr
+    %td 入試
+    %td= @exam_list.examination
+  %tr
+    %td 受験年度
+    %td= @exam_list.exam_year
+  %tr
+    %td IT基礎知識
+    %td= @exam_list.basic_knowledge
+  %tr
+    %td 小論文
+    %td= @exam_list.paper
+  %tr
+    %td プレゼンテーション
+    %td= @exam_list.presentation
+  %tr
+    %td 面接
+    %td= @exam_list.interview
+  %tr
+    %td 合計点
+    %td= @exam_list.test_score
+  %tr
+    %td 合否
+    %td= @exam_list.result
+  %tr
+    %td 備考
+    %td= @exam_list.memo
 
-= link_to 'Edit', edit_exam_list_path(@exam_list)
+= link_to '変更', edit_exam_list_path(@exam_list)
 \|
-= link_to 'Back', exam_lists_path
+= link_to '戻る', exam_lists_path
