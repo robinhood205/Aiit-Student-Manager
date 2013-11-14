@@ -1,6 +1,5 @@
 class CreateTuitions < ActiveRecord::Migration
   def change
-    drop_table :tuitions
     create_table :tuitions do |t|
       t.integer :student_list_id
       t.boolean :transfer_request
