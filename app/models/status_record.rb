@@ -7,5 +7,4 @@ extend Enumerize
 
   enumerize :absence_reason, in: [:業務都合, :経済的理由, :家庭の事情, :健康上の理由, :その他]
   enumerize :absence_time, in: [:一年, :半年, :その他]
-  enumerize :return_reason, in: [:業務都合, :経済的理由, :家庭の事情, :健康上の理由, :その他]
 end
