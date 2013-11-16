@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe "privacies/show" do
@@ -17,7 +18,7 @@ describe "privacies/show" do
       :mobile_email => "Mobile Email",
       :graduated_school => "Graduated School",
       :department => "Department",
-      :stream => "science",
+      :stream => "理系",
       :graduated_date => "Graduated Date",
       :new_graduates => false,
       :occupation => "Occupation",
@@ -45,7 +46,7 @@ describe "privacies/show" do
     rendered.should match(/Mobile Email/)
     rendered.should match(/Graduated School/)
     rendered.should match(/Department/)
-    rendered.should match(/science/)
+    rendered.should match(/理系/)
     rendered.should match(/Graduated Date/)
     rendered.should match(/false/)
     rendered.should match(/Occupation/)
