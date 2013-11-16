@@ -1,4 +1,4 @@
-= 学生データベース
+= 学生データベース(master)
 {<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]
 
 === 開発チーム
