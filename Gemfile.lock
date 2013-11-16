@@ -5,7 +5,7 @@ GIT
     rails_admin_import (0.1.8)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://bundler-api.herokuapp.com/
   specs:
     actionmailer (3.2.11)
       actionpack (= 3.2.11)
