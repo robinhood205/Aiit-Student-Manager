@@ -1,5 +1,6 @@
 #!/bin/bash
 echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
+git branch
 case ${TRAVIS_BRANCH} in
     release)
 	echo "it's Release."
@@ -11,7 +12,7 @@ case ${TRAVIS_BRANCH} in
 	echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 	heroku keys:clear
 	yes | heroku keys:add
-	yes | git push -f heroku master
+	yes | git push -f heroku release
 	heroku pg:reset DATABASE --confirm aiitstudents
 	heroku run rake db:migrate
 	heroku run rake db:seed
