@@ -1,5 +1,6 @@
 #!/bin/bash
 echo TRAVIS_BRANCH=${TRAVIS_BRANCH}
+git branch
 case ${TRAVIS_BRANCH} in
     release)
 	echo "it's Release."
