@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-source "http://bundler-api.herokuapp.com"
+source 'http://bundler-api.herokuapp.com'
 
 gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
