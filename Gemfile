@@ -90,3 +90,6 @@ group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
 end
+
+# Active-attr - https://github.com/cgriego/active_attr
+gem 'active_attr'

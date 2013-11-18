@@ -3,8 +3,8 @@ class StatusRecordsController < ApplicationController
   # GET /status_records
   # GET /status_records.json
   def index
-    @status_records = StatusRecord.all
-    @status_record = StatusRecord.new
+    @status_record_search_form = StatusRecordSearchForm.new params[:status_record_search_form]
+    @status_records = @status_record_search_form.search
 
     respond_to do |format|
       format.html # index.html.erb
