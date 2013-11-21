@@ -9,5 +9,4 @@ extend Enumerize
   has_many :student_lists
 
   enumerize :gender, in: [:男, :女]
-
 end
