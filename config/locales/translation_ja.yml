@@ -15,18 +15,18 @@ ja:
       enPiT: enPiT生
   activerecord:
     models:
-      aiit_member: AIIT会員(Master11.9)  #g
+      aiit_member: 1.AIIT会員(Master11.21)  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
-      exam_list: 受験情報  #g
-      guarantor: 保証人  #g
-      status_record: 身分異動  #g
-      tuition: 授業料関係 #g
-      privacy: 個人情報  #g
-      prospect: 見込み学生  #g
+      exam_list: 4.受験情報  #g
+      guarantor: 2.保証人  #g
+      status_record: 7.身分異動  #g
+      tuition: 8.授業料関係 #g
+      privacy: 6.個人情報  #g
+      prospect: 3.見込み学生  #g
       user: ユーザー情報  #g
-      student_list: 学生一覧  #g
+      student_list: 5.学生一覧  #g
 
     attributes:
       aiit_member:
