@@ -15,7 +15,7 @@ ja:
       enPiT: enPiT生
   activerecord:
     models:
-      aiit_member: 1.AIIT会員(Master11.21)  #g
+      aiit_member: 1.AIIT会員(Master11.26)  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
