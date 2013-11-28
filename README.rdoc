@@ -2,7 +2,7 @@
 {<img src="https://travis-ci.org/a1125ts/students.png" />}[https://travis-ci.org/a1125ts/students]
 
 === 開発チーム
-チョウ、ギュウ、ヨウ、廖、金子
+張、ギュウ、ヨウ、廖、金子
 
 === Scrum Master
 金子
