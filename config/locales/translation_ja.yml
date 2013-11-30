@@ -34,7 +34,7 @@ ja:
         name: 名前  #g
         kana_name: カナ氏名  #g
         gender: 性別  #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         exam_lists: 受験情報  
         status_record: 身分異動  
         privacy: 個人情報  
@@ -49,7 +49,7 @@ ja:
         exam_year: 受験年度  #g
         examination: 入試  #g
         interview: 面接  #g
-        memo: 備考  #g
+        memo: 備考と編集記録  #g
         paper: 小論文  #g
         presentation: プレゼンテーション  #g
         result: 合否  #g
@@ -64,7 +64,7 @@ ja:
         relationship: 続柄区分  #g
         guarantor_tel: 電話 #g
         guarantor_zip: 郵便番号 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         student_lists: 学生一覧  #g
 
       status_record:
@@ -72,14 +72,14 @@ ja:
         absence_time: 休学期間 #g
         beginning: 開始時間 #g
         end: 終了時間 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         status: 身分 #g
         student_list: 学生一覧
         return_reason: 復学理由
 
       tuition:
         loan_amount: 免除額 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         scholarship_division: 奨学金区分 #g
         transfer_request: 振替依頼書 #g
         student_list: 学生一覧
@@ -94,7 +94,7 @@ ja:
         entrance_date: 入学年月日 #g
         grade: 学年 #g
         graduation_date: 終了予定日 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         name: 学修番号 #g
         nationality: 国籍 #g
         program: クラス #g
@@ -135,7 +135,7 @@ ja:
         gender: 性別  #g
         tel: 電話番号（自宅）  #g
         zip_code: 郵便番号  #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         aiit_member: AIIT会員
 
 
@@ -147,7 +147,7 @@ ja:
         wished_material: 希望資料  #g
         visited_date: 来場日  #g
         applikation: 出願 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         aiit_member: AIIT会員
 
       user:
