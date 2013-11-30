@@ -4,7 +4,7 @@ extend Enumerize
   attr_accessible :PBL_1st, :PBL_2nd, :PBL_teacher, :aiit_member_id, :beginning, :campus_email, :classification, :end, :grade, :guarantor_id, :longterm, :memo, :name, :nationality, :program, :student_account, :visa
 
   has_many :tuitions
-  has_many :status_records
+  has_many :status_records, dependent: :destroy
 
   belongs_to :aiit_member
   belongs_to :guarantor
