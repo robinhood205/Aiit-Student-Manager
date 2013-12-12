@@ -40,6 +40,8 @@ ja:
         privacy: 個人情報  
         prospects: 見込み学生
         student_lists: 学生一覧 
+        created_at: 作成日時
+        updated_at: 更新日時
 
       exam_list: 
         basic_knowledge: IT基礎知識  #g
@@ -56,6 +58,8 @@ ja:
         review_flg: 事前審査有無  #g
         test_score: 合計点  #g
         aiit_member: AIIT会員
+        created_at: 作成日時
+        updated_at: 更新日時
 
       guarantor:
         guarantor_address: 住所  #g
@@ -66,6 +70,8 @@ ja:
         guarantor_zip: 郵便番号 #g
         memo: 備考と編集記録 #g
         student_lists: 学生一覧  #g
+        created_at: 作成日時
+        updated_at: 更新日時
 
       status_record:
         absence_reason: 異動理由 #g
@@ -76,6 +82,8 @@ ja:
         status: 身分 #g
         student_list: 学生一覧
         return_reason: 復学理由
+        created_at: 作成日時
+        updated_at: 更新日時
 
       tuition:
         loan_amount: 免除額 #g
@@ -84,6 +92,8 @@ ja:
         transfer_request: 振替依頼書 #g
         student_list: 学生一覧
         exemption_type: 免除種類
+        created_at: 作成日時
+        updated_at: 更新日時
 
       student_list:
         PBL_1st: PBL前期 #g
@@ -109,6 +119,8 @@ ja:
         beginning: 開始時間 #g
         end: 終了時間 #g
         longterm: 長期履修 #g
+        created_at: 作成日時
+        updated_at: 更新日時
 
       privacy:
         address: 住所番地  #g
@@ -137,6 +149,8 @@ ja:
         zip_code: 郵便番号  #g
         memo: 備考と編集記録 #g
         aiit_member: AIIT会員
+        created_at: 作成日時
+        updated_at: 更新日時
 
 
       prospect:
@@ -149,6 +163,8 @@ ja:
         applikation: 出願 #g
         memo: 備考と編集記録 #g
         aiit_member: AIIT会員
+        created_at: 作成日時
+        updated_at: 更新日時
 
       user:
         current_sign_in_at: 今回ログインした日  #g
