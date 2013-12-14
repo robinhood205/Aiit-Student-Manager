@@ -111,6 +111,7 @@ ja:
     export:
       confirmation: "%{name}としてエクスポート"
       select: "エクスポートするフィールドを選択してください"
+      select_all_fields: "全てのフィールドを選択"
       fields_from: "%{name}のフィールド"
       fields_from_associated: "関連する%{name}のフィールド"
       display: "カラム:%{name} 型:%{type}"
