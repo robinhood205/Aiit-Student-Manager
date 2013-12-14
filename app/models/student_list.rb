@@ -11,4 +11,6 @@ extend Enumerize
 
   enumerize :classification, in: [:正規生, :科目等履修生, :特別科目等履修生, :履修証明プログラム生, :'enPiT', :聴講生, :修了生]
   enumerize :longterm, in: [:なし, :'2.5年', :'3年'], :default => :なし
+
+  validates_presence_of :aiit_member_id, :guarantor_id
 end
