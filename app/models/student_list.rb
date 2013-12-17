@@ -13,4 +13,6 @@ extend Enumerize
   enumerize :longterm, in: [:なし, :'2.5年', :'3年'], :default => :なし
 
   validates_presence_of :aiit_member_id, :guarantor_id
+  validates_numericality_of :name, :only_integer => true
+  validates_uniqueness_of :name, :message => "は一意でなければなりません"
 end
