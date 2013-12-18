@@ -11,13 +11,13 @@
 <% end -%>
 <% end -%>
 
-<h1>Import <%= @abstract_model.to_param.titleize %></h1>
+<h1>インポート<%= @abstract_model.to_param.titleize %></h1>
 
-<small>The following fields may be included in the import file</small>
+<small>次のフィールドはインポートファイルに含まれているかもしれない</small>
 <table width="100%" cellpadding="0" cellspacing="0">
 <tr>
 <td width="20%" valign="top">
-<h3>Standard Fields</h3>
+<h3>標準フィールド</h3>
 <ul>
 <% @abstract_model.model.import_fields.each do |field| -%>
 <li><%= field %></li>
@@ -27,60 +27,60 @@
 
 <% if @abstract_model.model.belongs_to_fields.any? -%>
 <td width="20%" valign="top">
-<h3>Belongs To Fields</h3>
+<h3>フィールドに属する</h3>
 <ul>
 <% @abstract_model.model.belongs_to_fields.each do |field| -%>
 <li><%= field %></li>
 <% end -%>
 </ul>
-<small>These fields map to other items in the database, lookup via attribute selected below.</small>
+<small>これらのフィールドはデータベースの他の項目、次選ばれる属性による調べにマップする。</small>
 </td>
 <% end -%>
 
 <% if @abstract_model.model.file_fields.any? -%>
 <td width="20%" valign="top">
-<h3>File Fields</h3>
+<h3>ファイルは守備につく</h3>
 <ul>
 <% @abstract_model.model.file_fields.each do |field| -%>
 <li><%= field %></li>
 <% end -%>
 </ul>
-<small>These must be a downloadable URL.</small>
+<small>これらはダウンロード可能URL.</small>
 </td>
 <% end -%>
 
 <% if @abstract_model.model.many_fields.any? -%>
 <td width="20%" valign="top">
-<h3>Multiple Fields</h3>
+<h3>多重フィールド</h3>
 <ul>
 <% @abstract_model.model.many_fields.each do |field| -%>
 <li><%= field %></li>
 <% end -%>
 </ul>
-<small>These fields map to other columns in the database, lookup via attribute selected below. There may be multiple columns with this header in the spreadsheet.</small>
+<small>これらのフィールドはデータベースの他のコラム、次選ばれる属性による調べにマップする。 展開表のこのヘッダが付いている多重コラムがあるかもしれない。</small>
 </td>
 <% end -%>
 
 <% if RailsAdminImport.config(@abstract_model.model).extra_fields.any? -%>
 <td width="20%" valign="top">
-<h3>Extra Fields</h3>
+<h3>余分フィールド</h3>
 <ul>
 <% RailsAdminImport.config(@abstract_model.model).extra_fields.each do |field| -%>
 <li><%= field %></li>
 <% end -%>
 </ul>
-<small>Additional application specific fields.</small>
+<small>追加アプリケーション特有のフィールド.</small>
 </td>
 <% end -%>
         </tr>
 </table>
 
 <%= form_tag rails_admin.import_url(@abstract_model.to_param), :multipart => true do |f| -%>
-  <h5 style="color:red;">Please limit upload file to <%= RailsAdminImport.config.line_item_limit %> line items.</h5>
+  <h5 style="color:red;"> アップロードファイルに<%= RailsAdminImport.config.line_item_limit %> 行まで限定しなさい.</h5>
   <%= file_field_tag :file %>
   <p>
-  <%= check_box_tag :update_if_exists %> Update if Exists<br />
-  Update lookup field
+  <%= check_box_tag :update_if_exists %> 存在していればアップデート<br />
+  関連するフィールド
   <select name="update_lookup">
     <% @abstract_model.model.new.attributes.keys.each do |key| -%>
           <option value="<%= key %>"><%= key %></option>
@@ -90,7 +90,7 @@
 
   <% [@abstract_model.model.belongs_to_fields, @abstract_model.model.many_fields].flatten.each do |field| -%>
   <div style="display:inline-block; width: 45%;background:#cecece;margin: 5px;padding: 5px;">
-  <label style="width:200px;"><%= field %> mapping</label>&nbsp;&nbsp;
+  <label style="width:200px;"><%= field %> マッピング</label>&nbsp;&nbsp;
   <select name="<%= field %>">
     <% field.to_s.classify.constantize.new.attributes.keys.each do |key| -%>
           <option value="<%= key %>"><%= key %></option>
@@ -98,5 +98,5 @@
   <select>
   </div>
   <% end -%><br />
-  <%= submit_tag "Upload", :disable_with => "Uploading..." %>
+  <%= submit_tag "アップロード", :disable_with => "アップロード中..." %>
 <% end -%>
