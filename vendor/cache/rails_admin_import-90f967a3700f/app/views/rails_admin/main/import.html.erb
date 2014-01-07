@@ -11,7 +11,7 @@
 <% end -%>
 <% end -%>
 
-<h1>インポート  <%= @abstract_model.to_param.titleize %></h1>
+<h1>Import <%= @abstract_model.to_param.titleize %></h1>
 
 <small>The following fields may be included in the import file</small>
 <table width="100%" cellpadding="0" cellspacing="0">
@@ -72,7 +72,7 @@
 <small>Additional application specific fields.</small>
 </td>
 <% end -%>
-	</tr>
+        </tr>
 </table>
 
 <%= form_tag rails_admin.import_url(@abstract_model.to_param), :multipart => true do |f| -%>
@@ -83,8 +83,8 @@
   Update lookup field
   <select name="update_lookup">
     <% @abstract_model.model.new.attributes.keys.each do |key| -%>
-  	<option value="<%= key %>"><%= key %></option>
-	<% end -%>
+          <option value="<%= key %>"><%= key %></option>
+        <% end -%>
   </select>
   </p>
 
@@ -93,8 +93,8 @@
   <label style="width:200px;"><%= field %> mapping</label>&nbsp;&nbsp;
   <select name="<%= field %>">
     <% field.to_s.classify.constantize.new.attributes.keys.each do |key| -%>
-  	<option value="<%= key %>"><%= key %></option>
-	<% end -%>
+          <option value="<%= key %>"><%= key %></option>
+        <% end -%>
   <select>
   </div>
   <% end -%><br />

@@ -11,4 +11,5 @@ extend Enumerize
   has_many :tuitions, through: :student_lists
 
   enumerize :gender, in: [:男, :女]
+  validates_presence_of :birthday, :kana_name, :gender, :name
 end

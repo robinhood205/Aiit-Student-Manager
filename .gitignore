@@ -21,3 +21,5 @@ vendor/bundle
 .AppleDouble
 .LSOverride
 Icon
+
+/git_stats
