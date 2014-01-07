@@ -5,12 +5,15 @@
 RailsAdmin.config do |config|
 
    RailsAdminImport.config do |config| 
+
    config.model AiitMember do
        excluded_fields do
-         [:wished_program]
+         [:received_date, :wished_program, :wished_material, :event, :visited_date, :contact_unnecessary, :applikation, :aiit_member]
        end
        label :name
      end
+
+
    end
 
   # 逆向きのassociationをonにする
