@@ -15,7 +15,7 @@ ja:
       enPiT: enPiT生
   activerecord:
     models:
-      aiit_member: 1.AIIT会員(Master11.26)  #g
+      aiit_member: 1.AIIT会員(Release01.11)  #g
       association_pbl: association_pbl  #g
       association_student: association_student  #g
       association_teacher: association_teacher  #g
@@ -34,12 +34,14 @@ ja:
         name: 名前  #g
         kana_name: カナ氏名  #g
         gender: 性別  #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         exam_lists: 受験情報  
         status_record: 身分異動  
         privacy: 個人情報  
         prospects: 見込み学生
         student_lists: 学生一覧 
+        created_at: 作成日時
+        updated_at: 更新日時
 
       exam_list: 
         basic_knowledge: IT基礎知識  #g
@@ -49,13 +51,15 @@ ja:
         exam_year: 受験年度  #g
         examination: 入試  #g
         interview: 面接  #g
-        memo: 備考  #g
+        memo: 備考と編集記録  #g
         paper: 小論文  #g
         presentation: プレゼンテーション  #g
         result: 合否  #g
         review_flg: 事前審査有無  #g
         test_score: 合計点  #g
         aiit_member: AIIT会員
+        created_at: 作成日時
+        updated_at: 更新日時
 
       guarantor:
         guarantor_address: 住所  #g
@@ -64,26 +68,32 @@ ja:
         relationship: 続柄区分  #g
         guarantor_tel: 電話 #g
         guarantor_zip: 郵便番号 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         student_lists: 学生一覧  #g
+        created_at: 作成日時
+        updated_at: 更新日時
 
       status_record:
         absence_reason: 異動理由 #g
         absence_time: 休学期間 #g
         beginning: 開始時間 #g
         end: 終了時間 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         status: 身分 #g
         student_list: 学生一覧
         return_reason: 復学理由
+        created_at: 作成日時
+        updated_at: 更新日時
 
       tuition:
         loan_amount: 免除額 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         scholarship_division: 奨学金区分 #g
         transfer_request: 振替依頼書 #g
         student_list: 学生一覧
         exemption_type: 免除種類
+        created_at: 作成日時
+        updated_at: 更新日時
 
       student_list:
         PBL_1st: PBL前期 #g
@@ -94,7 +104,7 @@ ja:
         entrance_date: 入学年月日 #g
         grade: 学年 #g
         graduation_date: 終了予定日 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         name: 学修番号 #g
         nationality: 国籍 #g
         program: クラス #g
@@ -109,6 +119,8 @@ ja:
         beginning: 開始時間 #g
         end: 終了時間 #g
         longterm: 長期履修 #g
+        created_at: 作成日時
+        updated_at: 更新日時
 
       privacy:
         address: 住所番地  #g
@@ -135,8 +147,10 @@ ja:
         gender: 性別  #g
         tel: 電話番号（自宅）  #g
         zip_code: 郵便番号  #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         aiit_member: AIIT会員
+        created_at: 作成日時
+        updated_at: 更新日時
 
 
       prospect:
@@ -147,8 +161,10 @@ ja:
         wished_material: 希望資料  #g
         visited_date: 来場日  #g
         applikation: 出願 #g
-        memo: 備考 #g
+        memo: 備考と編集記録 #g
         aiit_member: AIIT会員
+        created_at: 作成日時
+        updated_at: 更新日時
 
       user:
         current_sign_in_at: 今回ログインした日  #g

@@ -4,17 +4,17 @@
 
 RailsAdmin.config do |config|
 
-  # RailsAdminImport.config do |config| 
-  # config.model User do
-  #   excluded_fields do
-  #     [:field1, :field2, :field3]
-  #   end
-  #   label :name
-  #   extra_fields do
-  #     [:field3, :field4, :field5]
-  #   end
-  # end
-  # end
+   RailsAdminImport.config do |config| 
+
+   config.model AiitMember do
+       excluded_fields do
+         [:received_date, :wished_program, :wished_material, :event, :visited_date, :contact_unnecessary, :applikation, :aiit_member]
+       end
+       label :name
+     end
+
+
+   end
 
   # 逆向きのassociationをonにする
   # config.model TelTest do
