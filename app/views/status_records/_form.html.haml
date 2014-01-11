@@ -11,7 +11,7 @@
     = f.number_field :student_list_id
   .field
     = f.label :status
-    = f.text_field :status
+    = f.select :status, [["退学", "退学"], ["休学", "休学"], ["復学", "復学"], ["除籍", "除籍"]]
   .field
     = f.label :absence_reason
     = f.select :absence_reason, [["業務都合", "業務都合"], ["経済的理由", "経済的理由"], ["家庭の事情", "家庭の事情"], ["健康上の理由", "健康上の理由"], ["その他", "その他"]]
@@ -26,7 +26,7 @@
     = f.date_select :end
   .field
     = f.label :return_reason
-    = f.select :return_reason, [["業務都合", "業務都合"], ["経済的理由", "経済的理由"], ["家庭の事情", "家庭の事情"], ["健康上の理由", "健康上の理由"], ["その他", "その他"]]
+    = f.text_field :return_reason
   .field
     = f.label :memo
     = f.text_area :memo
