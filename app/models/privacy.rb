@@ -8,7 +8,6 @@ extend Enumerize
 
   validates_presence_of :aiit_member_id
   validates_format_of :mobile, :with => /^\d{3}-\d{4}-\d{4}$/, :allow_blank => true, :message => "記入例：080-1234-5678"
-  validates_format_of :tel, :with => /^\d{2}-\d{4}-\d{4}$/, :allow_blank => true, :message => "記入例：03-1234-5678"
   validates_format_of :pc_email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/, :allow_blank => true, :message => "記入例：test@gamil.com"
   validates_format_of :mobile_email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/, :allow_blank => true, :message => "記入例：test@softbank.ne.jp"
   validates_format_of :zip_code, :with => /^\d{3}-\d{4}$/, :allow_blank => true, :message => "記入例：140-0011"
