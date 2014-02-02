@@ -36,10 +36,11 @@ ja:
         gender: 性別  #g
         memo: 備考と編集記録 #g
         exam_lists: 受験情報  
-        status_record: 身分異動  
+        status_records: 身分異動  
         privacy: 個人情報  
         prospects: 見込み学生
-        student_lists: 学生一覧 
+        student_lists: 学生一覧
+        tuitions: 授業料関係 
         created_at: 作成日時
         updated_at: 更新日時
 
