@@ -14,6 +14,7 @@ extend Enumerize
 
   validates_presence_of :aiit_member_id, :guarantor_id
   validates_numericality_of :name, :only_integer => true
+  validates :name, length: { maximum: 8 }
   validates_uniqueness_of :name, :message => "は一意でなければなりません"
   validates_format_of :campus_email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/, :allow_blank => true, :message => "記入例：test@aiit.co.jp"
 end
